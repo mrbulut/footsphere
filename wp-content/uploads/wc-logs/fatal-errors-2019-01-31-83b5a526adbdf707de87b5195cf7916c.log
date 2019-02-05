@@ -1,0 +1,18 @@
+2019-01-31T07:10:23+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/functions.php dosyasında 4927 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 8193 bytes)
+
+2019-01-31T07:10:27+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/functions.php dosyasında 4927 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 8193 bytes)
+
+2019-01-31T07:10:49+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/functions.php dosyasında 4927 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 8193 bytes)
+
+2019-01-31T07:10:50+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/functions.php dosyasında 4927 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 8193 bytes)
+
+2019-01-31T08:05:33+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/footsphere/database/MysqliDb.php dosyasında 2021 numaralı satırda Uncaught exception 'Exception' with message 'Unknown column 'post_id' in 'field list' query: INSERT  INTO wp_posts (`post_id`, `meta_key`, `meta_value`)  VALUES (?, NOW(), NOW())' in /opt/lampp/htdocs/wp-content/plugins/footsphere/database/MysqliDb.php:2021
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/footsphere/database/MysqliDb.php(1610): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/footsphere/database/MysqliDb.php(1549): MysqliDb->_buildQuery(NULL, Array)
+#2 /opt/lampp/htdocs/wp-content/plugins/footsphere/database/MysqliDb.php(830): MysqliDb->_buildInsert('wp_posts', Array, 'INSERT')
+#3 /opt/lampp/htdocs/wp-content/plugins/footsphere/database/productDB.php(212): MysqliDb->insert('wp_posts', Array)
+#4 /opt/lampp/htdocs/wp-content/plugins/footsphere/database/productDB.php(569): productDB->addProduct(Array)
+#5 /opt/lampp/htdocs/wp-content/plugins/footsphere/views/menu/adminpage/page/implement/request.php(185): productDB->urukEkle(NULL, NULL, NULL, 'image', '0', 4, '')
+#6 /opt/lamp
+

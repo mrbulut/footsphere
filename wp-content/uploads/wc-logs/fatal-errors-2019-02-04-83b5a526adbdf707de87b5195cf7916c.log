@@ -1,0 +1,925 @@
+2019-02-04T06:58:35+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Item.php dosyasında 1658 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 40960 bytes)
+
+2019-02-04T07:00:33+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Item.php dosyasında 1490 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 196608 bytes)
+
+2019-02-04T07:00:56+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Item.php dosyasında 1490 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 196608 bytes)
+
+2019-02-04T07:01:03+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Item.php dosyasında 1490 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 196608 bytes)
+
+2019-02-04T07:01:46+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Item.php dosyasında 1490 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 196608 bytes)
+
+2019-02-04T12:50:30+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:50:31+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:50:32+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:50:49+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:50:51+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:50:51+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:51:25+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:51:27+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:51:27+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:51:48+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:51:50+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:51:50+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:52:16+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:52:18+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:52:18+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:52:28+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:52:30+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:52:30+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:52:48+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:52:49+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T12:52:49+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T13:10:01+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 18 numaralı satırda require_once(): Failed opening required '/opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/CustomerDal.php' (include_path='.:/opt/lampp/lib/php')
+
+2019-02-04T13:10:03+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 18 numaralı satırda require_once(): Failed opening required '/opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/CustomerDal.php' (include_path='.:/opt/lampp/lib/php')
+
+2019-02-04T13:10:03+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 18 numaralı satırda require_once(): Failed opening required '/opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/CustomerDal.php' (include_path='.:/opt/lampp/lib/php')
+
+2019-02-04T13:14:08+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:14:10+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:14:10+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:14:35+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T13:14:37+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T13:14:37+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 19 numaralı satırda Class 'CustomerDal' not found
+
+2019-02-04T13:15:34+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:15:36+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:15:36+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:15:58+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:16:00+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:16:00+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:17:18+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:17:20+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:17:20+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:19:28+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:19:30+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:19:30+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:20:38+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/Customer.php dosyasında 10 numaralı satırda Class 'User' not found
+
+2019-02-04T13:20:40+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/Customer.php dosyasında 10 numaralı satırda Class 'User' not found
+
+2019-02-04T13:20:40+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/Customer.php dosyasında 10 numaralı satırda Class 'User' not found
+
+2019-02-04T13:21:04+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:21:06+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:21:06+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:23:33+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/Customer.php dosyasında 10 numaralı satırda Class 'User' not found
+
+2019-02-04T13:23:35+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/Customer.php dosyasında 10 numaralı satırda Class 'User' not found
+
+2019-02-04T13:23:35+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/Customer.php dosyasında 10 numaralı satırda Class 'User' not found
+
+2019-02-04T13:25:00+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/User.php dosyasında 11 numaralı satırda Interface 'IEntity' not found
+
+2019-02-04T13:25:02+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/User.php dosyasında 11 numaralı satırda Interface 'IEntity' not found
+
+2019-02-04T13:25:02+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/User.php dosyasında 11 numaralı satırda Interface 'IEntity' not found
+
+2019-02-04T13:25:31+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:25:33+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:25:33+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:26:18+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:26:20+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:26:20+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:26:51+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:26:53+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:26:53+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php dosyasında 14 numaralı satırda Class 'DatabaseTableDao' not found
+
+2019-02-04T13:27:25+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/Container.php dosyasında 11 numaralı satırda Class 'EntitiyContainer' not found
+
+2019-02-04T13:27:27+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/Container.php dosyasında 11 numaralı satırda Class 'EntitiyContainer' not found
+
+2019-02-04T13:27:27+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/Container.php dosyasında 11 numaralı satırda Class 'EntitiyContainer' not found
+
+2019-02-04T13:28:02+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 12 numaralı satırda Class 'MysqliDb' not found
+
+2019-02-04T13:28:04+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 12 numaralı satırda Class 'MysqliDb' not found
+
+2019-02-04T13:28:04+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 12 numaralı satırda Class 'MysqliDb' not found
+
+2019-02-04T13:32:48+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:32:50+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:32:50+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:38:35+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:38:37+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:38:37+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:39:16+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:39:18+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:39:18+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:39:48+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:39:49+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:39:50+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:40:04+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:40:07+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:40:07+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:41:42+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/User.php dosyasında 11 numaralı satırda Interface 'IEntity' not found
+
+2019-02-04T13:41:44+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/User.php dosyasında 11 numaralı satırda Interface 'IEntity' not found
+
+2019-02-04T13:41:44+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/concrete/User.php dosyasında 11 numaralı satırda Interface 'IEntity' not found
+
+2019-02-04T13:42:25+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:42:27+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:42:27+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntity.php dosyasında 9 numaralı satırda Cannot redeclare class IEntity
+
+2019-02-04T13:43:33+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntityConcrete.php dosyasında 9 numaralı satırda Cannot redeclare class IEntityConcrete
+
+2019-02-04T13:43:34+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntityConcrete.php dosyasında 9 numaralı satırda Cannot redeclare class IEntityConcrete
+
+2019-02-04T13:43:35+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/entities/abstract/IEntityConcrete.php dosyasında 9 numaralı satırda Cannot redeclare class IEntityConcrete
+
+2019-02-04T13:45:23+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 270 numaralı satırda Class 'ConfigReader' not found
+
+2019-02-04T13:45:25+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 270 numaralı satırda Class 'ConfigReader' not found
+
+2019-02-04T13:45:25+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 270 numaralı satırda Class 'ConfigReader' not found
+
+2019-02-04T13:45:56+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 318 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:318
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(425): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2008): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(575): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo
+
+2019-02-04T13:45:58+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 318 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:318
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(425): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2008): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(575): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T13:45:58+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 318 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:318
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(425): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2008): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(575): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T13:48:48+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 318 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:318
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(425): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2008): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(575): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo
+
+2019-02-04T13:48:50+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 318 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:318
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(425): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2008): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(575): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T13:48:50+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 318 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:318
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(425): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2008): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(575): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T13:50:00+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 53 numaralı satırda Cannot redeclare custom_admin_footer() (previously declared in /opt/lampp/htdocs/wp-content/plugins/footsphere/init.php:143)
+
+2019-02-04T13:50:02+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 53 numaralı satırda Cannot redeclare custom_admin_footer() (previously declared in /opt/lampp/htdocs/wp-content/plugins/footsphere/init.php:143)
+
+2019-02-04T13:50:02+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/setup.php dosyasında 53 numaralı satırda Cannot redeclare custom_admin_footer() (previously declared in /opt/lampp/htdocs/wp-content/plugins/footsphere/init.php:143)
+
+2019-02-04T13:50:18+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo
+
+2019-02-04T13:50:20+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T13:50:20+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T13:52:24+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 317 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:317
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(424): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2007): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(574): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo
+
+2019-02-04T13:52:26+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 317 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:317
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(424): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2007): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(574): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T13:52:26+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 317 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:317
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(424): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2007): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(574): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T13:55:13+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 324 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:324
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(431): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2014): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(581): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo
+
+2019-02-04T13:55:15+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 324 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:324
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(431): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2014): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(581): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T13:55:15+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 324 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:324
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(431): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2014): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(581): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(20): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T14:17:25+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo
+
+2019-02-04T14:17:27+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T14:17:27+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE  (...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/UserDal.php(71): DatabaseTableDao->CreateTable(Object(User), 'wp_users')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/CustomerDal.php(21): UserDal->__construct()
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): CustomerDal->__construct()
+#7 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...'
+
+2019-02-04T14:18:29+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE wp...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options))
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#6 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/wp-admin/plugins.php(43): activate_plugin('asd/setup.php', 'http://localhos...', false
+
+2019-02-04T14:18:31+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE wp...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options))
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#6 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/wp-admin/plugins.php(172): plugin_sandbox_scrape('asd/setup.php')
+#8 {main}
+  thrown
+
+2019-02-04T14:18:31+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE wp...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options))
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#6 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/wp-admin/plugins.php(172): plugin_sandbox_scrape('asd/setup.php')
+#8 {main}
+  thrown
+
+2019-02-04T14:18:43+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 97 numaralı satırda Call to a member function getOne() on a non-object
+
+2019-02-04T14:18:45+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 97 numaralı satırda Call to a member function getOne() on a non-object
+
+2019-02-04T14:18:45+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 97 numaralı satırda Call to a member function getOne() on a non-object
+
+2019-02-04T14:19:36+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 97 numaralı satırda Call to a member function get() on a non-object
+
+2019-02-04T14:19:38+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 97 numaralı satırda Call to a member function get() on a non-object
+
+2019-02-04T14:19:38+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 97 numaralı satırda Call to a member function get() on a non-object
+
+2019-02-04T14:20:41+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(1616): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(754): MysqliDb->_buildQuery(1)
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(780): MysqliDb->get(NULL, 1, '*')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(97): MysqliDb->getOne(NULL)
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(181): DatabaseTableDao->select('aam_route_role_...')
+#7 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(202): O
+
+2019-02-04T14:20:43+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(1616): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(754): MysqliDb->_buildQuery(1)
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(780): MysqliDb->get(NULL, 1, '*')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(97): MysqliDb->getOne(NULL)
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(181): DatabaseTableDao->select('aam_route_role_...')
+#7 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(202): O
+
+2019-02-04T14:20:43+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(1616): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(754): MysqliDb->_buildQuery(1)
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(780): MysqliDb->get(NULL, 1, '*')
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(97): MysqliDb->getOne(NULL)
+#6 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(181): DatabaseTableDao->select('aam_route_role_...')
+#7 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(202): O
+
+2019-02-04T14:22:26+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE wp...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options))
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#6 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/wp-admin/plugins.php(43): activate_plugin('asd/setup.php', 'http://localhos...', false
+
+2019-02-04T14:22:28+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE wp...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options))
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#6 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/wp-admin/plugins.php(172): plugin_sandbox_scrape('asd/setup.php')
+#8 {main}
+  thrown
+
+2019-02-04T14:22:28+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 319 numaralı satırda Uncaught exception 'Exception' with message 'Connection profile not set' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:319
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(426): MysqliDb->connect('default')
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(2009): MysqliDb->mysqli()
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(69): MysqliDb->rawQuery('CREATE TABLE wp...')
+#4 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options))
+#5 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#6 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/wp-admin/plugins.php(172): plugin_sandbox_scrape('asd/setup.php')
+#8 {main}
+  thrown
+
+2019-02-04T14:23:57+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/core/lib/ConfigReader.php dosyasında 10 numaralı satırda Cannot redeclare class ConfigReader
+
+2019-02-04T14:23:59+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/core/lib/ConfigReader.php dosyasında 10 numaralı satırda Cannot redeclare class ConfigReader
+
+2019-02-04T14:23:59+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/core/lib/ConfigReader.php dosyasında 10 numaralı satırda Cannot redeclare class ConfigReader
+
+2019-02-04T14:25:01+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 3 query: CREATE TABLE wp_Options (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(70): MysqliDb->rawQuery('CREATE TABLE wp...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options))
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(43): activate_plugin('asd/setup.php', 'http://localhos...', fal
+
+2019-02-04T14:25:03+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 3 query: CREATE TABLE wp_Options (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(70): MysqliDb->rawQuery('CREATE TABLE wp...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options))
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): plugin_sandbox_scrape('asd/setup.php')
+#6 {main}
+  thrown
+
+2019-02-04T14:25:03+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 3 query: CREATE TABLE wp_Options (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(70): MysqliDb->rawQuery('CREATE TABLE wp...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options))
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): plugin_sandbox_scrape('asd/setup.php')
+#6 {main}
+  thrown
+
+2019-02-04T14:25:45+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(70): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(43):
+
+2019-02-04T14:25:47+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(70): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:25:47+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(70): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:26:33+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(72): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(43):
+
+2019-02-04T14:26:35+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(72): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:26:35+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(72): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:27:26+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(71): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(43):
+
+2019-02-04T14:27:27+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(71): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:27:28+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(71): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:29:10+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(71): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(43):
+
+2019-02-04T14:29:12+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(71): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:29:12+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(71): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:29:44+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(71): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(43):
+
+2019-02-04T14:29:45+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(71): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:29:45+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(71): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:30:13+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(72): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(43):
+
+2019-02-04T14:30:15+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(72): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:30:15+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(72): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:31:23+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 37 numaralı satırda Call to undefined method Options::Get()
+
+2019-02-04T14:31:24+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 37 numaralı satırda Call to undefined method Options::Get()
+
+2019-02-04T14:31:24+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php dosyasında 37 numaralı satırda Call to undefined method Options::Get()
+
+2019-02-04T14:31:54+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(76): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(43):
+
+2019-02-04T14:31:56+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(76): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:31:56+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(76): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:32:16+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(75): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(43):
+
+2019-02-04T14:32:18+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(75): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:32:18+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(75): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172): pl
+
+2019-02-04T14:32:56+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(75): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'wp_options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(567): include_once('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(4
+
+2019-02-04T14:32:58+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(75): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'wp_options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172):
+
+2019-02-04T14:32:58+00:00 CRITICAL /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php dosyasında 2027 numaralı satırda Uncaught exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' at line 1 query: CREATE TABLE  (
+ 			ID INT(32) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ 			)' in /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php:2027
+Stack trace:
+#0 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/MysqliDb.php(576): MysqliDb->_prepareQuery()
+#1 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/abstract/DatabaseTableDao.php(75): MysqliDb->rawQuery('CREATE TABLE  (...')
+#2 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(60): DatabaseTableDao->CreateTable(Object(Options), 'wp_options')
+#3 /opt/lampp/htdocs/wp-content/plugins/asd/setup.php(21): OptionsDal->__construct()
+#4 /opt/lampp/htdocs/wp-admin/includes/plugin.php(1909): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wp-admin/plugins.php(172):
+

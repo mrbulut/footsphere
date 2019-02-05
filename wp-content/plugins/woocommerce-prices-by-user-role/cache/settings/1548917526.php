@@ -1,0 +1,1 @@
+<?php return '{"roles":[],"discountOrMakeUp":"discount","discountByRoles":[],"showCustomerSavings":[],"customerSavingsLableColor":"#ff0000","textForUnregisterUsers":"Please login or register to see price","hideAddToCartButtonForUserRoles":[],"hidePriceForUserRoles":[],"textForRegisterUsers":"Price for your role is hidden","hideEmptyPrice":[]}';
