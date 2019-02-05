@@ -73,12 +73,13 @@ class CustomerDal extends DatabaseTableDao implements IDatabaseTableDao
         if ($UserId) {
             return $this->select(
                 array(
-                    $this->Rows[0] => $UserId
+                    $this->Rows[1] => $UserId
                 )
             );
         } else
             return false;
     }
+
 
     public function updateCustomer(Customer $customer)
     {
@@ -95,6 +96,47 @@ class CustomerDal extends DatabaseTableDao implements IDatabaseTableDao
                 array(
                     $this->Rows[0] => $this->user->getUserId()
                 )
+            );
+
+
+        } else
+            return false;
+    }
+
+    public function addCustomer(Customer $customer)
+    {
+        if ($customer) {
+            $result = array();
+            foreach ($customer as $key => $value) {
+                if ($value) {
+                    $result[$key] = $value;
+                }
+            }
+
+            if(!self::getCustomer($customer)){
+                return $this->insert(
+                    $result
+                );
+
+            }else{
+                return false;
+            }
+
+        } else
+            return false;
+    }
+
+    public function getCustomer(Customer $customer){
+        if ($customer) {
+            $result = array();
+            foreach ($customer as $key => $value) {
+                if ($value) {
+                    $result[$key] = $value;
+                }
+            }
+
+            return $this->select(
+                $result
             );
 
 

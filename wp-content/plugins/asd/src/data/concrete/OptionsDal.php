@@ -7,9 +7,9 @@
  */
 
 include_once ROOT_PATH . "/src/entities/concrete/OptionsConcrete.php";
-include_once ROOT_PATH."/src/entities/abstract/Container.php";
-include_once ROOT_PATH."/src/data/abstract/DatabaseTableDao.php";
-include_once ROOT_PATH."/src/data/abstract/IDatabaseTableDao.php";
+include_once ROOT_PATH . "/src/entities/abstract/Container.php";
+include_once ROOT_PATH . "/src/data/abstract/DatabaseTableDao.php";
+include_once ROOT_PATH . "/src/data/abstract/IDatabaseTableDao.php";
 
 class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
@@ -57,20 +57,19 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function __construct()
     {
-        $this->Rows = parent::CreateTable(Container::getInstance(new Options()),"wp_options");
-       // self::defineCaps();
+        $this->Rows = parent::CreateTable(Container::getInstance(new Options()), "wp_options");
+        self::defineCaps();
         self::defineSettings();
 
     }
 
     private function defineSettings()
     {
-        if (!self::selectOption($this->OptionsNames['commission'])) {
-            self::addOption($this->OptionsNames['commission'], $this->commission);
-            self::addOption($this->OptionsNames['requestTimeLimit'], $this->requestTimeLimit);
-            self::addOption($this->OptionsNames['modelLimit'], $this->modelLimit);
-            self::addOption($this->OptionsNames['requestLimit'], $this->requestLimit);
-        }
+        self::addOption($this->OptionsNames['requestTimeLimit'], $this->requestTimeLimit);
+        self::addOption($this->OptionsNames['modelLimit'], $this->modelLimit);
+        self::addOption($this->OptionsNames['requestLimit'], $this->requestLimit);
+        self::addOption($this->OptionsNames['commission'], $this->commission);
+
     }
 
     private function defineCaps()
@@ -109,29 +108,29 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getLangueages($userID)
     {
-        return self::selectOption($this->OptionsNames['langueages']."_".$userID);
+        return self::selectOption($this->OptionsNames['langueages'] . "_" . $userID)[$this->Rows[2]];;
     }
 
-    public function setLangueages($userID,$langueages)
+    public function setLangueages($userID, $langueages)
     {
-        return self::updateOptionToOptionName($this->OptionsNames['langueages']."_".$userID, $langueages);
+        return self::updateOptionToOptionName($this->OptionsNames['langueages'] . "_" . $userID, $langueages);
     }
 
     public function getRequest($userID)
     {
-        return self::selectOption($this->OptionsNames['request']."_".$userID);
+        return self::selectOption($this->OptionsNames['request'] . "_" . $userID)[$this->Rows[2]];;
     }
 
-    public function setRequest($userID,$request)
+    public function setRequest($userID, $request)
     {
-        return self::updateOptionToOptionName($this->OptionsNames['request']."_".$userID, $request);
+        return self::updateOptionToOptionName($this->OptionsNames['request'] . "_" . $userID, $request);
     }
 
 
     public function getProducerRequestLimit()
     {
 
-        return self::selectOption($this->OptionsNames['requestLimit']);
+        return self::selectOption($this->OptionsNames['requestLimit'])[$this->Rows[2]];
     }
 
     public function setProducerRequestLimit($producerRequestLimit)
@@ -140,11 +139,9 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
     }
 
 
-
-
     public function getProducerModelLimit()
     {
-        return self::selectOption($this->OptionsNames['modelLimit']);
+        return self::selectOption($this->OptionsNames['modelLimit'])[$this->Rows[2]];;
     }
 
     public function setProducerModelLimit($producerModelLimit)
@@ -154,7 +151,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getRequestTimeArea()
     {
-        return self::updateOptionToOptionName($this->OptionsNames['requestTimeLimit']);
+        return self::updateOptionToOptionName($this->OptionsNames['requestTimeLimit'])[$this->Rows[2]];;
     }
 
     public function setRequestTimeArea($requestTimeArea)
@@ -164,7 +161,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getCommissionArea()
     {
-        return self::updateOptionToOptionName($this->OptionsNames['commission']);
+        return self::updateOptionToOptionName($this->OptionsNames['commission'])[$this->Rows[2]];;
     }
 
     public function setCommissionArea($commissionArea)
@@ -201,7 +198,9 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
     private function addOption($option_name, $options_value)
     {
         if ($option_name) {
-            if(!self::selectOption($option_name)){
+            if (self::selectOption($option_name)) {
+               return false;
+            } else {
                 return $this->insert(
                     array(
                         $this->Rows[1] => $option_name,
@@ -210,10 +209,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
                     )
                 );
-            }else{
-                return false;
             }
-
 
 
         } else

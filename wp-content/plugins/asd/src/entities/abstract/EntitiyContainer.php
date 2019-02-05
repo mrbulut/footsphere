@@ -10,7 +10,7 @@ abstract class EntitiyContainer
 {
     private static $_instance;
 
-    public static function getInstance(IEntity $IEntity)
+    public static function getInstance($IEntity)
     {
         if (isset(self::$_instance)) {
             return self::$_instance;

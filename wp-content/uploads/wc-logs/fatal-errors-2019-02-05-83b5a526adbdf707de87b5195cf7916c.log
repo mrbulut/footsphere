@@ -150,3 +150,149 @@ Stack trace:
 #6 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(181): DatabaseTableDao->select('aam_route_role_...')
 #7 /opt/lampp/htdocs/wp-content/plugins/asd/src/data/concrete/OptionsDal.php(202): 
 
+2019-02-05T13:02:48+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/class-requests.php dosyasında 644 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 222395 bytes)
+
+2019-02-05T13:32:22+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:32:28+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:32:37+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:33:48+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:33:59+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:34:12+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:34:35+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:34:51+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:35:02+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:36:03+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:37:15+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:38:34+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/functions.php dosyasında 440 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 131523 bytes)
+
+2019-02-05T13:40:23+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:40:59+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:41:12+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:42:01+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:42:22+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:42:32+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:42:43+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:42:49+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:42:53+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:43:05+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:44:06+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:44:13+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:44:23+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:44:38+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:45:20+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:45:32+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:51:41+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:52:52+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:52:56+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:54:00+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:54:09+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:54:13+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:54:52+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:54:55+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:55:11+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:55:19+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:55:42+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:55:47+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:55:52+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T13:56:34+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:01:05+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/functions.php dosyasında 440 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 98288 bytes)
+
+2019-02-05T14:11:24+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Item.php dosyasında 2736 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 786432 bytes)
+
+2019-02-05T14:14:39+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Item.php dosyasında 2736 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 786432 bytes)
+
+2019-02-05T14:14:44+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/functions.php dosyasında 440 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 200967 bytes)
+
+2019-02-05T14:15:38+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:20:52+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:26:00+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:26:16+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:26:53+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:27:31+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:28:04+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:29:46+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:30:12+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:30:55+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:31:18+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/functions.php dosyasında 440 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 159095 bytes)
+
+2019-02-05T14:31:26+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:32:28+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:32:33+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:32:48+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:33:52+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:33:58+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:35:21+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Item.php dosyasında 2736 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 786432 bytes)
+
+2019-02-05T14:35:27+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Item.php dosyasında 2736 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 786432 bytes)
+
+2019-02-05T14:43:58+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:44:21+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:44:34+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+
+2019-02-05T14:46:11+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/functions.php dosyasında 440 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 105722 bytes)
+
+2019-02-05T14:47:20+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Item.php dosyasında 2736 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 786432 bytes)
+
+2019-02-05T14:47:21+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Item.php dosyasında 2736 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 786432 bytes)
+
+2019-02-05T14:47:56+00:00 CRITICAL /opt/lampp/htdocs/wp-includes/SimplePie/Misc.php dosyasında 362 numaralı satırda Allowed memory size of 134217728 bytes exhausted (tried to allocate 277992 bytes)
+

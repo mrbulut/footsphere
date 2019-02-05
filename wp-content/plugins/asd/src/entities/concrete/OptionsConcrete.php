@@ -12,7 +12,7 @@ class Options implements IEntity
     public $option_id;
     public $option_name;
     public $option_value;
-    public $auto_load;
+    public $autoload;
 
 
 
@@ -34,22 +34,6 @@ class Options implements IEntity
     public function setOptionId($option_id)
     {
         $this->option_id = $option_id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getAutoLoad()
-    {
-        return $this->auto_load;
-    }
-
-    /**
-     * @param mixed $auto_load
-     */
-    public function setAutoLoad($auto_load)
-    {
-        $this->auto_load = $auto_load;
     }
 
     /**

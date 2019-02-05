@@ -6,7 +6,7 @@ include_once ROOT_PATH . "/src/entities/concrete/UserConcrete.php";
 class Product implements IEntity{
     public $ID;
     public $PName;
-    public $Desc;
+    public $DescProduct;
     public $Price;
     public $Image;
     public $Image2;

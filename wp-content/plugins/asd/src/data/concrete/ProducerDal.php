@@ -28,9 +28,10 @@ class ProducerDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function __construct($UserId = null)
     {
+
+        $this->Rows = parent::CreateTable(Container::getInstance(new Producer()));
         if ($UserId == null)
             $this->user = new UserDal();
-        $this->Rows = parent::CreateTable(Container::getInstance(new Producer()));
     }
 
     public function getProducerToId($id)

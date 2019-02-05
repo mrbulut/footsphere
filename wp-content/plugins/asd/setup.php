@@ -16,14 +16,15 @@ if (!function_exists('add_action')) {
 }
 
 define('ROOT_PATH', __DIR__);
-include_once  __DIR__.'/src/data/concrete/CustomerDal.php';
-include_once  __DIR__.'/src/entities/concrete/CustomerConcrete.php';
+include_once  __DIR__.'/src/data/concrete/UserDal.php';
+include_once  __DIR__.'/src/entities/concrete/UserConcrete.php';
+include_once ROOT_PATH."/src/entities/abstract/Container.php";
+$database =Container::getInstance(UserDal::class);
+$m = new User();
 
 
-
-
-$database = new CustomerDal();
-$mesaj = new Customer();
+//$database = new CustomerDal();
+//$mesaj = new Customer();
 
 
 

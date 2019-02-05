@@ -9,7 +9,6 @@ include_once ROOT_PATH . "/src/entities/concrete/ProductConcrete.php";
 include_once ROOT_PATH."/src/entities/abstract/Container.php";
 include_once ROOT_PATH."/src/data/abstract/DatabaseTableDao.php";
 include_once ROOT_PATH."/src/data/abstract/IDatabaseTableDao.php";
-include_once ROOT_PATH."/src/data/concrete/UserDal.php";
 
 class ProductDal extends DatabaseTableDao implements IDatabaseTableDao
 {

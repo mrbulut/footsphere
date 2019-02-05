@@ -12,21 +12,7 @@ include_once ROOT_PATH."/src/data/abstract/IDatabaseTableDao.php";
 
 class MessageDal extends DatabaseTableDao implements IDatabaseTableDao
 {
-    /**
-     * MessageDal constructor.
-     * @param String $TableName
-     * @param IEntity $IEntity
-     */
 
-    /**
-     * Message constructor.
-     * @param int $Id
-     * @param $UserId
-     * @param $WhoIsMessage
-     * @param $Message
-     * @param $Date
-     * @param $Status  Okunmamis,Okunmus
-     */
     private static $Rows;
 
     public function __construct()
@@ -41,7 +27,7 @@ class MessageDal extends DatabaseTableDao implements IDatabaseTableDao
         if ($id) {
             return $this->select(
                 array(
-                    'ID' => $id
+                    $this->Rows[0] => $id
                 )
             );
         } else
@@ -55,14 +41,14 @@ class MessageDal extends DatabaseTableDao implements IDatabaseTableDao
         if ($UserId) {
             return $this->selectAll(
                 array(
-                    'UserId' => $UserId
+                    $this->Rows[1] => $UserId
                 )
                 , $HowManyMessage);
         } else
             return false;
     }
 
-    // Sistemdeki toplam atılan mesaj sayısını döndürür.
+    // Sistemdeki toplam atılan mesajları döndürür.
     public function getTotalMessage($HowManyMessage = null)
     {
         return $this->selectAll(array(), $HowManyMessage);
@@ -73,7 +59,7 @@ class MessageDal extends DatabaseTableDao implements IDatabaseTableDao
     {
         return $this->selectAll(
             array(
-                'Status' => 'Okunmamis'
+                $this->Rows[5] => 'Okunmamis'
             )
             , $HowManyMessage);
     }
@@ -84,10 +70,10 @@ class MessageDal extends DatabaseTableDao implements IDatabaseTableDao
         if ($UserId) {
             return $this->update(
                 array(
-                    'Status' => 'Okunmus'
+                    $this->Rows[5] => 'Okunmus'
                 ),
                 array(
-                    'UserId' => $UserId
+                    $this->Rows[1] => $UserId
                 )
             );
         } else
@@ -100,11 +86,11 @@ class MessageDal extends DatabaseTableDao implements IDatabaseTableDao
         if ($message) {
             return $this->insert(
                 array(
-                    'Message' => $message->Message,
-                    'WhoIsMessage' => $message->WhoIsMessage,
-                    'Date' => $message->Date,
-                    'Status' => $message->Status,
-                    'UserId' => $message->UserId,
+                    $this->Rows[3] => $message->Message,
+                    $this->Rows[2] => $message->WhoIsMessage,
+                    $this->Rows[4]=> $message->Date,
+                    $this->Rows[5] => $message->Status,
+                    $this->Rows[1] => $message->UserId,
                 )
             );
         } else
@@ -116,8 +102,8 @@ class MessageDal extends DatabaseTableDao implements IDatabaseTableDao
         if ($UserId) {
             return $this->selectAll(
                 array(
-                    'Status' => 'Okunmamis',
-                    'UserId' => $UserId
+                    $this->Rows[5] => 'Okunmamis',
+                    $this->Rows[1] => $UserId
                 ),
                 $HowManyMessage
             );
