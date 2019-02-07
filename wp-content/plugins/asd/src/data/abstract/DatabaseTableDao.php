@@ -7,7 +7,6 @@
  */
 include_once ROOT_PATH . "/src/data/abstract/MysqliDb.php";
 include_once ROOT_PATH . "/src/data/config.php";
-include_once ROOT_PATH . "/src/entities/abstract/IEntity.php";
 
 abstract class DatabaseTableDao extends MysqliDb
 {
@@ -27,6 +26,72 @@ abstract class DatabaseTableDao extends MysqliDb
 
     private $value;
 
+    private  $Object;
+
+    private  $ObjectWhere;
+
+    // Databasede ana 4 işlemi(get,insert,update,delete) yapmak için sorgu ve girdileri oluşturuyor.
+    public function settingQuery($Object=null,$Objectwhere=null){
+        if($Object){
+            $this->Object = self::ClassConverter($Object);
+
+        }
+
+        if($Objectwhere){
+            $this->ObjectWhere = self::ClassConverter($Objectwhere);
+        }
+
+    }
+
+    public function getToObject()
+    {
+
+        if ($this->ObjectWhere) {
+            return self::select(
+                $this->result
+            );
+        } else
+            return false;
+    }
+
+    public function insertToObject()
+    {
+
+        if ($this->Object) {
+            if (!self::getToObject($this->Object)) {
+                return self::insert(
+                    $this->Object
+                );
+            }
+        } else
+            return false;
+    }
+
+    public function updateToObject()
+    {
+        if ($this->Object) {
+            if (self::getToObject($this->ObjectWhere)) {
+
+                return self::update(
+                    $this->Object,
+                    $this->ObjectWhere
+                );
+            }
+        } else
+            return false;
+    }
+
+    public function deleteToObject()
+    {
+        if ($this->ObjectWhere) {
+            if (self::getToObject($this->ObjectWhere)) {
+                return self::delete(
+                    $this->ObjectWhere
+                );
+            }
+        } else
+            return false;
+    }
 
 
     public function CreateTable(IEntity $IEntity, $TableName = null)
@@ -79,6 +144,7 @@ abstract class DatabaseTableDao extends MysqliDb
     {
 
 
+
         self::where($where);
         return $this->database->getOne($this->TableName);
 
@@ -105,9 +171,11 @@ abstract class DatabaseTableDao extends MysqliDb
     public function where($where = array(), $order = array())
     {
 
+
         if ($where) {
             foreach ($where as $key => $value) {
                 $this->database->where($key, $value);
+
             }
         }
         if ($order) {
@@ -135,7 +203,7 @@ abstract class DatabaseTableDao extends MysqliDb
 
     }
 
-    private  function createRows()
+    private function createRows()
     {
         //  will to begin from 1 because id  be first
         for ($i = 1; $i < count($this->Rows); $i++) {
@@ -151,6 +219,16 @@ abstract class DatabaseTableDao extends MysqliDb
         }
     }
 
+    private function ClassConverter($Object)
+    {
+        $result = array();
+        foreach ($Object as $key => $value) {
+            if ($value) {
+                $result[$key] = $value;
+            }
+        }
+        return $result;
+    }
 
 
 }

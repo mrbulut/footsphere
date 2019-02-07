@@ -10,7 +10,7 @@ include_once ROOT_PATH."/src/entities/abstract/Container.php";
 include_once ROOT_PATH."/src/data/abstract/DatabaseTableDao.php";
 include_once ROOT_PATH."/src/data/abstract/IDatabaseTableDao.php";
 
-class ProductDal extends DatabaseTableDao implements IDatabaseTableDao
+class ProductDal extends DatabaseTableDao
 {
     private static $Rows;
 
@@ -96,4 +96,8 @@ class ProductDal extends DatabaseTableDao implements IDatabaseTableDao
     }
 
 
+    function selectToObject($Object)
+    {
+        // TODO: Implement selectToObject() method.
+    }
 }

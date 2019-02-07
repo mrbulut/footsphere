@@ -17,11 +17,13 @@ class CustomerDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function __construct($UserId = null)
     {
-       $this->Rows = parent::CreateTable(Container::getInstance(new Customer()));
+
+        $this->Rows = parent::CreateTable(Container::getInstance(new Customer()));
 
         if ($UserId == null)
             $this->user = new UserDal();
     }
+
 
     public function getProductWaitingCustomers(){
         return $this->selectAll(
@@ -53,95 +55,6 @@ class CustomerDal extends DatabaseTableDao implements IDatabaseTableDao
                 self::$Rows[8] => 'Fix'
             )
         );
-    }
-
-
-    public function getCustomerToId($id)
-    {
-        if ($id) {
-            return $this->select(
-                array(
-                    'ID' => $id
-                )
-            );
-        } else
-            return false;
-    }
-
-    public function getCustomerToUserId($UserId)
-    {
-        if ($UserId) {
-            return $this->select(
-                array(
-                    $this->Rows[1] => $UserId
-                )
-            );
-        } else
-            return false;
-    }
-
-
-    public function updateCustomer(Customer $customer)
-    {
-        if ($customer) {
-            $result = array();
-            foreach ($customer as $key => $value) {
-                if ($value) {
-                    $result[$key] = $value;
-                }
-            }
-
-            return $this->update(
-                $result,
-                array(
-                    $this->Rows[0] => $this->user->getUserId()
-                )
-            );
-
-
-        } else
-            return false;
-    }
-
-    public function addCustomer(Customer $customer)
-    {
-        if ($customer) {
-            $result = array();
-            foreach ($customer as $key => $value) {
-                if ($value) {
-                    $result[$key] = $value;
-                }
-            }
-
-            if(!self::getCustomer($customer)){
-                return $this->insert(
-                    $result
-                );
-
-            }else{
-                return false;
-            }
-
-        } else
-            return false;
-    }
-
-    public function getCustomer(Customer $customer){
-        if ($customer) {
-            $result = array();
-            foreach ($customer as $key => $value) {
-                if ($value) {
-                    $result[$key] = $value;
-                }
-            }
-
-            return $this->select(
-                $result
-            );
-
-
-        } else
-            return false;
     }
 
 
