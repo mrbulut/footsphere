@@ -31,7 +31,6 @@ abstract class DatabaseTableDao extends MysqliDb
 
     public function CreateTable(IEntity $IEntity, $TableName = null)
     {
-        echo get_class($IEntity);
         $this->database = MySqliDb::getInstance();
         $this->IEntity = $IEntity;
         $this->_instance = $this->IEntity;
