@@ -1,6 +1,7 @@
 
 
-# Use in all database object 
+# Use in all database object  #
+
 <code> $database = new CustomerDal(); </code>
 ---------
 <pre><code>
