@@ -2,6 +2,8 @@
 
 ** Use in all database object **
 
+https://github.com/ThingEngineer/PHP-MySQLi-Database-Class
+You can use features in This github link with $database object 
 
 <pre><code>
 $database = new CustomerDal(); 
@@ -20,8 +22,7 @@ $database->updateToObject(); // return true or false
 $database->deleteToObject(); // return true or false
 </pre></code>
 
-https://github.com/ThingEngineer/PHP-MySQLi-Database-Class
-You can use features in This github link with $database object 
+
 ---------
 ** # class CustomerDal; **
 
@@ -95,7 +96,7 @@ $database->addProducer(User $user,$offerLimit); // like the offerlimit min max =
 </code></pre>
 --------------
 --------------
-** # class ProductDal; **
+**  class ProductDal; **
 <pre><code>
 $database = new ProductDal(); 
 
@@ -103,7 +104,7 @@ $database = new ProductDal();
 </code></pre>
 --------------
 
-** # class RequestDal; **
+**  class RequestDal; **
 <pre><code>
 $ProductsAndPrices // ProductId:Price, ProductId2:Price2,...
 $Status            // Continue, Accepted, Onaylandi, Reddedildi.
@@ -118,7 +119,7 @@ $database->getProducerStatistics(); //   return $array
 
 </code></pre>
 --------------
-** # class UserDal; **
+**  class UserDal; **
 <pre><code>
 $database = new UserDal(); 
 
