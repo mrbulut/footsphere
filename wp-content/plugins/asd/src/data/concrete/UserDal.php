@@ -7,9 +7,9 @@
  */
 
 include_once ROOT_PATH . "/src/entities/concrete/UserConcrete.php";
-include_once ROOT_PATH."/src/entities/abstract/Container.php";
-include_once ROOT_PATH."/src/data/abstract/DatabaseTableDao.php";
-include_once ROOT_PATH."/src/data/abstract/IDatabaseTableDao.php";
+include_once ROOT_PATH . "/src/entities/abstract/Container.php";
+include_once ROOT_PATH . "/src/data/abstract/DatabaseTableDao.php";
+include_once ROOT_PATH . "/src/data/abstract/IDatabaseTableDao.php";
 require_once ABSPATH . "wp-includes/pluggable.php";
 require_once ABSPATH . "wp-admin/upgrade-functions.php";
 require_once ABSPATH . "wp-includes/registration.php";
@@ -95,16 +95,16 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
         return wp_delete_user($this->UserId);
     }
 
-    private function updateUserWP($array = array())
+
+    public function updateUserWP(User $user)
     {
         if ($this->UserId) {
-            foreach ($array as $key => $value) {
+            foreach ($user as $key => $value) {
                 wp_update_user(array('ID' => $this->UserId, $key => $value));
             }
         }
     }
 
-    //Obje döndürüyor ->user_meta şeklinde kullanılacak.
     private function getUserWP($UserId)
     {
         $data = get_userdata($UserId);
@@ -116,38 +116,6 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
         $this->User->setUserRole($data->wp_capabilities[0]);
     }
 
-
-    public
-    function setUserPass($user_pass)
-    {
-        self::updateUserWP(array(
-            $this->Rows[1] => $user_pass
-        ));
-    }
-
-    public
-    function setUserEmail($user_email)
-    {
-        self::updateUserWP(array(
-            $this->Rows[2] => $user_email
-        ));
-    }
-
-    public
-    function setDisplayName($display_name)
-    {
-        self::updateUserWP(array(
-            $this->Rows[4] => $display_name
-        ));
-    }
-
-    public
-    function setUserRole($user_role)
-    {
-        self::updateUserWP(array(
-            $this->Rows[5] => $user_role
-        ));
-    }
 
 
 }

@@ -216,12 +216,11 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
             return false;
     }
 
-    private function updateOptionToID($option_name, $options_value, $option_id)
+    private function updateOptionToID($options_value, $option_id)
     {
         if ($option_id) {
             return $this->update(
                 array(
-                    $this->Rows[1] => $option_name,
                     $this->Rows[2] => $options_value,
 
                 ),

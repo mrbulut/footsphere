@@ -34,30 +34,6 @@ class ProducerDal extends DatabaseTableDao implements IDatabaseTableDao
             $this->user = new UserDal();
     }
 
-    public function getProducerToId($id)
-    {
-        if ($id) {
-            return $this->select(
-                array(
-                    'ID' => $id
-                )
-            );
-        } else
-            return false;
-    }
-
-    public function getProducerToUserId($UserId)
-    {
-        if ($UserId) {
-            return $this->select(
-                array(
-                    $this->Rows[0] => $UserId
-                )
-            );
-        } else
-            return false;
-    }
-
 
     public function addProducer(User $user, $OfferLimit)
     {
@@ -78,38 +54,6 @@ class ProducerDal extends DatabaseTableDao implements IDatabaseTableDao
             return false;
     }
 
-    public function updateProducer(Producer $producer)
-    {
-        if ($producer) {
-            $result = array();
-            foreach ($producer as $key => $value) {
-                if ($value) {
-                    $result[$key] = $value;
-                }
-            }
-
-            return $this->update(
-                array(
-                    $this->Rows[0] => $this->user->getUserId()
-                ),
-                $result
-            );
-        } else
-            return false;
-    }
-
-    public function deleteProducer()
-    {
-        if ($this->user->deleteUser()) {
-            return $this->delete(
-                array(
-                    self::$Rows[0] => $this->user->getUserId()
-                )
-            );
-        } else {
-            return false;
-        }
-    }
 
 
 }

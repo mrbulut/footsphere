@@ -4,6 +4,11 @@
     <list default="true" id="fb711fa5-61b1-4d66-9f3b-f368ae1cf3e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../asd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/data/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/OptionsDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/OptionsDal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/ProducerDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/ProducerDal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/ProductDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/ProductDal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/RequestDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/RequestDal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/UserDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/UserDal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mgwoocommercebrands" beforeDir="false" afterPath="$PROJECT_DIR$/../mgwoocommercebrands" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -257,7 +262,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="171" y="198" width="1255" height="789" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15963607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
