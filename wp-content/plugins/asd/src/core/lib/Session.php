@@ -24,25 +24,4 @@ class Session
         }
     }
 
-    /*
-    flashMessage() Kullanimi
-    #tek seferlik, #silinmeli mesaj, #yönlendirme
-    örneğin;
-    üyelik tamamlandı ise
-    header('location index.php');
-    Session::flash('valu','Başarı ile üye oldunuz.');
-
-    if(Session::isthere('valu'))
-    echo Session::flashMessage('valu');
-
-    */
-    public static function flashMessage($name,$string = null){
-        if (self::isthere($name)){
-            $session = self::get($name);
-            self::delete($name);
-            return $session;
-        }else{
-            self::create($name);
-        }
-    }
 }

@@ -12,13 +12,11 @@ License: MIT
 
 define('ROOT_PATH',__DIR__);
 
-require_once ROOT_PATH.'/src/data/concrete/CustomerDal.php';
+require_once ROOT_PATH.'/src/core/res/values/String.php';
 
-$eklencekObject = new Customer();
-$eklencekObject->setAge("1");
-$database = new CustomerDal();
-$database->settingQuery($eklencekObject);
-$database->deleteToObject();
+$string = new StringReader("tr");
+echo $string->Get('backend_profil_kAdiText');
+
 //new User*Dal();
 
 

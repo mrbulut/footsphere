@@ -12,18 +12,20 @@ include_once ROOT_PATH."/src/data/abstract/DatabaseTableDao.php";
 include_once ROOT_PATH."/src/data/abstract/DatabaseTableDao.php";
 include_once ROOT_PATH."/src/data/concrete/UserDal.php";
 /*
-     * $this->Rows[0] => $Id;
-     * $this->Rows[1] => $UserId;
-     * $this->Rows[2] => $ProducerNo;
-     * $this->Rows[3] => $RequestNo;
-     * $this->Rows[4] => $ProductsAndPrices; // urunId:Price, urunId2:Price, urunId3:Price,
-     * $this->Rows[5] => $Status; // DevamEdiyor, KabulEdildi, Onaylandi, Reddedildi.
-     * $this->Rows[6] => $Type; // ayakkabi,terlik
+
+
+      $this->Rows[4] => $ProductsAndPrices; // urunId:Price, urunId2:Price, urunId3:Price,
+
   */
 
 class RequestDal extends DatabaseTableDao implements IDatabaseTableDao
 {
     private static $Rows;
+
+    private $StatusValue = array("Continue", "Accepted", "Checked", "UnChecked");
+    private $TypeValue = array("Shoes", "Slipper");
+    // $this->Rows[4] => $ProductsAndPrices; // urunId:Price, urunId2:Price, urunId3:Price,
+
 
     public function __construct()
     {
@@ -31,7 +33,6 @@ class RequestDal extends DatabaseTableDao implements IDatabaseTableDao
     }
 
 
-    //DevamEdiyor, KabulEdildi, Onaylandi, Reddedildi.
     public function getProducerStatistics($ProducerNo)
     {
 
@@ -44,13 +45,13 @@ class RequestDal extends DatabaseTableDao implements IDatabaseTableDao
             $pass = $this->select(
                 array(
                     self::$Rows[2] => $ProducerNo,
-                    self::$Rows[5] => 'Onaylandi'
+                    self::$Rows[5] => 'Checked'
                 )
             );
             $refuse = $this->select(
                 array(
                     self::$Rows[2] => $ProducerNo,
-                    self::$Rows[5] => 'Reddedildi'
+                    self::$Rows[5] => 'UnChecked'
                 )
             );
 

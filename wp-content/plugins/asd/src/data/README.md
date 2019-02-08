@@ -2,6 +2,8 @@
 
 ** Use in all database object **
 
+must input mysql connection info to config.php file
+
 https://github.com/ThingEngineer/PHP-MySQLi-Database-Class
 You can use features in This github link with $database object 
 
@@ -57,7 +59,7 @@ $database->isThereAnyUnreadMessage($HowManyMessage); // unread message for the u
 
 <pre><code>
 // defineCaps() // User's permission 
-// defineSettings() // General const
+// defineSettings() // General consts
 
 $database = new OptionsDal(); 
 $database->setLangueages($UserId,$lang); // Langueages's short code (Tr)
@@ -88,7 +90,7 @@ $database->updateOptionToID($option_name,$option_value); // update option by opt
 
 </code></pre>
 --------------
-** # class ProducerDal; **
+**  class ProducerDal; **
 <pre><code>
 $database = new ProducerDal(); 
 $database->addProducer(User $user,$offerLimit); // like the offerlimit min max = 50-100 
@@ -107,12 +109,12 @@ $database = new ProductDal();
 **  class RequestDal; **
 <pre><code>
 $ProductsAndPrices // ProductId:Price, ProductId2:Price2,...
-$Status            // Continue, Accepted, Onaylandi, Reddedildi.
+$Status            // Continue, Accepted, Checked , UnChecked .
 $Type              // Shoes, Slipper
 $database = new RequestDal(); 
 $ProductsAndPrices = 
 $database->getAllRequestsToContinue(); // all of not finish time requests
-$database->getProducerStatistics(); //   return $array
+$database->getProducerStatistics(ProducerNo); //   return $array
   $array['all']  int
   $array['pass'] int
   $array['refuse'] int

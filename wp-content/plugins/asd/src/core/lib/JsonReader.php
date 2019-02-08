@@ -11,7 +11,7 @@ class JsonReader
 {
     public function jsonRead($fileName)
     {
-        $dosyayolu = ABSPATH . "core/res/values/language/" . $fileName . ".json";
+        $dosyayolu = $fileName;
         $dosya = fopen($dosyayolu, 'r');
         $json = fread($dosya, filesize($dosyayolu));
         $data = json_decode($json, true);
