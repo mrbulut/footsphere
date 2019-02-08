@@ -68,3 +68,34 @@ Cookie->get($name);
 </pre></code>
 
 --------------
+
+<b>Using The ExhangeRateConverter class in ExhangeRateConverter.php</b> "/res/lib/ExhangeRateConverter.php"
+
+converting with buying 
+<pre>
+  TRY [TÜRK LİRASI]
+  USD [AMERİKAN DOLARI]
+  AUD [AVUSTRALYA DOLARI]
+  DKK [DANİMARKA KRONU]
+  EUR [EURO]
+  GBP [İNGİLİZ STERLİNİ]
+  CHF [İSVİÇRE FRANGI]
+  SEK [İSVEÇ KRONU]
+  CAD [KANADA DOLARI]
+  KWD [KUVEYT DİNARI]
+  NOK [NORVEÇ KRONU]
+  SAR [SUUDİ ARABİSTAN RİYALİ]
+  JPY [JAPON YENİ]
+  BGN [BULGAR LEVASI]
+  RON [RUMEN LEYİ]
+  RUB [RUS RUBLESİ]
+  IRR [İRAN RİYALİ]
+  CNY [ÇİN YUANI]
+  PKR [PAKİSTAN RUPİSİ]
+</pre>
+<pre><code>
+$rates = new ExchangeRateConverter(10); // 10 minutes cache
+$rates->convert('TRY','USD',25); TRY 25 Convert X $ 
+$kur->convert('TRY','USD',25, 'BanknoteBuying') // BanknoteBuying, BanknoteSelling, ForexBuying, ForexSelling
+$rates->getCurrency('TRY')  ; real time data
+</pre></code>

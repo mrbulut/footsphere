@@ -14,13 +14,11 @@ define('ROOT_PATH',__DIR__);
 
 
 
-require_once(ROOT_PATH . '/src/core/res/values/GeneralCons.php');
+require_once(ROOT_PATH . '/src/core/lib/ExchangeRateConverter.php');
 
-$string = new GeneralCons("Türkçe");
-$de =  $string->getFilesInLangFiles();
 
-foreach ($de as $key => $value)
-echo $value;
+$rates = new ExchangeRateConverter(120); // 10 minutes cache
+echo "ddddddddd.".$rates->convert('TRY','USD',25);
 
 ?>
 

@@ -30,7 +30,8 @@
  * 
  * =========================
  * Changelog v1.0.1
- * 1- Önbellekleme sistemi eklendi. İsteğe bağlı olarak veriler, sınıfa parametre olarak verilen değer kadar önbellekte tutulabilir.
+ * 1- Önbellekleme sistemi eklendi. İsteğe bağlı olarak veriler, sınıfa parametre olarak verilen değer kadar
+ *        önbellekte tutulabilir.
  * 	  Örnek: $kur = new TCMB_currency(10); 	(XML dosyasındaki veriler 10 dk boyunca önbellekte tutulur.)
  *
  * 2- convert() methoduna $type parametresi eklendi. Bu parametre 'BanknoteBuying', 'BanknoteSelling', 'ForexBuying' ve 'ForexSelling' değerlerini alabilir. 
