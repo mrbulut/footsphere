@@ -24,7 +24,7 @@ $database->deleteToObject(); // return true or false
 
 
 ---------
-** # class CustomerDal; **
+**  class CustomerDal; **
 
 <pre><code>
 $ExtraFilePath // File1,File2,...
@@ -39,7 +39,7 @@ $database->getProductFixCustomers(); // return ready users
 
 </code></pre>
 -----------
-** # class MessageDal; **
+**  class MessageDal; **
 <pre><code>
 $WhoIsMessage // Producer, Customer, OperationManager
 $Status       // UnReaded, Readed
@@ -53,7 +53,7 @@ $database->isThereAnyUnreadMessage($HowManyMessage); // unread message for the u
 </code></pre>
 --------------
 
-** # class OptionsDal; **
+**  class OptionsDal; **
 
 <pre><code>
 // defineCaps() // User's permission 
