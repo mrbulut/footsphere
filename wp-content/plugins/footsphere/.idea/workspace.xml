@@ -2,14 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb711fa5-61b1-4d66-9f3b-f368ae1cf3e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../asd/src/core/lib/currency_feed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/src/core/lib/AamUserRoles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/tests/core/crosscuttingconcerns/log/LoggerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/tests/core/crosscuttingconcerns/log/abstract/FileLoggerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/tests/core/lib/ConfigReaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/tests/core/lib/DateConverterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/tests/core/lib/JsonReaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/tests/core/lib/examp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/tests/data/abstract/DatabaseTabloDaoFake.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/tests/data/abstract/MysqliDbFake.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/tests/data/abstract/TestClassDal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/tests/data/concrete/DatabaseTEst.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asd/tests/entities/concrete/TestClassConcrete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/.idea/asd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/.idea/asd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/core/lib/ExchangeRateConverter.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/lib/ExchangeRateConverter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/core/lib/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/lib/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/core/crosscuttingconcerns/log/Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/crosscuttingconcerns/log/Logger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/core/crosscuttingconcerns/log/abstract/FileLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/crosscuttingconcerns/log/abstract/FileLogger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/core/crosscuttingconcerns/log/abstract/ILogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/crosscuttingconcerns/log/abstract/ILogger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/core/lib/Cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/lib/Cookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/core/lib/DateConverter.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/lib/DateConverter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/abstract/DatabaseTableDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/abstract/DatabaseTableDao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/abstract/MysqliDb.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/abstract/MysqliDb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/OptionsDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/OptionsDal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/tests/Testing.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dovizkur.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dovizkur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mgwoocommercebrands" beforeDir="false" afterPath="$PROJECT_DIR$/../mgwoocommercebrands" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/languages/languages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="44" column="63" lean-forward="true" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
+            <state relative-caret-position="792">
+              <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -46,7 +66,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/dovizkur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-70">
+            <state relative-caret-position="18">
               <caret line="55" column="31" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="31" />
             </state>
           </provider>
@@ -100,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footsphere.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="162">
               <caret line="17" column="29" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="29" />
               <folding>
                 <element signature="e#7#157#0#PHP" expanded="true" />
@@ -111,15 +131,13 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bespoke/init.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-231" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/advanced-access-manager/aam.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="1152">
               <caret line="75" column="44" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="44" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
@@ -179,9 +197,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="133" />
-    <option name="y" value="131" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="239" />
+    <option name="y" value="159" />
     <option name="width" value="1458" />
     <option name="height" value="921" />
   </component>
@@ -191,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,7 +247,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,12 +290,13 @@
       <workItem from="1548920231230" duration="21107000" />
       <workItem from="1549259255538" duration="22029000" />
       <workItem from="1549542920909" duration="1634000" />
-      <workItem from="1549613294512" duration="4158000" />
+      <workItem from="1549613294512" duration="4660000" />
+      <workItem from="1549865018426" duration="1202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75022000" />
+    <option name="totallyTimeSpent" value="76726000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -289,10 +308,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="133" y="131" width="1458" height="921" extended-state="0" />
-    <editor active="true" />
+    <frame x="239" y="159" width="1458" height="921" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1388102" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14093484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -581,6 +599,20 @@
     <entry file="file://$PROJECT_DIR$/includes/advanced-access-manager/vendor/firebase/ExpiredException.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/languages/languages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="98" column="14" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/bsproductDB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4680">
@@ -609,31 +641,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="98" column="14" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bespoke/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/advanced-access-manager/aam.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="75" column="44" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="44" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/footsphere.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="162">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="e#7#157#0#PHP" expanded="true" />
@@ -641,16 +651,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/languages/languages.php">
+    <entry file="file://$PROJECT_DIR$/bespoke/init.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/advanced-access-manager/aam.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="44" column="63" lean-forward="true" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
+        <state relative-caret-position="1152">
+          <caret line="75" column="44" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="44" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/dovizkur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
+        <state relative-caret-position="18">
           <caret line="55" column="31" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="31" />
         </state>
       </provider>

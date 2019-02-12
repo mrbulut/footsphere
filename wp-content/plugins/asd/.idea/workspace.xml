@@ -2,14 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21cef520-00b7-4ea0-8190-87eb1a79b3b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/core/lib/currency_feed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/lib/AamUserRoles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/LoggerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/abstract/FileLoggerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/core/lib/ConfigReaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/core/lib/DateConverterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/core/lib/JsonReaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/core/lib/examp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/data/abstract/DatabaseTabloDaoFake.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/data/abstract/MysqliDbFake.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/data/abstract/TestClassDal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/data/concrete/DatabaseTEst.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/entities/concrete/TestClassConcrete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/asd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/asd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/lib/ExchangeRateConverter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/lib/ExchangeRateConverter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/lib/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/lib/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/Logger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/FileLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/FileLogger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/ILogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/ILogger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/lib/Cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/lib/Cookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/lib/DateConverter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/lib/DateConverter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/abstract/DatabaseTableDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/abstract/DatabaseTableDao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/abstract/MysqliDb.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/abstract/MysqliDb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/concrete/OptionsDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/concrete/OptionsDal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Testing.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../footsphere/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../footsphere/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footsphere/lib/dovizkur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../footsphere/lib/dovizkur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mgwoocommercebrands" beforeDir="false" afterPath="$PROJECT_DIR$/../mgwoocommercebrands" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,50 +57,30 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/lib/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="451">
-                <caret line="97" column="52" lean-forward="true" selection-start-line="96" selection-end-line="97" selection-end-column="52" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/data/concrete/CustomerDal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="30" selection-start-line="20" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/lib/currency_feed.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/data/abstract/IDatabaseDao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/tests/data/abstract/DatabaseTabloDaoFake.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-              <folding>
-                <element signature="e#7#152#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/lib/ExchangeRateConverter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="-638">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -98,14 +98,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Exception</find>
-      <find>Extension</find>
-      <find>0,</find>
-      <find>User</find>
       <find>__co</find>
       <find>write</find>
       <find>$this-&gt;database-</find>
-      <find>insert</find>
       <find>requestTimeLimit</find>
       <find>get_class_vars</find>
       <find>getuserWP</find>
@@ -128,6 +123,11 @@
       <find>config</find>
       <find>Using The Cookie class in Cookie.php &quot;/res/lib/Cookie.ph</find>
       <find>cokie</find>
+      <find>openLogFile</find>
+      <find>table</find>
+      <find>mysqk</find>
+      <find>insert</find>
+      <find>$_I</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,36 +136,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/entities/concrete/OptionsConcrete.php" />
-        <option value="$PROJECT_DIR$/src/entities/abstract/EntitiyContainer.php" />
-        <option value="$PROJECT_DIR$/src/entities/concrete/ProductConcrete.php" />
-        <option value="$PROJECT_DIR$/src/entities/concrete/ProducerConcrete.php" />
-        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/PHP-Logger-Class/tests/index.php" />
-        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/index.php" />
-        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/logs/example.log.php" />
-        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/ILogger.php" />
-        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/FileLogger.php" />
-        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/logs/log.php" />
-        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/Logger.php" />
-        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/FileLogger.php" />
-        <option value="$PROJECT_DIR$/setup.php" />
-        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/cache/abstract/ICache.php5" />
-        <option value="$PROJECT_DIR$/tests/index.php" />
-        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/cache/Cache.php" />
-        <option value="$PROJECT_DIR$/tests/unit/Test.php" />
-        <option value="$PROJECT_DIR$/tests/Test.php" />
-        <option value="$PROJECT_DIR$/tests/Testing.php5" />
-        <option value="$PROJECT_DIR$/tests/TestTt.php5" />
-        <option value="$PROJECT_DIR$/tests/TestTt.php" />
-        <option value="$PROJECT_DIR$/tests/MessageDal.php" />
-        <option value="$PROJECT_DIR$/phpunit.xml" />
-        <option value="$PROJECT_DIR$/tests/unit/Testing.php" />
-        <option value="$PROJECT_DIR$/tests/Testing.php" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/data/abstract/IDatabaseTableDao.php" />
         <option value="$PROJECT_DIR$/src/index.php" />
         <option value="$PROJECT_DIR$/src/data/concrete/CustomerDal.php" />
-        <option value="$PROJECT_DIR$/src/data/abstract/DatabaseTableDao.php" />
         <option value="$PROJECT_DIR$/src/data/doc.txt" />
         <option value="$PROJECT_DIR$/src/data/concrete/MessageDal.php" />
         <option value="$PROJECT_DIR$/src/data/concrete/ProducerDal.php" />
@@ -173,20 +145,48 @@
         <option value="$PROJECT_DIR$/src/data/concrete/UserDal.php" />
         <option value="$PROJECT_DIR$/src/data/concrete/RequestDal.php" />
         <option value="$PROJECT_DIR$/src/data/README.md" />
-        <option value="$PROJECT_DIR$/src/core/lib/DateConverter.php" />
-        <option value="$PROJECT_DIR$/src/core/lib/Cookie.php" />
-        <option value="$PROJECT_DIR$/src/core/lib/ConfigReader.php" />
         <option value="$PROJECT_DIR$/src/core/lib/JsonReader.php" />
         <option value="$PROJECT_DIR$/src/core/lib/Session.php" />
         <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/README.md" />
         <option value="$PROJECT_DIR$/src/core/res/values/String.php" />
         <option value="$PROJECT_DIR$/src/core/README.md" />
-        <option value="$PROJECT_DIR$/src/data/concrete/OptionsDal.php" />
         <option value="$PROJECT_DIR$/src/core/res/values/GeneralCons.php" />
         <option value="$PROJECT_DIR$/src/core/lib/README.md" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/core/lib/ExchangeRateConverter.php" />
+        <option value="$PROJECT_DIR$/src/core/lib/currency_feed.xml" />
+        <option value="$PROJECT_DIR$/src/data/concrete/OptionsDal.php" />
+        <option value="$PROJECT_DIR$/src/core/lib/AamUserRoles.php" />
+        <option value="$PROJECT_DIR$/tests/Testing.php" />
+        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/Logger.php" />
+        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/ILogger.php" />
+        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/logs/log.php" />
+        <option value="$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/abstract/logs/logTest.php" />
+        <option value="$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/abstract/FileLoggerTest.php" />
+        <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/FileLogger.php" />
+        <option value="$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/LoggerTest.php" />
+        <option value="$PROJECT_DIR$/src/core/lib/ConfigReader.php" />
+        <option value="$PROJECT_DIR$/tests/core/lib/lib/ConfigReader.php" />
+        <option value="$PROJECT_DIR$/tests/core/lib/ConfigReaderTest.php" />
+        <option value="$PROJECT_DIR$/src/core/lib/DateConverter.php" />
+        <option value="$PROJECT_DIR$/tests/core/lib/DateConverterTest.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/src/core/lib/ExchangeRateConverter.php" />
+        <option value="$PROJECT_DIR$/tests/core/lib/ExchangeRateConverterTest.php" />
+        <option value="$PROJECT_DIR$/tests/core/lib/examp.json" />
+        <option value="$PROJECT_DIR$/tests/core/lib/JsonReaderTest.php" />
+        <option value="$PROJECT_DIR$/src/core/lib/Cookie.php" />
+        <option value="$PROJECT_DIR$/tests/core/lib/CookieTest.php" />
+        <option value="$PROJECT_DIR$/tests/data/abstract/TestClassConcrete.php" />
+        <option value="$PROJECT_DIR$/tests/entities/concrete/TestClassConcrete.php" />
+        <option value="$PROJECT_DIR$/src/data/abstract/MysqliDb.php" />
+        <option value="$PROJECT_DIR$/tests/data/abstract/TestClassDal.php" />
+        <option value="$PROJECT_DIR$/tests/data/FakeMysqliDb.php" />
+        <option value="$PROJECT_DIR$/tests/data/abstract/DatabaseTabloDaoTest.php" />
+        <option value="$PROJECT_DIR$/src/data/abstract/DatabaseTableDao.php" />
+        <option value="$PROJECT_DIR$/tests/data/concrete/DatabaseTEst.php" />
+        <option value="$PROJECT_DIR$/phpunit.xml" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/tests/data/abstract/MysqliDbFake.php" />
+        <option value="$PROJECT_DIR$/tests/data/abstract/DatabaseTabloDaoFake.php" />
       </list>
     </option>
   </component>
@@ -199,12 +199,48 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="Docker php 7.3" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="Docker php 7.3">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/dbunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="83" />
-    <option name="width" value="1852" />
-    <option name="height" value="1048" />
+    <option name="x" value="472" />
+    <option name="y" value="153" />
+    <option name="width" value="1448" />
+    <option name="height" value="921" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -214,62 +250,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="asd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="asd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="asd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="asd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="asd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="asd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="asd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="asd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="abstract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="asd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="concrete" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -364,6 +344,22 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="asd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asd" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,22 +371,22 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/entities" />
+      <recent name="$PROJECT_DIR$/tests/core/lib" />
+      <recent name="$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/abstract" />
+      <recent name="$PROJECT_DIR$/tests/core/crosscuttingconcerns/log" />
+      <recent name="$PROJECT_DIR$/src/core/crosscuttingconcerns" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/data/abstract" />
+      <recent name="$PROJECT_DIR$/tests/entities/concrete" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/tests" />
-      <recent name="$PROJECT_DIR$/tests/unit" />
-      <recent name="$PROJECT_DIR$/vendor" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/core/crosscuttingconcerns" />
-      <recent name="$PROJECT_DIR$/src/core/lib" />
-      <recent name="$PROJECT_DIR$/src/core" />
-      <recent name="$PROJECT_DIR$/tests" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -410,23 +406,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.Testing">
+  <component name="RunManager" selected="PHPUnit.tests">
+    <configuration name="TestClassDal.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost/Intelij/tests/data/abstract/TestClassDal.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="DatabaseTEst" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="DatabaseTEst" file="$PROJECT_DIR$/tests/data/concrete/DatabaseTEst.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GuestBookTest.testRowCount" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="GuestBookTest" file="$PROJECT_DIR$/tests/data/concrete/DatabaseTEst.php" method="testRowCount" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="Local Unit Tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner directory="$PROJECT_DIR$/tests/" scope="XML" />
       <method v="2" />
     </configuration>
-    <configuration name="Testing" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Testing" file="$PROJECT_DIR$/tests/Testing.php" scope="Class" />
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/tests" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MysqliDbFake.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/tests/data/abstract/MysqliDbFake.php">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="PHPUnit.Local Unit Tests" />
-      <item itemvalue="PHPUnit.Testing" />
+      <item itemvalue="PHPUnit.phpunit.xml" />
+      <item itemvalue="PHPUnit.GuestBookTest.testRowCount" />
+      <item itemvalue="PHPUnit.DatabaseTEst" />
+      <item itemvalue="JavaScript Debug.TestClassDal.php" />
+      <item itemvalue="PHP Script.MysqliDbFake.php" />
+      <item itemvalue="PHPUnit.tests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.Testing" />
         <item itemvalue="PHPUnit.tests" />
+        <item itemvalue="PHP Script.MysqliDbFake.php" />
+        <item itemvalue="JavaScript Debug.TestClassDal.php" />
+        <item itemvalue="PHPUnit.DatabaseTEst" />
+        <item itemvalue="PHPUnit.GuestBookTest.testRowCount" />
       </list>
     </recent_temporary>
   </component>
@@ -447,44 +469,45 @@
       <workItem from="1549462334907" duration="1719000" />
       <workItem from="1549464323362" duration="1493000" />
       <workItem from="1549521793551" duration="865000" />
-      <workItem from="1549522995926" duration="32728000" />
+      <workItem from="1549522995926" duration="43828000" />
+      <workItem from="1549865018934" duration="18166000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="unit - 2019.02.07 at 12h 02m 26s.xml">
-      <configuration name="unit" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="DatabaseTabloDaoTest_testSomeSubjectThatUsesMysqli - 2019.02.11 at 14h 41m 31s.xml">
+      <configuration name="DatabaseTabloDaoTest.testSomeSubjectThatUsesMysqli" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Local_Unit_Tests - 2019.02.07 at 12h 03m 01s.xml">
-      <configuration name="Local Unit Tests" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="DatabaseTabloDaoTest_testSomeSubjectThatUsesMysqli - 2019.02.11 at 14h 51m 09s.xml">
+      <configuration name="DatabaseTabloDaoTest.testSomeSubjectThatUsesMysqli" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="unit - 2019.02.07 at 12h 03m 33s.xml">
-      <configuration name="unit" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="DatabaseTabloDaoTest_testSomeSubjectThatUsesMysqli - 2019.02.11 at 14h 51m 11s.xml">
+      <configuration name="DatabaseTabloDaoTest.testSomeSubjectThatUsesMysqli" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="unit - 2019.02.07 at 12h 03m 42s.xml">
-      <configuration name="unit" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="DatabaseTabloDaoTest_testSomeSubjectThatUsesMysqli - 2019.02.11 at 14h 51m 38s.xml">
+      <configuration name="DatabaseTabloDaoTest.testSomeSubjectThatUsesMysqli" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="unit - 2019.02.07 at 12h 03m 50s.xml">
-      <configuration name="unit" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="DatabaseTabloDaoTest_testSomeSubjectThatUsesMysqli - 2019.02.11 at 14h 52m 14s.xml">
+      <configuration name="DatabaseTabloDaoTest.testSomeSubjectThatUsesMysqli" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2019.02.07 at 12h 03m 54s.xml">
+    <history-entry file="GuestBookTest_testRowCount - 2019.02.11 at 15h 39m 26s.xml">
+      <configuration name="GuestBookTest.testRowCount" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="DatabaseTEst - 2019.02.11 at 15h 40m 02s.xml">
+      <configuration name="DatabaseTEst" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="DatabaseTEst - 2019.02.11 at 15h 40m 48s.xml">
+      <configuration name="DatabaseTEst" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="DatabaseTEst - 2019.02.11 at 15h 41m 02s.xml">
+      <configuration name="DatabaseTEst" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests - 2019.02.11 at 15h 48m 26s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Local_Unit_Tests - 2019.02.07 at 12h 04m 03s.xml">
-      <configuration name="Local Unit Tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Local_Unit_Tests - 2019.02.07 at 12h 04m 08s.xml">
-      <configuration name="Local Unit Tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Testing - 2019.02.07 at 12h 04m 15s.xml">
-      <configuration name="Testing" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Testing - 2019.02.07 at 12h 04m 35s.xml">
-      <configuration name="Testing" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108955000" />
+    <option name="totallyTimeSpent" value="138221000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,23 +519,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="83" width="1852" height="1048" extended-state="0" />
-    <editor active="true" />
+    <frame x="472" y="153" width="1448" height="921" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14230344" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2574893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32749742" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32946634" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39907193" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32719836" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26184833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398773" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32871974" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.32924336" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991803" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3007209" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29856852" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -550,210 +572,7 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/MessageDal.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/abstract/ILogger.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/abstract/FileLogger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Testing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/concrete/ProductConcrete.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/concrete/UserConcrete.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/abstract/IDatabaseTableDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="312" column="3" lean-forward="true" selection-start-line="312" selection-start-column="3" selection-end-line="312" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/concrete/MessageDal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="53" column="40" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/concrete/ProducerDal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/concrete/MessageConcrete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="29" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/concrete/OptionsConcrete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/concrete/ProducerConcrete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/concrete/CustomerConcrete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="23" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/concrete/ProductDal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/concrete/RequestConcrete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/concrete/RequestDal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/concrete/UserDal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/abstract/DatabaseTableDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/res/values/language/tr.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="71" column="26" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Extensions/PhptTestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="290" column="13" selection-start-line="290" selection-start-column="13" selection-end-line="290" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="8" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/abstract/MysqliDb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="269" column="34" lean-forward="true" selection-start-line="269" selection-start-column="16" selection-end-line="269" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/DateConverter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/Hash.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/Filter.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/Token.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/advanced-access-manager/autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/FileLogger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/crosscuttingconcerns/cache/Cache.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/crosscuttingconcerns/README.md">
@@ -766,67 +585,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/crosscuttingconcerns/log/Logger.php">
+    <entry file="file://$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/ILogger.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" selection-start-line="10" selection-end-line="12" selection-end-column="39" />
+        <state relative-caret-position="54">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
+    <entry file="file://$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/logs/log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/MockInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="468" column="94" selection-start-line="468" selection-start-column="94" selection-end-line="468" selection-end-column="94" />
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/advanced-access-manager/aam.php">
+    <entry file="file://$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/abstract/FileLoggerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/concrete/OptionsDal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="74" column="31" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="31" />
+        <state relative-caret-position="486">
+          <caret line="27" column="5" selection-start-line="18" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/res/values/GeneralCons.php">
+    <entry file="file://$PROJECT_DIR$/src/core/crosscuttingconcerns/log/Logger.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        <state relative-caret-position="360">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="396">
-            <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/abstract/logs/logTest.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/core/lib/lib/ConfigReader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/Cookie.php">
+    <entry file="file://$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/ExpectationDirector.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="209">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/lib/ConfigReader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="144">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#6#90#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/concrete/CustomerDal.php">
+    <entry file="file://$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/FileLogger.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="19" selection-start-line="11" selection-end-line="12" />
+        <state relative-caret-position="235">
+          <caret line="57" column="15" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/basic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="144" column="9" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/lib/DateConverter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/lib/currency_feed.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/core/lib/ExchangeRateConverterTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/lib/ExchangeRateConverter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/res/values/language/en.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/LoggerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="41" column="27" selection-start-line="41" selection-end-line="42" />
+          <folding>
+            <element signature="e#204#220#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/lib/Cookie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/core/lib/CookieTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/lib/AamUserRoles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/lib/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -837,47 +737,190 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date_c.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/SimpleXML/SimpleXML.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="368" column="9" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/currency_feed.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="451">
-            <caret line="97" column="52" lean-forward="true" selection-start-line="96" selection-end-line="97" selection-end-column="52" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/ExchangeRateConverter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        <state relative-caret-position="209">
+          <caret line="341" column="20" selection-start-line="341" selection-start-column="20" selection-end-line="341" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        <state relative-caret-position="234">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
             <element signature="e#7#152#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/core/lib/ConfigReaderTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/core/lib/examp.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/res/values/GeneralCons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="80" column="35" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Printer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/core/lib/DateConverterTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/core/lib/JsonReaderTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="37" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/data/abstract/TestClassConcrete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/abstract/EntitiyContainer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/concrete/MessageConcrete.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/concrete/CustomerConcrete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/abstract/IDatabaseTableDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/abstract/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/entities/concrete/TestClassConcrete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/data/abstract/TestClassDal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="9" column="50" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/data/abstract/MysqliDbFake.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/PDO/PDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="839" column="20" selection-start-line="839" selection-start-column="20" selection-end-line="839" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/concrete/CustomerDal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="30" selection-start-line="20" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/abstract/DatabaseTableDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/abstract/MysqliDb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="828" column="28" selection-start-line="828" selection-start-column="22" selection-end-line="828" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/data/concrete/DatabaseTEst.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="e#92#123#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/abstract/IDatabaseDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/data/abstract/DatabaseTabloDaoFake.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-638">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>

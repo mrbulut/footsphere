@@ -1,7 +1,11 @@
 <?php
 
+namespace log;
 
 require_once('ILogger.php');
+
+use Exception;
+
 
     class FileLoggerException extends Exception {}
     
@@ -31,6 +35,8 @@ require_once('ILogger.php');
         /**
          * The file permissions.
          */
+
+        private $logfile;
         const FILE_CHMOD = 756;
         
         const NOTICE = '[NOTICE]';
@@ -44,10 +50,17 @@ require_once('ILogger.php');
          * @param string $logfile The path to the loggable file.
          */
         public function __construct() {
-            $logfile = __DIR__ . '/logs/log.php';
+            $this->logfile = __DIR__ . '/logs/log.php';
+        }
+
+        public function setupLogger(){
             if($this->fileHandle == NULL){
-                $this->openLogFile($logfile);
+                $this->openLogFile();
             }
+        }
+
+        public function setLogFile($path){
+            $this->logfile = $path;
         }
         
         /**
@@ -89,7 +102,7 @@ require_once('ILogger.php');
          * 
          * @param string $message
          */
-        private function writeToLogFile($message) {
+        protected function writeToLogFile($message) {
             flock($this->fileHandle, LOCK_EX);
             fwrite($this->fileHandle, $message.PHP_EOL);
             flock($this->fileHandle, LOCK_UN);
@@ -100,7 +113,7 @@ require_once('ILogger.php');
          * 
          * @return string with the current date
          */
-        private function getTime() {
+        protected function getTime() {
             return date($this->timeFormat);
         }
         
@@ -119,20 +132,26 @@ require_once('ILogger.php');
          * 
          * @param string $logFile Path to log file.
          */
-        public function openLogFile($logFile) {
+        public function openLogFile() {
+
             $this->closeLogFile();
-            
+            $logFile = $this->logfile;
             if(!is_dir(dirname($logFile))){
                 if(!mkdir(dirname($logFile), FileLogger::FILE_CHMOD, true)){
                     throw new FileLoggerException('Could not find or create directory for log file.');
                 }
             }
-            
+
             if(!$this->fileHandle = fopen($logFile, 'a+')){
                 throw new FileLoggerException('Could not open file handle.');
             }
+
         }
-        
+
+        public function opendd(){
+            return 'dsd6d';
+        }
+
 
     
 }

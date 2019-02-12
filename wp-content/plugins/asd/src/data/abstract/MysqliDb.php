@@ -13,8 +13,8 @@
  * @link      http://github.com/joshcam/PHP-MySQLi-Database-Class 
  * @version   2.9.2
  */
-include_once ROOT_PATH."/src/data/abstract/IDatabaseDao.php";
-include_once ROOT_PATH.'/src/core/lib/ConfigReader.php';
+include_once "../../../src/data/abstract/IDatabaseDao.php";
+include_once "../../../src/core/lib/ConfigReader.php";
 
 class MysqliDb implements IDatabaseDao
 {

@@ -8,20 +8,23 @@
 
 class DateConverter
 {
-    public function MiliSecondToMinute($Date)
+    public function DateToMinute($Date,$time=null)
     {
+        if(!$time){
+            $time = time();
+        }
         if ($Date != null) {
-            $time = ceil(self::DateToMilisecond($Date) - time());
-            return $time/3600;
+            $time = ceil(self::DateToMilisecond($Date) - $time);
+            return $time/60;
         }
         require false;
     }
 
-    public function MiliSecondToHour($Date)
+    public function DateToHour($Date)
     {
         if ($Date != null) {
             $time = ceil(self::DateToMilisecond($Date) - time());
-            return $time/60;
+            return $time/3600;
         }
         require false;
     }

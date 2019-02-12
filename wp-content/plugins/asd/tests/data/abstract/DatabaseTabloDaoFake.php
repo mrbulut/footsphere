@@ -2,18 +2,14 @@
 /**
  * Created by PhpStorm.
  * User: muzaffer
- * Date: 31.01.2019
- * Time: 12:35
+ * Date: 11.02.2019
+ * Time: 13:54
  */
-include_once "../../../src/data/abstract/MysqliDb.php";
-include_once "../../../src/data/config.php";
+include_once '../../../tests/data/abstract/TestClassDal.php';
+include_once '../../../tests/entities/concrete/TestClassConcrete.php';
 
-abstract class DatabaseTableDao extends MysqliDb
+class DatabaseTabloDaoFake extends MysqliDbFake
 {
-    /**
-     * @param String $TableName
-     * @param array $RowsType
-     */
     private $IEntity = IEntity::class;
 
     private $Extension = 'a_fs_';
@@ -29,19 +25,6 @@ abstract class DatabaseTableDao extends MysqliDb
     private  $Object;
 
     private  $ObjectWhere;
-
-    // Databasede ana 4 işlemi(get,insert,update,delete) yapmak için sorgu ve girdileri oluşturuyor.
-    public function settingQuery($Object=null,$Objectwhere=null){
-        if($Object){
-            $this->Object = self::ClassConverter($Object);
-
-        }
-
-        if($Objectwhere){
-            $this->ObjectWhere = self::ClassConverter($Objectwhere);
-        }
-
-    }
 
     public function getToObject()
     {
@@ -94,16 +77,17 @@ abstract class DatabaseTableDao extends MysqliDb
     }
 
 
+
     public function CreateTable(IEntity $IEntity, $TableName = null)
     {
-        $this->database = MySqliDb::getInstance();
+        $this->database = MysqliDbFake::getInstance();
         $this->IEntity = $IEntity;
         $this->_instance = $this->IEntity;
 
         self::createRowsAndTableName($TableName);
 
 
-        if (!$this->database->tableExists($this->TableName)) {
+        if (!$this->database->tableExist($this->TableName)) {
             $id = 'ID';
             if ($this->Rows[0] == "option_id") {
                 $id = "option_id";
@@ -114,10 +98,75 @@ abstract class DatabaseTableDao extends MysqliDb
  			" . $this->value . ")";
 
 
-            $this->database->rawQuery($sql);
+            $this->database->rawQueryy($sql);
         }
 
         return $this->Rows;
+
+    }
+
+
+
+    public function settingQuery($Object = null, $Objectwhere = null)
+    {
+        if($Object){
+            $this->Object = self::ClassConverter($Object);
+
+        }
+
+        if($Objectwhere){
+            $this->ObjectWhere = self::ClassConverter($Objectwhere);
+        }
+
+    }
+
+
+
+
+
+    public function createRowsAndTableName($TableName)
+    {
+        $i = 0;
+        foreach ($this->IEntity as $key => $value) {
+            $this->Rows[$i] = $key;
+            $i++;
+        }
+
+        if ($TableName == null) {
+            $this->TableName = $this->Extension . get_class($this->IEntity);
+        } else {
+            $this->TableName = $TableName;
+        }
+
+        self::createRows();
+
+    }
+
+    private function createRows()
+    {
+        //  will to begin from 1 because id  be first
+        for ($i = 1; $i < count($this->Rows); $i++) {
+
+            if ($i == (count($this->Rows) - 1)) {
+                $this->value = $this->value . "" . $this->Rows[$i] . " " . "TEXT";
+
+            } else {
+
+                $this->value = $this->value . "" . $this->Rows[$i] . " " . "TEXT" . ",";
+            }
+
+        }
+    }
+
+    private function ClassConverter($Object)
+    {
+        $result = array();
+        foreach ($Object as $key => $value) {
+            if ($value) {
+                $result[$key] = $value;
+            }
+        }
+        return $result;
     }
 
 
@@ -181,50 +230,8 @@ abstract class DatabaseTableDao extends MysqliDb
         }
     }
 
-    public function createRowsAndTableName($TableName)
-    {
-        $i = 0;
-        foreach ($this->IEntity as $key => $value) {
-            $this->Rows[$i] = $key;
-            $i++;
-        }
 
-        if ($TableName == null) {
-            $this->TableName = $this->Extension . get_class($this->IEntity);
-        } else {
-            $this->TableName = $TableName;
-        }
 
-        self::createRows();
-
-    }
-
-    private function createRows()
-    {
-        //  will to begin from 1 because id  be first
-        for ($i = 1; $i < count($this->Rows); $i++) {
-
-            if ($i == (count($this->Rows) - 1)) {
-                $this->value = $this->value . "" . $this->Rows[$i] . " " . "TEXT";
-
-            } else {
-
-                $this->value = $this->value . "" . $this->Rows[$i] . " " . "TEXT" . ",";
-            }
-
-        }
-    }
-
-    private function ClassConverter($Object)
-    {
-        $result = array();
-        foreach ($Object as $key => $value) {
-            if ($value) {
-                $result[$key] = $value;
-            }
-        }
-        return $result;
-    }
 
 
 }

@@ -6,6 +6,8 @@
  * Time: 12:10
  */
 
+namespace log;
+
 interface ILogger
 {
      function Log($message,$type);
