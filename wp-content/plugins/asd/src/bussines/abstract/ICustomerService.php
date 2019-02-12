@@ -37,5 +37,7 @@ interface ICustomerService
     function getProductCompoleteCustomers();
     function getProductFixCustomers();
 
+    function setCustomerStatus($UserId,$Status);
+
 
 }

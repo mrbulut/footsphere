@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21cef520-00b7-4ea0-8190-87eb1a79b3b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bussines/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bussines/abstract/ICustomerService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bussines/concrete/CustomerManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bussines/abstract/IMessageService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bussines/concrete/MessageManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/Logger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/FileLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/FileLogger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/ILogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/ILogger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/abstract/DatabaseTableDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/abstract/DatabaseTableDao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/abstract/MysqliDb.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/abstract/MysqliDb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/concrete/CustomerDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/concrete/CustomerDal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/concrete/UserDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/concrete/UserDal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/concrete/CustomerConcrete.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/concrete/CustomerConcrete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bussines/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/bussines/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bussines/abstract/ICustomerService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/bussines/abstract/ICustomerService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bussines/concrete/CustomerManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/bussines/concrete/CustomerManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../footsphere/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../footsphere/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mgwoocommercebrands" beforeDir="false" afterPath="$PROJECT_DIR$/../mgwoocommercebrands" afterDir="false" />
     </list>
@@ -43,84 +37,102 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bussines/concrete/CustomerManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="33" column="39" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/concrete/CustomerDal.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="25" column="37" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entities/concrete/MessageConcrete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1296" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/concrete/MessageDal.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/concrete/OptionsDal.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1943">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="51" selection-end-column="55" />
-              <folding>
-                <element signature="e#7#152#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/bussines/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="720">
-                <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entities/concrete/CustomerConcrete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.8645084">
+      <split-first>
+        <splitter split-orientation="horizontal" split-proportion="0.5">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/bussines/README.md">
+                  <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                    <state split_layout="FIRST">
+                      <first_editor relative-caret-position="972">
+                        <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+                      </first_editor>
+                      <second_editor />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/index.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state>
+                      <caret column="3" selection-start-column="3" selection-end-column="3" />
+                      <folding>
+                        <element signature="e#7#152#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/bussines/abstract/IMessageService.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="162">
+                      <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/bussines/abstract/ICustomerService.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="612">
+                      <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/bussines/concrete/MessageManager.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="465">
+                      <caret line="40" column="28" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="28" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/bussines/concrete/MessageManager.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="705">
+                      <caret line="109" column="60" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="60" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/bussines/concrete/CustomerManager.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-108">
+                  <caret line="83" column="9" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="83" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/data/concrete/MessageDal.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="431">
+                  <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -171,8 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/core/lib/JsonReader.php" />
-        <option value="$PROJECT_DIR$/src/core/lib/Session.php" />
         <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/README.md" />
         <option value="$PROJECT_DIR$/src/core/res/values/String.php" />
         <option value="$PROJECT_DIR$/src/core/README.md" />
@@ -213,15 +223,17 @@
         <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/Logger.php" />
         <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/FileLogger.php" />
         <option value="$PROJECT_DIR$/src/data/abstract/DatabaseTableDao.php" />
-        <option value="$PROJECT_DIR$/src/bussines/abstract/ICustomerService.php" />
         <option value="$PROJECT_DIR$/src/entities/concrete/UserConcrete.php" />
         <option value="$PROJECT_DIR$/src/entities/concrete/CustomerConcrete.php" />
         <option value="$PROJECT_DIR$/src/data/concrete/UserDal.php" />
         <option value="$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/logs/log.php" />
         <option value="$PROJECT_DIR$/src/data/concrete/CustomerDal.php" />
+        <option value="$PROJECT_DIR$/src/bussines/abstract/ICustomerService.php" />
         <option value="$PROJECT_DIR$/src/bussines/concrete/CustomerManager.php" />
+        <option value="$PROJECT_DIR$/src/bussines/abstract/IMessageService.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/src/bussines/README.md" />
+        <option value="$PROJECT_DIR$/src/bussines/concrete/MessageManager.php" />
       </list>
     </option>
   </component>
@@ -271,11 +283,10 @@
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="286" />
-    <option name="y" value="100" />
-    <option name="width" value="1458" />
-    <option name="height" value="948" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="42" />
+    <option name="width" value="1717" />
+    <option name="height" value="967" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -402,6 +413,13 @@
               <item name="asd" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bussines" type="462c0819:PsiDirectoryNode" />
+              <item name="abstract" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bussines" type="462c0819:PsiDirectoryNode" />
               <item name="concrete" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -456,11 +474,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/bussines/abstract" />
       <recent name="$PROJECT_DIR$/src/bussines" />
       <recent name="$PROJECT_DIR$/tests/entities" />
       <recent name="$PROJECT_DIR$/tests/core/lib" />
       <recent name="$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/abstract" />
-      <recent name="$PROJECT_DIR$/tests/core/crosscuttingconcerns/log" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/data/abstract" />
@@ -551,7 +569,7 @@
       <workItem from="1549464323362" duration="1493000" />
       <workItem from="1549521793551" duration="865000" />
       <workItem from="1549522995926" duration="43828000" />
-      <workItem from="1549865018934" duration="39022000" />
+      <workItem from="1549865018934" duration="41109000" />
     </task>
     <servers />
   </component>
@@ -588,7 +606,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159077000" />
+    <option name="totallyTimeSpent" value="161164000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -600,10 +618,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="0" y="42" width="1717" height="967" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10992529" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.123279475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -616,7 +634,7 @@
       <window_info anchor="bottom" id="Docker" order="7" weight="0.32924336" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991803" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29739335" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2965235" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -654,23 +672,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/core/crosscuttingconcerns/log/LoggerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="41" column="27" selection-start-line="41" selection-end-line="42" />
-          <folding>
-            <element signature="e#204#220#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/lib/Cookie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/core/lib/CookieTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -903,13 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bussines/abstract/ICustomerService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/concrete/UserConcrete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-885">
@@ -931,25 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/concrete/MessageConcrete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1296" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/concrete/MessageDal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/concrete/OptionsDal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1943">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/concrete/ProducerDal.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
@@ -964,24 +939,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/concrete/CustomerDal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/crosscuttingconcerns/log/abstract/logs/log.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bussines/concrete/CustomerManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -995,10 +956,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/concrete/OptionsDal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1943">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/concrete/CustomerDal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bussines/abstract/ICustomerService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bussines/concrete/CustomerManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="83" column="9" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="83" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/concrete/MessageConcrete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bussines/abstract/IMessageService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/concrete/MessageDal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="51" selection-end-column="55" />
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
           <folding>
             <element signature="e#7#152#0#PHP" expanded="true" />
           </folding>
@@ -1007,11 +1017,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bussines/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="720">
-            <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="972">
+            <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bussines/concrete/MessageManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="109" column="60" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="60" />
         </state>
       </provider>
     </entry>

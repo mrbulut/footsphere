@@ -4,7 +4,6 @@
 include_once ROOT_PATH."/src/bussines/concrete/CustomerManager.php";
 $CustomerManager = new CustomerManager($UserId);
 
-
 $Customer = new Customer();
 $Customer->setUserId($UserId); 
 $CustomerWhere = new Customer(); 
@@ -38,3 +37,22 @@ $data = $CustomerManager->getCustomerList($Customer);
       
 </pre></code>
 
+
+
+<b>Using The MessageManager class in MessageManager.php</b> "/bussines/concrete/MessageManager.php"
+
+<pre><code>
+include_once ROOT_PATH."/src/bussines/concrete/MessageManager.php";
+$CustomerManager = new MessageManager(1);
+$message = new message();
+$message->setUserId(1);$message->setMessage("MESAJJJJ");
+$messageWhere =new message();
+$messageWhere->setId(2);
+echo $CustomerManager->getMessagesList($messageWhere)['Message'];
+
+      $CustomerManager->getMessagesList(Message); //return array
+      $CustomerManager->addMessage(Message); // return id
+      $CustomerManager->updateMessage(Message,Message); //return boolean
+      $CustomerManager->deleteMessage(Message); // return boolean
+      
+</pre></code>

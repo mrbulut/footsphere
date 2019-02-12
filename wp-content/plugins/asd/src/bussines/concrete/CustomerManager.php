@@ -11,7 +11,6 @@ include_once ROOT_PATH . "/src/bussines/abstract/ICustomerService.php";
 include_once ROOT_PATH . "/src/data/concrete/CustomerDal.php";
 include_once ROOT_PATH . "/src/data/concrete/OptionsDal.php";
 include_once ROOT_PATH . "/src/data/concrete/UserDal.php";
-
 include_once ROOT_PATH . "/src/entities/concrete/CustomerConcrete.php";
 include_once ROOT_PATH . "/src/bussines/abstract/ICustomerService.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/FileLogger.php";

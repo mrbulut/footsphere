@@ -14,43 +14,14 @@ define('ABSPATH',dirname(__FILE__)."/../../../");
 
 define('ROOT_PATH',__DIR__);
 
-include_once ROOT_PATH."/src/bussines/concrete/CustomerManager.php";
-$CustomerManager = new CustomerManager(1);
-$Customer = new Customer();
-$Customer->setAge(555);
-$CustomerWhere = new Customer();
-$CustomerWhere->setID(1);
-echo "burda..." .$CustomerManager->setCustomerStatus(1,"fix");
-//foreach ($data as $key => $value){
-   // echo "asddasdasd. " . $key.$value . "<br>";
-//}
-//echo "dsadasdasdasd";
-/*
-    $CustomerManager->getCustomerList(); //return array
-    $CustomerManager->addCustomer(); // return id
-    $CustomerManager->updateCustomer(); //return boolean
-    $CustomerManager->deleteCustomer(); // return boolean
+include_once ROOT_PATH."/src/bussines/concrete/MessageManager.php";
+$CustomerManager = new MessageManager(1);
+$message = new message();
+$message->setUserId(1);$message->setMessage("MESAJJJJ");
+$messageWhere =new message();
+$messageWhere->setId(2);
+echo "burda..." .$CustomerManager->getMessagesList($messageWhere)['Message'];
 
-    $CustomerManager->getRole();
-
-    $CustomerManager->getExtraFile();
-    $CustomerManager->updateExtraFile($filePath);
-    $CustomerManager->deleteExtraFile($filePath);
-
-    $CustomerManager->getProducts();
-    $CustomerManager->updateProduct($array = array());
-    $CustomerManager->deleteProduct($productNo);
-
-    $CustomerManager->getLanguages();
-    $CustomerManager->setLanguages($lang);
-
-    $CustomerManager->getProductWaitingCustomers();
-    $CustomerManager->getProductNoCompoleteCustomers();
-    $CustomerManager->getProductCompoleteCustomers();
-    $CustomerManager->getProductFixCustomers();
-
-    $CustomerManager->setCustomerStatus($UserId,"Fix");
-    */
 
 //SETUP
 
