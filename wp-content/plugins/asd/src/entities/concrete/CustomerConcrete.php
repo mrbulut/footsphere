@@ -12,6 +12,9 @@ class Customer extends User implements IEntity
     // WP USER //
     public $ID;
     public $UserId;
+
+
+
     public $Length;
     public $Weight;
     public $Age;
@@ -24,7 +27,13 @@ class Customer extends User implements IEntity
     public $FootImage;
     public $FootImage2;
     public $FootImage3;
+    public $Language;
 
+    function ResetObject() {
+        foreach ($this as $key => $value) {
+            unset($this->$key);
+        }
+    }
     /**
      * @return mixed
      */
@@ -42,6 +51,21 @@ class Customer extends User implements IEntity
     }
 
 
+    /**
+     * @return mixed
+     */
+    public function getLanguage()
+    {
+        return $this->Language;
+    }
+
+    /**
+     * @param mixed $Language
+     */
+    public function setLanguage($Language)
+    {
+        $this->Language = $Language;
+    }
     /**
      * Customer constructor.
      * @param $Length

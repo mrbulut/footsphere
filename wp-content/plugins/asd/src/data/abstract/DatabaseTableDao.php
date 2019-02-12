@@ -5,8 +5,8 @@
  * Date: 31.01.2019
  * Time: 12:35
  */
-include_once "../../../src/data/abstract/MysqliDb.php";
-include_once "../../../src/data/config.php";
+include_once ROOT_PATH."/src/data/abstract/MysqliDb.php";
+include_once ROOT_PATH."/src/data/config.php";
 
 abstract class DatabaseTableDao extends MysqliDb
 {
@@ -48,7 +48,7 @@ abstract class DatabaseTableDao extends MysqliDb
 
         if ($this->ObjectWhere) {
             return self::select(
-                $this->result
+                $this->ObjectWhere
             );
         } else
             return false;

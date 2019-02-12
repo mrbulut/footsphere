@@ -13,8 +13,8 @@
  * @link      http://github.com/joshcam/PHP-MySQLi-Database-Class 
  * @version   2.9.2
  */
-include_once "../../../src/data/abstract/IDatabaseDao.php";
-include_once "../../../src/core/lib/ConfigReader.php";
+include_once ROOT_PATH."/src/data/abstract/IDatabaseDao.php";
+include_once ROOT_PATH."/src/core/lib/ConfigReader.php";
 
 class MysqliDb implements IDatabaseDao
 {
@@ -2597,18 +2597,6 @@ class MysqliDb implements IDatabaseDao
         return explode(",", $user_info);
     }
 
-    public function getRole()
-    {
-        require_once ABSPATH . "wp-includes/pluggable.php";
-
-        $user_info;
-        if (is_user_logged_in()) {
-            $current_user = wp_get_current_user();
-            return $current_user->roles;
-
-        }
-        
-    }
 
     public function updateUser($userID, $dispName, $email, $sifre = '')
     {

@@ -6,53 +6,77 @@
  * Time: 11:40
  */
 include_once ROOT_PATH . "/src/entities/concrete/CustomerConcrete.php";
-include_once ROOT_PATH."/src/entities/abstract/Container.php";
-include_once ROOT_PATH."/src/data/abstract/DatabaseTableDao.php";
-include_once ROOT_PATH."/src/data/abstract/IDatabaseTableDao.php";
-include_once ROOT_PATH."/src/data/concrete/UserDal.php";
+include_once ROOT_PATH . "/src/entities/abstract/Container.php";
+include_once ROOT_PATH . "/src/data/abstract/DatabaseTableDao.php";
+include_once ROOT_PATH . "/src/data/abstract/IDatabaseTableDao.php";
+include_once ROOT_PATH . "/src/data/concrete/UserDal.php";
 
 class CustomerDal extends DatabaseTableDao implements IDatabaseTableDao
 {
     private static $Rows;
 
-    public function __construct($UserId = null)
+    public function __construct()
     {
 
         $this->Rows = parent::CreateTable(Container::getInstance(new Customer()));
 
-        if ($UserId == null)
-            $this->user = new UserDal();
     }
 
 
-    public function getProductWaitingCustomers(){
+    public function setCustomerStatus($UserId, $status)
+    {
+        if ($UserId) {
+            return $this->update(
+                array(
+                    'BespokeStatus' => $status
+                ),
+                array(
+                    'UserId' => $UserId
+                )
+            );
+        } else {
+            return false;
+        }
+
         return $this->selectAll(
             array(
-                self::$Rows[8] => 'Waiting'
+                'BespokeStatus' => 'Waiting'
             )
         );
     }
 
-    public function getProductNoCompoleteCustomers(){
+    public function getProductWaitingCustomers()
+    {
         return $this->selectAll(
             array(
-                self::$Rows[8] => 'NoCompolete'
+                'BespokeStatus' => 'Waiting'
             )
         );
     }
 
-    public function getProductCompoleteCustomers(){
+    public function getProductNoCompoleteCustomers()
+    {
         return $this->selectAll(
             array(
-                self::$Rows[8] => 'Compolete'
+                'BespokeStatus' => 'NoCompolete'
             )
         );
     }
 
-    public function getProductFixCustomers(){
+    public function getProductCompoleteCustomers()
+    {
         return $this->selectAll(
             array(
-                self::$Rows[8] => 'Fix'
+                'BespokeStatus' => 'Compolete'
+            )
+        );
+    }
+
+    public function getProductFixCustomers()
+    {
+        return $this->selectAll(
+            array(
+                'BespokeStatus' => 'Fix'
             )
         );
     }

@@ -6,7 +6,6 @@
  * Time: 12:10
  */
 
-namespace log;
 
 interface ILogger
 {

@@ -1,10 +1,7 @@
 <?php
 
-namespace log;
 
 require_once('ILogger.php');
-
-use Exception;
 
 
     class FileLoggerException extends Exception {}
@@ -51,13 +48,11 @@ use Exception;
          */
         public function __construct() {
             $this->logfile = __DIR__ . '/logs/log.php';
-        }
-
-        public function setupLogger(){
             if($this->fileHandle == NULL){
                 $this->openLogFile();
             }
         }
+
 
         public function setLogFile($path){
             $this->logfile = $path;

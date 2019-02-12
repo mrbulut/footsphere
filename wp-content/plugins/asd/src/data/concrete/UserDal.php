@@ -10,7 +10,7 @@ include_once ROOT_PATH . "/src/entities/concrete/UserConcrete.php";
 include_once ROOT_PATH . "/src/entities/abstract/Container.php";
 include_once ROOT_PATH . "/src/data/abstract/DatabaseTableDao.php";
 include_once ROOT_PATH . "/src/data/abstract/IDatabaseTableDao.php";
-require_once ABSPATH . "wp-includes/pluggable.php";
+include_once ABSPATH . "wp-includes/pluggable.php";
 require_once ABSPATH . "wp-admin/upgrade-functions.php";
 require_once ABSPATH . "wp-includes/registration.php";
 require_once ABSPATH . "wp-admin/includes/user.php";
@@ -57,6 +57,7 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function __construct($UserId = null)
     {
+
         if ($UserId == null) {
             if (is_user_logged_in()) {
                 $current_user = wp_get_current_user();
@@ -64,12 +65,16 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
             } else {
                 $this->UserId = $UserId;
             }
+        }else{
+            $this->UserId = $UserId;
         }
+
+
 
         $this->User = new User();
         $this->Rows = parent::CreateTable(Container::getInstance(new User()), "wp_users");
 
-        self::getUserWP($this->UserId, $this->User);
+        self::getUserWP($this->UserId);
     }
 
     public function createUser(User $user)
@@ -113,7 +118,17 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
         $this->User->setUserEmail($data->user_email);
         $this->User->setUserPass($data->user_pass);
         $this->User->setUserRegistered($data->user_registered);
-        $this->User->setUserRole($data->wp_capabilities[0]);
+
+        if(count($data->wp_capabilities)>0){
+            foreach ($data->wp_capabilities as $key => $value){
+                $this->User->setUserRole($key);
+                break;
+            }
+        }
+
+
+
+
     }
 
 
