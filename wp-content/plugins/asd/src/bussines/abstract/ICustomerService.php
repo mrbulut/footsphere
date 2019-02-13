@@ -27,7 +27,7 @@ interface ICustomerService
 
     function getProducts();
     function updateProduct($array = array());
-    function deleteProduct($productNo);
+    function deleteProduct($array = array());
 
     function getLanguages();
     function setLanguages($lang);
@@ -38,6 +38,10 @@ interface ICustomerService
     function getProductFixCustomers();
 
     function setCustomerStatus($UserId,$Status);
+
+    function setCustomerStatusAutomatic();
+
+
 
 
 }

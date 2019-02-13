@@ -34,6 +34,9 @@ $data = $CustomerManager->getCustomerList($Customer);
       $CustomerManager->getProductFixCustomers();// return array
   
       $CustomerManager->setCustomerStatus($UserId,"Fix");
+      $CustomerManager->setCustomerStatusAutomatic(); 
+      "$Length; $Weight; $Age; $Foot Size; $FootImage; $FootImage2; $FootImage3; "
+      Users with full the variables is changing status 
       
 </pre></code>
 
