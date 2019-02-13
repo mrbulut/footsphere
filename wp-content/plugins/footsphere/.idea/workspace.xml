@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb711fa5-61b1-4d66-9f3b-f368ae1cf3e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../asd/src/bussines/abstract/IOptionsService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/bussines/abstract/IProducerService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/OptionsManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/ProducerManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/bussines/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/OptionsDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/OptionsDal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/ProducerDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/ProducerDal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/UserDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/UserDal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/entities/concrete/ProducerConcrete.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/entities/concrete/ProducerConcrete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/contactDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/contactDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/optionsDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/optionsDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/producerDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/producerDB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mgwoocommercebrands" beforeDir="false" afterPath="$PROJECT_DIR$/../mgwoocommercebrands" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

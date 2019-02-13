@@ -103,15 +103,15 @@ $OptionsManager = new OptionsManager($UserId); // maybe null
 include_once ROOT_PATH."/src/bussines/concrete/ProducerManager.php";
 $ProducerManager = new ProducerManager($UserId); // maybe null
 
-         function getProducerProducts();
-           function addProduct($UserId,$array=array());
-           function deleteProduct($UserId,$ProductNo);
+           function getProducerProducts(); // Return String ex : 122,333,444,...
+           function addProduct($UserId,$array=array());// ex: array(ProductId,ProductId2,ProductId3);
+           function deleteProduct($UserId,$ProductNo); // return bolean
        
-           function getProducerByUserId($UserId);
-           function getProducerAll();
+           function getProducerByUserId($UserId); // return array 
+           function getProducerAll();   // all producers info of system
        
            function updateProducerByUserId(Producer $producer,$UserId);
-           function createProducer($Name,$Email,$Pass,$OfferLimit);
+           function createProducer($Name,$Email,$Pass,$OfferLimit);// if is there return false
            function removeProducer($UserId);
 
 </pre></code>
