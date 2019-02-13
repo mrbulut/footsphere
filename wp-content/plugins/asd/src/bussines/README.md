@@ -46,16 +46,27 @@ $data = $CustomerManager->getCustomerList($Customer);
 
 <pre><code>
 include_once ROOT_PATH."/src/bussines/concrete/MessageManager.php";
-$CustomerManager = new MessageManager(1);
+$MessageManager = new MessageManager(1);
 $message = new message();
 $message->setUserId(1);$message->setMessage("MESAJJJJ");
 $messageWhere =new message();
 $messageWhere->setId(2);
+
 echo $CustomerManager->getMessagesList($messageWhere)['Message'];
 
-      $CustomerManager->getMessagesList(Message); //return array
-      $CustomerManager->addMessage(Message); // return id
-      $CustomerManager->updateMessage(Message,Message); //return boolean
-      $CustomerManager->deleteMessage(Message); // return boolean
+      $MessageManager->getMessagesList(Message); //return array
+      $MessageManager->addMessage(Message); // return id
+      $MessageManager->updateMessage(Message,Message); //return boolean
+      $MessageManager->deleteMessage(Message); // return boolean
       
+          function getAllMessageForUser($UserId); // array - all message of users 
+          function isThereUnreadMessageForUser($UserId);array - all message of users
+          function getAllMessage(); // array - all messages of system
+          function getAllMessageLenght(); int 
+          function getAllUnDreadMessages(); // array - get undread messages
+          function setTheUserMessagesRead($UserId); // bolean - do has been read messages for user
+          function writeMessage($UserId,$Message,$Who); //  
+
+
+
 </pre></code>

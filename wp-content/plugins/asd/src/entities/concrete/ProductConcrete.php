@@ -23,7 +23,11 @@ class Product implements IEntity{
     public $Season;
     public $InsideBaseType;
     public $InsideBaseMeterial;
-
+    function ResetObject() {
+        foreach ($this as $key => $value) {
+            unset($this->$key);
+        }
+    }
     /**
      * Product constructor.
      * @param $ID

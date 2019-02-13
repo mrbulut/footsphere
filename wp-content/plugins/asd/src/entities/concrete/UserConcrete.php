@@ -42,7 +42,8 @@ class User implements IEntity
      * @param $display_name
      * @param $user_role
      */
-    public function __construct(){
+    public function __construct()
+    {
     }
 
     /**
@@ -75,6 +76,13 @@ class User implements IEntity
     public function setUserPass($user_pass)
     {
         $this->user_pass = $user_pass;
+    }
+
+    function ResetObject()
+    {
+        foreach ($this as $key => $value) {
+            unset($this->$key);
+        }
     }
 
     /**
@@ -140,8 +148,6 @@ class User implements IEntity
     {
         $this->user_role = $user_role;
     }
-
-
 
 
 }

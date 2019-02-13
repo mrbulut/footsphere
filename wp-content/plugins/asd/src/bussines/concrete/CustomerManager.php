@@ -292,6 +292,7 @@ class CustomerManager implements ICustomerService
             }
 
             if ($statusChange) {
+                $this->Logger->Log("Müşteri durumu tamamlandıya dönüştürüldü.",FileLogger::NOTICE);
                 $this->CustomerDal->setCustomerStatus($this->UserId,"Complete");
             }
         }

@@ -5,10 +5,16 @@
       <change beforePath="$PROJECT_DIR$/../asd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/bussines/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/abstract/ICustomerService.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/abstract/ICustomerService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/abstract/IMessageService.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/abstract/IMessageService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/bussines/concrete/CustomerManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/CustomerManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/data/abstract/DatabaseTableDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/abstract/DatabaseTableDao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/entities/concrete/CustomerConcrete.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/entities/concrete/CustomerConcrete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/concrete/MessageManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/MessageManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/entities/concrete/MessageConcrete.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/entities/concrete/MessageConcrete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/entities/concrete/OptionsConcrete.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/entities/concrete/OptionsConcrete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/entities/concrete/ProducerConcrete.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/entities/concrete/ProducerConcrete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/entities/concrete/ProductConcrete.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/entities/concrete/ProductConcrete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/entities/concrete/RequestConcrete.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/entities/concrete/RequestConcrete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/entities/concrete/UserConcrete.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/entities/concrete/UserConcrete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/contactDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/contactDB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mgwoocommercebrands" beforeDir="false" afterPath="$PROJECT_DIR$/../mgwoocommercebrands" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,25 +42,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/wpusermetaDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
+            <state relative-caret-position="36">
               <caret line="42" column="25" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/contactDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="165" column="28" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="28" />
+            <state relative-caret-position="4771">
+              <caret line="286" lean-forward="true" selection-start-line="286" selection-end-line="286" />
+              <folding>
+                <element signature="n#style#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#1;n#aside#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/bespokeDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1149">
+            <state relative-caret-position="753">
               <caret line="582" selection-start-line="582" selection-end-line="582" />
             </state>
           </provider>
@@ -63,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/bsproductDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4680">
+            <state relative-caret-position="-215">
               <caret line="260" selection-start-line="260" selection-end-line="260" />
             </state>
           </provider>
@@ -84,8 +95,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/MysqliDb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46116">
-              <caret line="2574" column="20" selection-start-line="2574" selection-start-column="20" selection-end-line="2574" selection-end-column="20" />
+            <state relative-caret-position="3745">
+              <caret line="2601" column="9" lean-forward="true" selection-start-line="2601" selection-start-column="9" selection-end-line="2601" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/optionsDB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4301">
+              <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/producerDB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2374">
+              <caret line="222" column="45" lean-forward="true" selection-start-line="222" selection-start-column="45" selection-end-line="222" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/productDB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16473">
+              <caret line="182" column="30" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/requestDB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -133,19 +180,19 @@
         <option value="$PROJECT_DIR$/languages/languages.php" />
         <option value="$PROJECT_DIR$/database/requestDB.php" />
         <option value="$PROJECT_DIR$/database/bsproductDB.php" />
-        <option value="$PROJECT_DIR$/database/contactDB.php" />
         <option value="$PROJECT_DIR$/database/optionsDB.php" />
         <option value="$PROJECT_DIR$/init.php" />
         <option value="$PROJECT_DIR$/database/MysqliDb.php" />
         <option value="$PROJECT_DIR$/lib/dovizkur.php" />
         <option value="$PROJECT_DIR$/footsphere.php" />
         <option value="$PROJECT_DIR$/database/bespokeDB.php" />
+        <option value="$PROJECT_DIR$/database/contactDB.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="132" />
-    <option name="y" value="144" />
+    <option name="x" value="-246" />
+    <option name="y" value="27" />
     <option name="width" value="1458" />
     <option name="height" value="1019" />
   </component>
@@ -233,12 +280,12 @@
       <workItem from="1549542920909" duration="1634000" />
       <workItem from="1549613294512" duration="4660000" />
       <workItem from="1549865018426" duration="7785000" />
-      <workItem from="1550039117527" duration="2246000" />
+      <workItem from="1550039117527" duration="4809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85555000" />
+    <option name="totallyTimeSpent" value="88118000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -250,7 +297,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="90" width="1458" height="1019" extended-state="0" />
+    <frame x="-246" y="27" width="1458" height="1019" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14305949" />
@@ -391,27 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/requestDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/producerDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="222" column="45" lean-forward="true" selection-start-line="222" selection-start-column="45" selection-end-line="222" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/productDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="182" column="30" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/menu/adminpage/page/implement/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -430,13 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/optionsDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3617">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -564,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/bsproductDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4680">
-          <caret line="260" selection-start-line="260" selection-end-line="260" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/footsphere.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -581,31 +593,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/MysqliDb.php">
+    <entry file="file://$PROJECT_DIR$/database/bespokeDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46116">
-          <caret line="2574" column="20" selection-start-line="2574" selection-start-column="20" selection-end-line="2574" selection-end-column="20" />
+        <state relative-caret-position="753">
+          <caret line="582" selection-start-line="582" selection-end-line="582" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/contactDB.php">
+    <entry file="file://$PROJECT_DIR$/database/bsproductDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="165" column="28" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="28" />
+        <state relative-caret-position="-215">
+          <caret line="260" selection-start-line="260" selection-end-line="260" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/MysqliDb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3745">
+          <caret line="2601" column="9" lean-forward="true" selection-start-line="2601" selection-start-column="9" selection-end-line="2601" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/optionsDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4301">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/producerDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2374">
+          <caret line="222" column="45" lean-forward="true" selection-start-line="222" selection-start-column="45" selection-end-line="222" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/productDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16473">
+          <caret line="182" column="30" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/requestDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/wpusermetaDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
+        <state relative-caret-position="36">
           <caret line="42" column="25" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/bespokeDB.php">
+    <entry file="file://$PROJECT_DIR$/database/contactDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1149">
-          <caret line="582" selection-start-line="582" selection-end-line="582" />
+        <state relative-caret-position="4771">
+          <caret line="286" lean-forward="true" selection-start-line="286" selection-end-line="286" />
+          <folding>
+            <element signature="n#style#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#aside#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

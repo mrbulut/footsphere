@@ -33,7 +33,11 @@ class Producer extends User implements IEntity
     public function __construct(){
 
     }
-
+    function ResetObject() {
+        foreach ($this as $key => $value) {
+            unset($this->$key);
+        }
+    }
     /**
      * @return mixed
      */

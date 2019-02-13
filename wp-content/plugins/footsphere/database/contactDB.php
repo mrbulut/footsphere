@@ -66,7 +66,6 @@ class contactDB
 	public function getAlluserID($userID)
 	{
 		if ($userID == -1) {
-			$dizi = [];
 			$this->database->where('status', 0);
 			return $this->database->get($this->tableName);
 		} elseif ($userID == 0) {

@@ -97,7 +97,7 @@ class MessageManager implements IMessageService
         }
     }
 
-    function updateMessage(Message $message, Message $messageWhere )
+    function updateMessage(Message $message, Message $messageWhere)
     {
         $this->MessageDal->settingQuery($message, $messageWhere);
         try {
@@ -114,5 +114,77 @@ class MessageManager implements IMessageService
         } catch (\Exception $exp) {
             $this->Logger->Log("Sorgu çalıştırılamadı.", FileLogger::FATAL);
         }
+    }
+
+    function getAllMessageForUser($UserId = null)
+    {
+        if ($UserId)
+            $this->UserId = $UserId;
+        $this->MessageWhere->ResetObject();
+        $this->MessageWhere->setUserId($this->UserId);
+        return self::getMessagesList($this->MessageWhere);
+    }
+
+    function isThereUnreadMessageForUser($UserId = null)
+    {
+        if ($UserId)
+            $this->UserId = $UserId;
+        $this->MessageWhere->ResetObject();
+        $this->MessageWhere->setUserId($this->UserId);
+        $this->MessageWhere->setStatus("Unread");
+        return self::getMessagesList($this->MessageWhere);
+    }
+
+    function getAllMessage()
+    {
+        return $this->MessageDal->selectAll();
+    }
+
+    function getAllMessageLenght()
+    {
+        return count($this->MessageDal->selectAll());
+    }
+
+    function getAllUnDreadMessages()
+    {
+        $this->MessageWhere->ResetObject();
+        $this->MessageWhere->setStatus("Unread");
+        return self::getMessagesList($this->MessageWhere);
+    }
+
+    function setTheUserMessagesRead($UserId = null)
+    {
+        if ($UserId)
+            $this->UserId = $UserId;
+        $this->MessageWhere->ResetObject();
+        $this->Message->ResetObject();
+
+        $this->MessageWhere->setUserId($this->UserId);
+        $this->Message->setStatus("Read");
+        return self::updateMessage($this->Message, $this->MessageWhere);
+    }
+
+    function writeMessage($UserId, $Message, $Who)
+    {
+        if($Message!='' || $Message!=null){
+            if ($UserId)
+                $this->UserId = $UserId;
+            $this->Message->ResetObject();
+
+            if($Who=="Editor"){
+                $this->Message->setStatus("Read");
+            }else{
+                $this->Message->setStatus("Unread");
+            }
+            $this->Message->setUserId($this->UserId);
+            $this->Message->setMessage($Message);
+            $this->Message->setDate(date("Y-m-d H:i:s"));
+            $this->Message->setWhoIsMessage($Who);
+            return self::addMessage($this->Message);
+        }else{
+            return "empty_message";
+        }
+
+
     }
 }

@@ -14,11 +14,11 @@ define('ABSPATH',dirname(__FILE__)."/../../../");
 
 define('ROOT_PATH',__DIR__);
 
-include_once ROOT_PATH."/src/bussines/concrete/CustomerManager.php";
-$CustomerManager = new CustomerManager();
-$Customer = new Customer();
-$Customer->setUserId(3);
-$CustomerManager->setCustomerStatusAutomatic();
+include_once ROOT_PATH."/src/bussines/concrete/MessageManager.php";
+$MessageManager = new MessageManager();
+$Message = new Message();
+$MessageManager->setTheUserMessagesRead(2);
+
 //echo "burda..." .$CustomerManager->getMessagesList($messageWhere)['Message'];
 
 

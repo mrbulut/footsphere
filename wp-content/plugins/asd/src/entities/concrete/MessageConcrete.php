@@ -29,7 +29,11 @@ class Message implements IEntity
     {
 
     }
-
+    function ResetObject() {
+        foreach ($this as $key => $value) {
+            unset($this->$key);
+        }
+    }
 
     /**
      * @return mixed

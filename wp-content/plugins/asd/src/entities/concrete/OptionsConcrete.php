@@ -27,7 +27,11 @@ class Options implements IEntity
     {
         return $this->option_id;
     }
-
+    function ResetObject() {
+        foreach ($this as $key => $value) {
+            unset($this->$key);
+        }
+    }
     /**
      * @param mixed $option_id
      */
