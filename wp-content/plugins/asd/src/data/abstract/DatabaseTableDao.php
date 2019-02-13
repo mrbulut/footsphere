@@ -47,7 +47,7 @@ abstract class DatabaseTableDao extends MysqliDb
     {
 
         if ($this->ObjectWhere) {
-            return self::select(
+            return self::selectAll(
                 $this->ObjectWhere
             );
         } else

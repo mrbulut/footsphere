@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fb711fa5-61b1-4d66-9f3b-f368ae1cf3e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../asd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/bussines/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/bussines/abstract/ICustomerService.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/abstract/ICustomerService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/bespokeDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/bespokeDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/concrete/CustomerManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/CustomerManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/abstract/DatabaseTableDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/abstract/DatabaseTableDao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/entities/concrete/CustomerConcrete.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/entities/concrete/CustomerConcrete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mgwoocommercebrands" beforeDir="false" afterPath="$PROJECT_DIR$/../mgwoocommercebrands" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/database/bespokeDB.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1149">
-              <caret line="582" column="4" selection-start-line="582" selection-start-column="4" selection-end-line="582" selection-end-column="4" />
+              <caret line="582" selection-start-line="582" selection-end-line="582" />
             </state>
           </provider>
         </entry>
@@ -142,8 +144,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="90" />
+    <option name="x" value="132" />
+    <option name="y" value="144" />
     <option name="width" value="1458" />
     <option name="height" value="1019" />
   </component>
@@ -231,12 +233,12 @@
       <workItem from="1549542920909" duration="1634000" />
       <workItem from="1549613294512" duration="4660000" />
       <workItem from="1549865018426" duration="7785000" />
-      <workItem from="1550039117527" duration="1654000" />
+      <workItem from="1550039117527" duration="2246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84963000" />
+    <option name="totallyTimeSpent" value="85555000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -603,7 +605,7 @@
     <entry file="file://$PROJECT_DIR$/database/bespokeDB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1149">
-          <caret line="582" column="4" selection-start-line="582" selection-start-column="4" selection-end-line="582" selection-end-column="4" />
+          <caret line="582" selection-start-line="582" selection-end-line="582" />
         </state>
       </provider>
     </entry>

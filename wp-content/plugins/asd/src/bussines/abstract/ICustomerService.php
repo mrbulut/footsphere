@@ -33,8 +33,8 @@ interface ICustomerService
     function setLanguages($lang);
 
     function getProductWaitingCustomers();
-    function getProductNoCompoleteCustomers();
-    function getProductCompoleteCustomers();
+    function getProductNoCompleteCustomers();
+    function getProductCompleteCustomers();
     function getProductFixCustomers();
 
     function setCustomerStatus($UserId,$Status);

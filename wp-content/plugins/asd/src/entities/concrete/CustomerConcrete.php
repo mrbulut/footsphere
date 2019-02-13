@@ -22,7 +22,7 @@ class Customer extends User implements IEntity
     public $FootsphereFilePath;
     public $ExtraFilePath;  // File1,File2,...
     public $CanUseProducts;
-    public $BespokeStatus; // NoCompolete, Compolete, Waiting, Fix
+    public $BespokeStatus; // NoComplete, Complete, Waiting, Fix
     public $ExtraInfo;
     public $FootImage;
     public $FootImage2;

@@ -207,14 +207,13 @@ class CustomerManager implements ICustomerService
 
             $isThere = false;
             foreach ($array as $key => $value) {
-                if($value == $ValEx)
+                if ($value == $ValEx)
                     $isThere = true;
             }
-            if(!$isThere && $ValEx!=''){
-                $result = $result.$ValEx.",";
+            if (!$isThere && $ValEx != '') {
+                $result = $result . $ValEx . ",";
             }
         }
-
 
 
         $this->Customer->setCanUseProducts($result);
@@ -239,18 +238,18 @@ class CustomerManager implements ICustomerService
 
     public function getProductWaitingCustomers()
     {
-       return $this->CustomerDal->getProductWaitingCustomers();
+        return $this->CustomerDal->getProductWaitingCustomers();
     }
 
-    public function getProductNoCompoleteCustomers()
+    public function getProductNoCompleteCustomers()
     {
-        return $this->CustomerDal->getProductNoCompoleteCustomers();
+        return $this->CustomerDal->getProductNoCompleteCustomers();
 
     }
 
-    public function getProductCompoleteCustomers()
+    public function getProductCompleteCustomers()
     {
-        return  $this->CustomerDal->getProductCompoleteCustomers();
+        return $this->CustomerDal->getProductCompleteCustomers();
 
     }
 
@@ -260,13 +259,45 @@ class CustomerManager implements ICustomerService
 
     }
 
-    public function setCustomerStatus($UserId,$Status)
+    public function setCustomerStatus($UserId, $Status)
     {
-        return $this->CustomerDal->setCustomerStatus($UserId,$Status);
+        return $this->CustomerDal->setCustomerStatus($UserId, $Status);
 
     }
 
 
+    function setCustomerStatusAutomatic()
+    {
+        $this->CustomerWhere->ResetObject();
+        $this->CustomerWhere->setUserId($this->UserId);
+        $result = self::getCustomerList($this->CustomerWhere);
+
+        if ($result[0]['BespokeStatus'] == "NoComplete") {
+            $statusChange = true;
+            foreach ($result[0] as $index => $in) {
+                if (
+                    $index == "Length" ||
+                    $index == "Weight" ||
+                    $index == "Age" ||
+                    $index == "FootImage" ||
+                    $index == "FootImage2" ||
+                    $index == "FootImage3"
+
+                ) {
+                    if ($in == '') {
+                        $statusChange = false;
+                    }
+                }
+
+            }
+
+            if ($statusChange) {
+                $this->CustomerDal->setCustomerStatus($this->UserId,"Complete");
+            }
+        }
+
+
+    }
 }
 
 

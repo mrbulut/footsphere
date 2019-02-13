@@ -29,8 +29,8 @@ $data = $CustomerManager->getCustomerList($Customer);
       $CustomerManager->setLanguages($lang);
   
       $CustomerManager->getProductWaitingCustomers();  // return array
-      $CustomerManager->getProductNoCompoleteCustomers();// return array
-      $CustomerManager->getProductCompoleteCustomers();// return array
+      $CustomerManager->getProductNoCompleteCustomers();// return array
+      $CustomerManager->getProductCompleteCustomers();// return array
       $CustomerManager->getProductFixCustomers();// return array
   
       $CustomerManager->setCustomerStatus($UserId,"Fix");
