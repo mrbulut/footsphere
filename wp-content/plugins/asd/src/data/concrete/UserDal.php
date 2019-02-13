@@ -65,10 +65,9 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
             } else {
                 $this->UserId = $UserId;
             }
-        }else{
+        } else {
             $this->UserId = $UserId;
         }
-
 
 
         $this->User = new User();
@@ -77,21 +76,28 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
         self::getUserWP($this->UserId);
     }
 
-    public function createUser(User $user)
+    public function createUser(User $user, $Cap)
     {
         $user_id = username_exists($user->getUserName());
-        if (!$user_id and email_exists($user->getUserEmail() == false)) {
 
-            $user_id = wp_create_user(
-                $user->getUserName(),
-                $user->getUserPass(),
-                $user->getUserEmail());
-            if ($user_id)
-                return $user_id;
-            else
-                return false;
+        if (!$user_id) {
+            if (email_exists($user->getUserEmail()) == false) {
+                $user_id = wp_create_user(
+                    $user->getUserName(),
+                    $user->getUserPass(),
+                    $user->getUserEmail());
+                if ($user_id) {
+                    wp_update_user(array('ID' => $user_id, 'role' => $Cap));
+                    return $user_id;
+                } else
+                    return false;
+            } else {
+                return "email_var";
+            }
+
+
         } else {
-            return false;
+            return $user_id;
         }
     }
 
@@ -119,18 +125,15 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
         $this->User->setUserPass($data->user_pass);
         $this->User->setUserRegistered($data->user_registered);
 
-        if(count($data->wp_capabilities)>0){
-            foreach ($data->wp_capabilities as $key => $value){
+        if (count($data->wp_capabilities) > 0) {
+            foreach ($data->wp_capabilities as $key => $value) {
                 $this->User->setUserRole($key);
                 break;
             }
         }
 
 
-
-
     }
-
 
 
 }

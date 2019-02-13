@@ -46,27 +46,72 @@ $data = $CustomerManager->getCustomerList($Customer);
 
 <pre><code>
 include_once ROOT_PATH."/src/bussines/concrete/MessageManager.php";
-$MessageManager = new MessageManager(1);
-$message = new message();
-$message->setUserId(1);$message->setMessage("MESAJJJJ");
-$messageWhere =new message();
-$messageWhere->setId(2);
-
-echo $CustomerManager->getMessagesList($messageWhere)['Message'];
+$MessageManager = new MessageManager($UserId);
 
       $MessageManager->getMessagesList(Message); //return array
       $MessageManager->addMessage(Message); // return id
       $MessageManager->updateMessage(Message,Message); //return boolean
       $MessageManager->deleteMessage(Message); // return boolean
-      
-          function getAllMessageForUser($UserId); // array - all message of users 
-          function isThereUnreadMessageForUser($UserId);array - all message of users
-          function getAllMessage(); // array - all messages of system
-          function getAllMessageLenght(); int 
-          function getAllUnDreadMessages(); // array - get undread messages
-          function setTheUserMessagesRead($UserId); // bolean - do has been read messages for user
-          function writeMessage($UserId,$Message,$Who); //  
+
+      $MessageManager->getAllMessageForUser($UserId); // array - all message of users 
+      $MessageManager->isThereUnreadMessageForUser($UserId);array - all message of users
+      $MessageManager->getAllMessage(); // array - all messages of system
+      $MessageManager->getAllMessageLenght(); int 
+      $MessageManager->getAllUnDreadMessages(); // array - get undread messages
+      $MessageManager->setTheUserMessagesRead($UserId); // bolean - do has been read messages for user
+      $MessageManager->writeMessage($UserId,$Message,$Who); //  
 
 
+
+</pre></code>
+
+
+<b>Using The OptionsManager class in OptionsManager.php</b> "/bussines/concrete/OptionsManager.php"
+
+<pre><code>
+include_once ROOT_PATH."/src/bussines/concrete/OptionsManager.php";
+$OptionsManager = new OptionsManager($UserId); // maybe null
+
+       function addOption($option_name,$option_value); r
+       function updateOptionById($option_id,$option_value);
+       function updateOptionByName($option_name,$option_value);
+   
+       function denineDefaultSettings();
+       function getLangueages($UserId);
+       function setLangueages($UserId, $langueages);
+       function getRequest($UserId);
+       function setRequest($UserId, $request); 
+   
+       function getProducerRequestLimit();
+       function setProducerRequestLimit($producerRequestLimit);
+   
+       function getProducerModelLimit();
+       function setProducerModelLimit($producerModelLimit);
+   
+       function getRequestTimeArea();
+       function setRequestTimeArea($requestTimeArea);
+   
+       function getCommissionArea();
+       function setCommissionArea($commissionArea);
+
+</pre></code>
+
+
+<b>Using The ProducerManager class in ProducerManager.php</b> "/bussines/concrete/ProducerManager.php"
+
+<pre><code>
+include_once ROOT_PATH."/src/bussines/concrete/ProducerManager.php";
+$ProducerManager = new ProducerManager($UserId); // maybe null
+
+         function getProducerProducts();
+           function addProduct($UserId,$array=array());
+           function deleteProduct($UserId,$ProductNo);
+       
+           function getProducerByUserId($UserId);
+           function getProducerAll();
+       
+           function updateProducerByUserId(Producer $producer,$UserId);
+           function createProducer($Name,$Email,$Pass,$OfferLimit);
+           function removeProducer($UserId);
 
 </pre></code>

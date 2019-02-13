@@ -218,37 +218,6 @@ class producerDB
 
 
 
-	public function dosyaSil($proID)
-	{
-		$value = explode(",", self::getEksDosyaYolu());
-		$result = '';
-		if (count($value) > 1) {
-			for ($i = 0; $i < count($value) - 1; $i++) {
-				$firstvalue = $value[$i];
-				$value[$i] = explode("_", explode(" ", $value[$i])[0]);
-				$value[$i] = $value[$i][0] . $value[$i][2];
-				//echo "valuei = " .$value[$i];
-				//echo " valuepro = " .$proID;
-
-				if ($value[$i] != $proID) {
-					$result = $result . $firstvalue . ",";
-				}
-			}
-		}
-		return self::set($this->bespokeRows[5], $result);
-	}
-
-	public function durumKontrol()
-	{
-		$result = false;
-
-		if (self::getBoyu() == null || self::getKilo() == null || self::getYas() == null) {
-			$result = false;
-		} else {
-			$result = true;
-		}
-		return $result;
-	}
 
 }
 ?>

@@ -375,4 +375,8 @@ class contactDB
 	
 }
 
+class bitti{
+
+}
+
 ?>

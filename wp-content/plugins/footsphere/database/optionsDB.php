@@ -291,6 +291,8 @@ class optionsDB {
 
 
 // AAM AND PERMİSSİON SETTİNGS ///
+class bitti{
 
+}
 
 ?>

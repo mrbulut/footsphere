@@ -33,17 +33,17 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
     public function __construct()
     {
         $this->Rows = parent::CreateTable(Container::getInstance(new Options()), "wp_options");
-        self::defineSettings();
 
     }
 
-    private function defineSettings()
+    public function defineSettings()
     {
-        self::addOption($this->OptionsNames['requestTimeLimit'], $this->requestTimeLimit);
-        self::addOption($this->OptionsNames['modelLimit'], $this->modelLimit);
-        self::addOption($this->OptionsNames['requestLimit'], $this->requestLimit);
-        self::addOption($this->OptionsNames['commission'], $this->commission);
-
+        if(!self::selectOption($this->OptionsNames['commission'])){
+            self::addOption($this->OptionsNames['requestTimeLimit'], $this->requestTimeLimit);
+            self::addOption($this->OptionsNames['modelLimit'], $this->modelLimit);
+            self::addOption($this->OptionsNames['requestLimit'], $this->requestLimit);
+            self::addOption($this->OptionsNames['commission'], $this->commission);
+        }
     }
 
 
@@ -137,7 +137,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     }
 
-    private function addOption($option_name, $options_value)
+    public function addOption($option_name, $options_value)
     {
         if ($option_name) {
             if (self::selectOption($option_name)) {
@@ -158,7 +158,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
             return false;
     }
 
-    private function updateOptionToID($options_value, $option_id)
+    public function updateOptionToID($options_value, $option_id)
     {
         if ($option_id) {
             return $this->update(
@@ -177,7 +177,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
     }
 
 
-    private function updateOptionToOptionName($option_name, $option_value)
+    public function updateOptionToOptionName($option_name, $option_value)
     {
         if ($option_name) {
             return $this->update(

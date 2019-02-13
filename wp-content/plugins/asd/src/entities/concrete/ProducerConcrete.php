@@ -19,6 +19,55 @@ class Producer extends User implements IEntity
     public $PaymentInformantion;
     public $CargoInformantion;
     public $OfferLimit;
+    public $Products;
+
+    /**
+     * @return mixed
+     */
+    public function getProducts()
+    {
+        return $this->Products;
+    }
+
+    /**
+     * @param mixed $Products
+     */
+    public function setProducts($Products)
+    {
+        $this->Products = $Products;
+    }
+    /**
+     * @return mixed
+     */
+    public function getUserId()
+    {
+        return $this->UserId;
+    }
+
+    /**
+     * @param mixed $UserId
+     */
+    public function setUserId($UserId)
+    {
+        $this->UserId = $UserId;
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public function getID()
+    {
+        return $this->ID;
+    }
+
+    /**
+     * @param mixed $ID
+     */
+    public function setID($ID)
+    {
+        $this->ID = $ID;
+    }
 
     /**
      * Producer constructor.

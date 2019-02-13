@@ -14,10 +14,12 @@ define('ABSPATH',dirname(__FILE__)."/../../../");
 
 define('ROOT_PATH',__DIR__);
 
-include_once ROOT_PATH."/src/bussines/concrete/MessageManager.php";
-$MessageManager = new MessageManager();
-$Message = new Message();
-$MessageManager->setTheUserMessagesRead(2);
+include_once ROOT_PATH."/src/bussines/concrete/ProducerManager.php";
+$MessageManager = new ProducerManager(8);
+$Producer = new Producer();
+$Producer->setOfferLimit(5);
+echo "dsds".$MessageManager->removeProducer(9);
+//echo "dsds".$MessageManager->getProducerProducts();
 
 //echo "burda..." .$CustomerManager->getMessagesList($messageWhere)['Message'];
 
