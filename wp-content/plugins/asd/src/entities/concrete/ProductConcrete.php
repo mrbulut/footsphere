@@ -123,6 +123,22 @@ class Product implements IEntity{
     /**
      * @return mixed
      */
+    public function getDesc()
+    {
+        return $this->Desc;
+    }
+
+    /**
+     * @param mixed $Desc
+     */
+    public function setDesc($Desc)
+    {
+        $this->Desc = $Desc;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getPrice()
     {
         return $this->Price;

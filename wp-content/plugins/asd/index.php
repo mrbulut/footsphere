@@ -14,13 +14,13 @@ define('ABSPATH',dirname(__FILE__)."/../../../");
 
 define('ROOT_PATH',__DIR__);
 
-include_once ROOT_PATH."/src/bussines/concrete/CustomerManager.php";
-$ProductManager = new CustomerManager();
-$Product = new Customer();
-$Product->setUserId(3);
-echo $ProductManager->getProducts();
+include_once ROOT_PATH."/src/bussines/concrete/RequestManager.php";
+$ProductManager = new RequestManager();
+$Request = new Request();
 
-
+$array =  $ProductManager->getRequestById(1);
+foreach ($array as $key => $value)
+    echo  $key.$value."<br>";
 
 ?>
 

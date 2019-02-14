@@ -165,3 +165,45 @@ $Product->setImage("imageadresi/ddd.com");
 
 
 </pre></code>
+
+
+
+<b>Using The RequestManager class in RequestManager.php</b> "/bussines/concrete/RequestManager.php"
+ 
+ <pre><code>
+ include_once ROOT_PATH."/src/bussines/concrete/RequestManager.php";
+ 
+     function getAllRequest(); // return array ({0,productArray},{1,product2array},..)
+ 
+     function getRequestByProducerNo($ProducerNo); // return array ({0,productArray},{1,product2array},..)
+ 
+     function getRequestById($Id); return array 
+ 
+     function getRequestByUserId($UserId); return array 
+ 
+     function getRequestByUserIdAndProducerNo($UserId, $ProducerNo);
+ 
+     function setRequestByUserId($UserId, $Status);
+ 
+     function createRequest($UserId, $ProducerNo, $RequestID, $Products, $Type); // return true or false
+ 
+     function removeRequest($RequestID);
+ 
+     function getRequestStatus($ID);
+ 
+     function setRequestStatusByID($ID, $Status);
+ 
+     function getRequestStatusByRequestNo($RequestNo);
+ 
+     function setRequestStatusByRequestNo($RequestNo, $Status);
+ 
+     function getProducerStatistics($ProducerNo); // return  $array['all'] = count($all);
+                                                             $array['pass'] = count($pass);
+                                                              $array['refuse'] = count($refuse);
+
+ 
+ 
+ 
+ 
+ 
+ </pre></code>

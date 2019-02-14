@@ -22,8 +22,7 @@ class RequestDal extends DatabaseTableDao implements IDatabaseTableDao
 {
     private static $Rows;
 
-    private $StatusValue = array("Continue", "Accepted", "Checked", "UnChecked");
-    private $TypeValue = array("Shoes", "Slipper");
+
     // $this->Rows[4] => $ProductsAndPrices; // urunId:Price, urunId2:Price, urunId3:Price,
 
 
