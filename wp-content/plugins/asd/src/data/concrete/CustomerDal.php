@@ -13,7 +13,7 @@ include_once ROOT_PATH . "/src/data/concrete/UserDal.php";
 
 class CustomerDal extends DatabaseTableDao implements IDatabaseTableDao
 {
-    private static $Rows;
+    private $Rows;
 
     public function __construct()
     {
@@ -38,11 +38,6 @@ class CustomerDal extends DatabaseTableDao implements IDatabaseTableDao
             return false;
         }
 
-        return $this->selectAll(
-            array(
-                'BespokeStatus' => 'Waiting'
-            )
-        );
     }
 
     public function getProductWaitingCustomers()

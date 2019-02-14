@@ -14,24 +14,14 @@ define('ABSPATH',dirname(__FILE__)."/../../../");
 
 define('ROOT_PATH',__DIR__);
 
-include_once ROOT_PATH."/src/bussines/concrete/ProducerManager.php";
-$MessageManager = new ProducerManager(8);
-$Producer = new Producer();
-$Producer->setOfferLimit(5);
-echo "dsds".$MessageManager->removeProducer(9);
-//echo "dsds".$MessageManager->getProducerProducts();
-
-//echo "burda..." .$CustomerManager->getMessagesList($messageWhere)['Message'];
-
-
-//SETUP
+include_once ROOT_PATH."/src/bussines/concrete/CustomerManager.php";
+$ProductManager = new CustomerManager();
+$Product = new Customer();
+$Product->setUserId(3);
+echo $ProductManager->getProducts();
 
 
 
-/*
-$rates = new ExchangeRateConverter(120); // 10 minutes cache
-echo "ddddddddd.".$rates->convert('TRY','USD',25);
-*/
 ?>
 
 

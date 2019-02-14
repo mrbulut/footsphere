@@ -5,8 +5,8 @@
  * Date: 31.01.2019
  * Time: 12:35
  */
-include_once ROOT_PATH."/src/data/abstract/MysqliDb.php";
-include_once ROOT_PATH."/src/data/config.php";
+include_once ROOT_PATH . "/src/data/abstract/MysqliDb.php";
+include_once ROOT_PATH . "/src/data/config.php";
 
 abstract class DatabaseTableDao extends MysqliDb
 {
@@ -26,18 +26,19 @@ abstract class DatabaseTableDao extends MysqliDb
 
     private $value;
 
-    private  $Object;
+    private $Object;
 
-    private  $ObjectWhere;
+    private $ObjectWhere;
 
     // Databasede ana 4 işlemi(get,insert,update,delete) yapmak için sorgu ve girdileri oluşturuyor.
-    public function settingQuery($Object=null,$Objectwhere=null){
-        if($Object){
+    public function settingQuery($Object = null, $Objectwhere = null)
+    {
+        if ($Object) {
             $this->Object = self::ClassConverter($Object);
 
         }
 
-        if($Objectwhere){
+        if ($Objectwhere) {
             $this->ObjectWhere = self::ClassConverter($Objectwhere);
         }
 
@@ -123,6 +124,7 @@ abstract class DatabaseTableDao extends MysqliDb
 
     public function insert($array = array())
     {
+
         $id = $this->database->insert($this->TableName, $array);
         if ($id)
             return $id;
@@ -171,7 +173,6 @@ abstract class DatabaseTableDao extends MysqliDb
         if ($where) {
             foreach ($where as $key => $value) {
                 $this->database->where($key, $value);
-
             }
         }
         if ($order) {

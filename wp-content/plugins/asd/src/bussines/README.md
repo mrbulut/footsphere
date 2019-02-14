@@ -115,3 +115,53 @@ $ProducerManager = new ProducerManager($UserId); // maybe null
            function removeProducer($UserId);
 
 </pre></code>
+
+
+<b>Using The ProductManager class in ProductManager.php</b> "/bussines/concrete/ProductManager.php"
+
+<pre><code>
+include_once ROOT_PATH."/src/bussines/concrete/ProductManager.php";
+
+
+$ProductManager = new ProductManager();
+$Product = new Product();
+$ProductWhere = new Product();
+$Product->setStatus("fix");
+$Product->setPName("Denemeürünü");
+$Product->setDescProduct("Açıklaması");
+$Product->setPrice("55");
+$Product->setImage("imageadresi/ddd.com");
+
+        function createProduct(Product $product); // creating product for producer 
+ 
+        function getAllProduct($Type);            // return array ({0,productArray},{1,product2array},..)
+    
+        function getAllProductByProducerNo($ProducerNo);  // return array ({0,productArray},{1,product2array},..)
+    
+        function getProductById($ID);// return array;
+            
+        function getProductByIdArray($ID);        // return array ({0,productArray},{1,product2array},..)
+    
+        function getProductByObject(Product $product); // return array ({0,productArray},{1,product2array},..)
+    
+        function setProductStatus($ID, $Status); //Approved,Waiting,NoApproved
+    
+        function getProductStatus($ID); //Approved,Waiting,NoApproved
+    
+        function removeProduct($ID);    // everywhere are cleaning
+    
+        function upgradeProduct(Product $product, $ID);  // everywhere are updating
+    
+        function addProductForUser($ProductId, $UserId); // 
+    
+       
+    
+        function getAllListForTheUser($UserId);          // return array ({0,productArray},{1,product2array},..)
+    
+        function removeProductPermissionForUser($UserId, $ProductId); //
+
+
+   
+
+
+</pre></code>

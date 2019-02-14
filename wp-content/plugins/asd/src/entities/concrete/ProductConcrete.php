@@ -23,6 +23,39 @@ class Product implements IEntity{
     public $Season;
     public $InsideBaseType;
     public $InsideBaseMeterial;
+    public $ProductWp_PostsId;
+
+    /**
+     * @return mixed
+     */
+    public function getDescProduct()
+    {
+        return $this->DescProduct;
+    }
+
+    /**
+     * @param mixed $DescProduct
+     */
+    public function setDescProduct($DescProduct)
+    {
+        $this->DescProduct = $DescProduct;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductWpPostsId()
+    {
+        return $this->ProductWp_PostsId;
+    }
+
+    /**
+     * @param mixed $ProductWp_PostsId
+     */
+    public function setProductWpPostsId($ProductWp_PostsId)
+    {
+        $this->ProductWp_PostsId = $ProductWp_PostsId;
+    }
     function ResetObject() {
         foreach ($this as $key => $value) {
             unset($this->$key);
@@ -85,22 +118,6 @@ class Product implements IEntity{
     public function setPName($PName)
     {
         $this->PName = $PName;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDesc()
-    {
-        return $this->Desc;
-    }
-
-    /**
-     * @param mixed $Desc
-     */
-    public function setDesc($Desc)
-    {
-        $this->Desc = $Desc;
     }
 
     /**
