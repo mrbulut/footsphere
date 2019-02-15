@@ -12,6 +12,7 @@ include_once ROOT_PATH . "/src/bussines/abstract/IOptionsService.php";
 include_once ROOT_PATH . "/src/data/concrete/OptionsDal.php";
 include_once ROOT_PATH . "/src/data/concrete/UserDal.php";
 include_once ROOT_PATH . "/src/entities/concrete/OptionsConcrete.php";
+include_once ROOT_PATH . "/src/core/lib/DateConverter.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/FileLogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/ILogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/Logger.php";
@@ -22,11 +23,13 @@ class OptionsManager implements IOptionsService
     private $OptionsDal;
     private $UserDal;
     private $UserId;
+    private $DateConverter;
 
 
     public function __construct($UserID = null)
     {
         $this->OptionsDal = new OptionsDal();
+        $this->DateConverter = new DateConverter();
         $this->UserDal = new UserDal($UserID);
         $this->Logger = new Logger(new FileLogger());
         $this->UserId = $this->UserDal->getUser()->getID();
@@ -69,19 +72,6 @@ class OptionsManager implements IOptionsService
         $this->OptionsDal->setLangueages($this->UserId,$langueages);
     }
 
-    function getRequest($userID=null)
-    {
-        if($userID)
-            $this->UserId = $userID;
-        $this->OptionsDal->getRequest($this->UserId);
-    }
-
-    function setRequest($userID, $request)
-    {
-        if($userID)
-            $this->UserId = $userID;
-        $this->OptionsDal->setRequest($this->UserId,$request);
-    }
 
     function getProducerRequestLimit()
     {
@@ -121,5 +111,37 @@ class OptionsManager implements IOptionsService
     function setCommissionArea($commissionArea)
     {
         return  $this->OptionsDal->setCommissionArea($commissionArea);
+    }
+
+
+    function createRequestForUser($UserId,$RequestType)
+    {
+
+        $date = $this->DateConverter->DateToHour(date("Y-m-d H:i:s"))+
+            (60*60*self::getRequestTimeArea());
+        return  $this->OptionsDal->addRequest($UserId,$RequestType,$date);
+    }
+
+
+    function deleteRequestForUser($UserId,$RequestType)
+    {
+        return  $this->OptionsDal->deleteRequest($UserId,$RequestType);
+    }
+
+    function getTheRequestTime($UserId, $RequestType)
+    {
+
+
+        $Date = $this->OptionsDal->getRequest($UserId,$RequestType) ;
+        $Minute = $this->DateConverter->DateToMinute($Date);
+        if($Minute >59){
+            $text = ($Minute) . "_" . "hour";
+            return $text;
+        }else if($Minute<=59){
+            $text = $Minute. "_" . "min" ;
+            return $text;
+        }else{
+            return "done";
+        }
     }
 }

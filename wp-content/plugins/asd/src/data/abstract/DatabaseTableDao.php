@@ -70,9 +70,9 @@ abstract class DatabaseTableDao extends MysqliDb
 
     public function updateToObject()
     {
+
         if ($this->Object) {
             if (self::getToObject($this->ObjectWhere)) {
-
                 return self::update(
                     $this->Object,
                     $this->ObjectWhere

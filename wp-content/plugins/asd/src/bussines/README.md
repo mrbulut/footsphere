@@ -79,9 +79,7 @@ $OptionsManager = new OptionsManager($UserId); // maybe null
        function denineDefaultSettings();
        function getLangueages($UserId);
        function setLangueages($UserId, $langueages);
-       function getRequest($UserId);
-       function setRequest($UserId, $request); 
-   
+       
        function getProducerRequestLimit();
        function setProducerRequestLimit($producerRequestLimit);
    
@@ -93,6 +91,11 @@ $OptionsManager = new OptionsManager($UserId); // maybe null
    
        function getCommissionArea();
        function setCommissionArea($commissionArea);
+       
+      
+           function createRequestForUser($UserId,$RequestType);
+           function deleteRequestForUser($UserId);
+           function getTheRequestTime($UserId,$RequestType); //return x_hour or xy_min or "done"
 
 </pre></code>
 
@@ -203,6 +206,44 @@ $Product->setImage("imageadresi/ddd.com");
 
  
  
+ 
+ 
+ 
+ </pre></code>
+
+
+
+<b>Using The UserManager class in UserManager.php</b> "/bussines/concrete/UserManager.php"
+ 
+ <pre><code>
+ include_once ROOT_PATH."/src/bussines/concrete/UserManager.php";
+ 
+      function getUser($UserId); // Return User Object
+  
+      function createUser(User $user, $capability);
+      
+      // return true or false
+      $User->setUserName("testuserloginname"); //Must
+      $User->setUserEmail("usertest@email.com");//Must
+      $User->setUserPass("password");//Must
+      $UserManager->createUser($User,"editor"); 
+      // contributor : Operation Manager or editor :Producer or subscriber : Customer
+      
+
+      
+      function deleteUser($UserId); 
+  
+      function updateUser(User $user, $UserId);
+      
+      // return true or false
+      $User = new User();
+      $User->setDisplayName("userTestName");
+      $User->setUserEmail("usertest@email.com");
+      $User->setUserPass("password");
+      // only the three preporty can change
+      
+
+
  
  
  

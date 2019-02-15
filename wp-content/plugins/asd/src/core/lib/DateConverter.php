@@ -8,13 +8,18 @@
 
 class DateConverter
 {
+    public function __construct()
+    {
+
+    }
+
     public function DateToMinute($Date,$time=null)
     {
         if(!$time){
             $time = time();
         }
         if ($Date != null) {
-            $time = ceil(self::DateToMilisecond($Date) - $time);
+            $time = ceil($Date - $time);
             return $time/60;
         }
         require false;

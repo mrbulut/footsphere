@@ -58,14 +58,22 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
         return self::updateOptionToOptionName($this->OptionsNames['langueages'] . "_" . $userID, $langueages);
     }
 
-    public function getRequest($userID)
+    public function getRequest($UserId,$RequestType)
     {
-        return self::selectOption($this->OptionsNames['request'] . "_" . $userID)[$this->Rows[2]];;
+        return self::selectOption($this->OptionsNames['request'] . "_" . $UserId."_".$RequestType)[$this->Rows[2]];;
     }
 
-    public function setRequest($userID, $request)
+    public function setRequest($UserId, $RequestType,$date)
     {
-        return self::updateOptionToOptionName($this->OptionsNames['request'] . "_" . $userID, $request);
+        return self::updateOptionToOptionName($this->OptionsNames['request'] . "_" . $UserId. "_". $RequestType, $date);
+    }
+
+    public function addRequest($UserId,$RequestType,$date){
+        return self::addOption($this->OptionsNames['request'] . "_" . $UserId. "_". $RequestType, $date);
+
+    }
+    public function deleteRequest($UserId,$RequestType){
+        return self::deleteOptionToOptionName($this->OptionsNames['request'] . "_" . $UserId. "_". $RequestType);
     }
 
 
@@ -93,7 +101,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getRequestTimeArea()
     {
-        return self::updateOptionToOptionName($this->OptionsNames['requestTimeLimit'])[$this->Rows[2]];;
+        return self::selectOption($this->OptionsNames['requestTimeLimit'])[$this->Rows[2]];;
     }
 
     public function setRequestTimeArea($requestTimeArea)
@@ -103,7 +111,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getCommissionArea()
     {
-        return self::updateOptionToOptionName($this->OptionsNames['commission'])[$this->Rows[2]];;
+        return self::selectOption($this->OptionsNames['commission'])[$this->Rows[2]];
     }
 
     public function setCommissionArea($commissionArea)
@@ -137,11 +145,26 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     }
 
+    private function deleteOptionToOptionName($OptionName)
+    {
+        if ($OptionName) {
+            return $this->delete(
+                array(
+                    self::$Rows[1] => $OptionName
+                )
+            );
+        } else
+            return false;
+
+    }
+
     public function addOption($option_name, $options_value)
     {
         if ($option_name) {
             if (self::selectOption($option_name)) {
-               return false;
+                echo "burda:".$option_name;
+
+                return false;
             } else {
                 return $this->insert(
                     array(

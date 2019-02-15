@@ -17,8 +17,6 @@ interface IOptionsService
     function denineDefaultSettings();
     function getLangueages($UserId);
     function setLangueages($UserId, $langueages);
-    function getRequest($UserId);
-    function setRequest($UserId, $request);
 
     function getProducerRequestLimit();
     function setProducerRequestLimit($producerRequestLimit);
@@ -32,6 +30,7 @@ interface IOptionsService
     function getCommissionArea();
     function setCommissionArea($commissionArea);
 
-
-
+    function createRequestForUser($UserId,$RequestType);
+    function deleteRequestForUser($UserId,$RequestType);
+    function getTheRequestTime($UserId,$RequestType);
 }

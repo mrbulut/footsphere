@@ -10,27 +10,27 @@ include_once ROOT_PATH . "/src/entities/abstract/IEntity.php";
 class User implements IEntity
 {
     protected $ID;
+    protected $user_login;
     protected $user_pass;
     protected $user_email;
     protected $user_registered;
     protected $display_name;
     protected $user_role;
-    protected $user_name;
 
     /**
      * @return mixed
      */
     public function getUserName()
     {
-        return $this->user_name;
+        return $this->user_login;
     }
 
     /**
      * @param mixed $user_name
      */
-    public function setUserName($user_name)
+    public function setUserName($user_login)
     {
-        $this->user_name = $user_name;
+        $this->user_login = $user_login;
     }
 
     /**

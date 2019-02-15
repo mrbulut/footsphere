@@ -101,25 +101,59 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
         }
     }
 
-    public function deleteUser()
+    public function deleteUser($UserId)
     {
-        return wp_delete_user($this->UserId);
+        return wp_delete_user($UserId);
     }
 
 
-    public function updateUserWP(User $user)
+    public function updateUserWP(User $user, User $UserWhere)
     {
-        if ($this->UserId) {
-            foreach ($user as $key => $value) {
-                wp_update_user(array('ID' => $this->UserId, $key => $value));
+        if ($user) {
+            $this->settingQuery($user, $UserWhere);
+            if ($user->getDisplayName()) {
+                $data['key'] = 'display_name';
+                $data['value'] = $user->getDisplayName();
+                self::updateWpByTheKey($data, $UserWhere->getID());
             }
+            if ($user->getUserEmail()) {
+                $data['key'] = 'user_email';
+                $data['value'] = $user->getUserEmail();
+                self::updateWpByTheKey($data, $UserWhere->getID());
+            }
+
+            if ($user->getUserPass()) {
+                $data['key'] = 'user_pass';
+                $data['value'] = $user->getUserPass();
+                self::updateWpByTheKey($data, $UserWhere->getID());
+            }
+
+
+        }
+
+    }
+
+    private function updateWpByTheKey($data, $UserId)
+    {
+        try {
+            $this->update(
+                array(
+                    $data['key'] => $data['value']
+                ),
+                array(
+                    'ID' => $UserId
+                )
+            );
+        } catch (Exception $exception) {
+
         }
     }
 
-    private function getUserWP($UserId)
+    public function getUserWP($UserId)
     {
         $data = get_userdata($UserId);
         $this->User->setID($data->ID);
+        $this->User->setUserName($data->user_login);
         $this->User->setDisplayName($data->display_name);
         $this->User->setUserEmail($data->user_email);
         $this->User->setUserPass($data->user_pass);

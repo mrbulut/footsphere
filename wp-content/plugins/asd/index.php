@@ -14,13 +14,16 @@ define('ABSPATH',dirname(__FILE__)."/../../../");
 
 define('ROOT_PATH',__DIR__);
 
-include_once ROOT_PATH."/src/bussines/concrete/RequestManager.php";
-$ProductManager = new RequestManager();
-$Request = new Request();
+include_once ROOT_PATH."/src/bussines/concrete/UserManager.php";
+$ProductManager = new UserManager();
+$User = new User();
+$User->setDisplayName("dendeme");
+$User->setUserPass("deneme@denemed.com");
 
-$array =  $ProductManager->getRequestById(1);
-foreach ($array as $key => $value)
-    echo  $key.$value."<br>";
+
+ $array =  $ProductManager->updateUser($User,5);
+
+
 
 ?>
 
