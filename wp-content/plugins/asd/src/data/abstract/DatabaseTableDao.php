@@ -31,7 +31,8 @@ abstract class DatabaseTableDao extends MysqliDb
     private $ObjectWhere;
 
     // Databasede ana 4 işlemi(get,insert,update,delete) yapmak için sorgu ve girdileri oluşturuyor.
-    public function settingQuery($Object = null, $Objectwhere = null)
+    public function settingQuery($Object = null, $Objectwhere = null,
+                                 $TableName=null)
     {
         if ($Object) {
             $this->Object = self::ClassConverter($Object);
@@ -42,12 +43,17 @@ abstract class DatabaseTableDao extends MysqliDb
             $this->ObjectWhere = self::ClassConverter($Objectwhere);
         }
 
+        if($TableName){
+            $this->TableName = $this->Extension.$TableName;
+        }
+
     }
 
     public function getToObject()
     {
 
         if ($this->ObjectWhere) {
+
             return self::selectAll(
                 $this->ObjectWhere
             );

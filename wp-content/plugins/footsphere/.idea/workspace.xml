@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb711fa5-61b1-4d66-9f3b-f368ae1cf3e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../asd/src/bussines/abstract/IUserService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/UserManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/bussines/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/abstract/IOptionsService.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/abstract/IOptionsService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/concrete/OptionsManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/OptionsManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/core/lib/DateConverter.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/lib/DateConverter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/abstract/ICustomerService.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/abstract/ICustomerService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/concrete/CustomerManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/CustomerManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/concrete/ProductManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/ProductManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/data/abstract/DatabaseTableDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/abstract/DatabaseTableDao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/data/abstract/MysqliDb.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/abstract/MysqliDb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/MessageDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/MessageDal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/OptionsDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/OptionsDal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/ProducerDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/ProducerDal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/RequestDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/RequestDal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/UserDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/UserDal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/entities/concrete/UserConcrete.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/entities/concrete/UserConcrete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mgwoocommercebrands" beforeDir="false" afterPath="$PROJECT_DIR$/../mgwoocommercebrands" afterDir="false" />
     </list>
@@ -44,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/database/wpusermetaDB.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1072">
-              <caret line="83" column="33" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="33" />
+              <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -185,8 +184,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="48" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="y" value="259" />
     <option name="width" value="1708" />
     <option name="height" value="1032" />
   </component>
@@ -264,12 +263,12 @@
       <workItem from="1549613294512" duration="4660000" />
       <workItem from="1549865018426" duration="7785000" />
       <workItem from="1550039117527" duration="22870000" />
-      <workItem from="1550211263228" duration="1606000" />
+      <workItem from="1550211263228" duration="2714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107785000" />
+    <option name="totallyTimeSpent" value="108893000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -281,10 +280,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="48" width="1708" height="1032" extended-state="0" />
+    <frame x="0" y="259" width="1708" height="1032" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12274368" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12274368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -637,7 +636,7 @@
     <entry file="file://$PROJECT_DIR$/database/wpusermetaDB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1072">
-          <caret line="83" column="33" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="33" />
+          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
         </state>
       </provider>
     </entry>

@@ -20,7 +20,7 @@ include_once ROOT_PATH."/src/data/concrete/UserDal.php";
 
 class RequestDal extends DatabaseTableDao implements IDatabaseTableDao
 {
-    private static $Rows;
+    private $Rows;
 
 
     // $this->Rows[4] => $ProductsAndPrices; // urunId:Price, urunId2:Price, urunId3:Price,

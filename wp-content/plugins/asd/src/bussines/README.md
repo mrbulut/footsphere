@@ -157,7 +157,6 @@ $Product->setImage("imageadresi/ddd.com");
     
         function addProductForUser($ProductId, $UserId); // 
     
-       
     
         function getAllListForTheUser($UserId);          // return array ({0,productArray},{1,product2array},..)
     

@@ -171,9 +171,11 @@ class CustomerManager implements ICustomerService
         // TODO: Implement deleteExtraFile() method.
     }
 
-    function getProducts()
+    function getProducts($UserId)
     {
-        return $this->CustomerObjectData['CanUseProducts'];
+        $this->Customer->ResetObject();
+        $this->Customer->setUserId($UserId);
+        return self::getCustomerList($this->Customer)[0]['CanUseProducts'];
     }
 
     function updateProduct($array = array())

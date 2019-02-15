@@ -22,7 +22,7 @@ include_once ROOT_PATH."/src/data/abstract/IDatabaseTableDao.php";
  */
 class ProducerDal extends DatabaseTableDao implements IDatabaseTableDao
 {
-    private static $Rows;
+    private $Rows;
 
 
     public function __construct($UserId = null)

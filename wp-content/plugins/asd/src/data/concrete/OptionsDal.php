@@ -14,7 +14,7 @@ include_once ROOT_PATH . "/src/data/abstract/IDatabaseTableDao.php";
 class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
 {
-    private static $Rows;
+    private $Rows;
 
     private $commission = "%100"; // komisyonumuz
     private $requestTimeLimit = 24; // isteğin 24 saat bekleme süresi

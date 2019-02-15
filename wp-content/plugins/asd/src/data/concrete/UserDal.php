@@ -26,7 +26,7 @@ require_once ABSPATH . "wp-admin/includes/user.php";
 
 class UserDal extends DatabaseTableDao implements IDatabaseTableDao
 {
-    private static $Rows;
+    private $Rows;
     private $User;
     private $UserId;
 

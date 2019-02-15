@@ -26,17 +26,18 @@ class ProductManager implements IProductService
     private $Product;
     private $ProductWhere;
 
+
     public function __construct()
     {
+
+        $this->Product = new Product();
+        $this->ProductWhere = new Product();
+        $this->CustomerManager = new CustomerManager();
         $this->ProductDal = new ProductDal();
         $this->UserDal = new UserDal();
         $this->Logger = new Logger(new FileLogger());
+
         $this->UserId = $this->UserDal->getUser()->getID();
-        $this->Product = new Product();
-        $this->ProductWhere = new Product();
-        $this->CustomerManager = new CustomerManager(3);
-        echo "d..".$this->CustomerManager->getProducts();
-        //$this->Product->set($this->UserDal->getUserId());
         //$this->ProductObjectData = self::getCustomerList($this->Customer);
     }
 
@@ -81,9 +82,10 @@ class ProductManager implements IProductService
     function getProductById($ID)
     {
         if ($ID) {
+
             $this->ProductWhere->ResetObject();
             $this->ProductWhere->setID($ID);
-            return self::getProductList($this->ProductWhere)[0];
+           return  self::getProductList($this->ProductWhere)[0];
         }
     }
 
@@ -157,17 +159,15 @@ class ProductManager implements IProductService
 
     function getAllListForTheUser($UserId)
     {
-        /*
         $result = array();
-        $this->CustomerManager = new CustomerManager($UserId);
-        echo "d..".$this->CustomerManager->getProducts($UserId);
-        $CanUseProductList = explode(",", $this->CustomerManager->getProducts($UserId)[0]);
-        foreach ($CanUseProductList as $key => $value) {
+        $data = $this->CustomerManager->getProducts($UserId);
+        $data = explode(",",$data);
+        foreach ($data as $key => $value){
 
-          //  echo $key.$value;
-                //$result[$key] = self::getProductById($value);
-        }*/
-        return false;
+            $result[$key]=self::getProductById($value);
+        }
+
+        return $result;
     }
 
     function createProduct(Product $Product)
@@ -203,9 +203,12 @@ class ProductManager implements IProductService
 
     private function getProductList(Product $product)
     {
-        $this->ProductDal->settingQuery(null, $product);
+
+        $this->ProductDal->settingQuery(null, $product,"Product");
         try {
+
             if ($product) {
+
                 $result = $this->ProductDal->getToObject();
                 if ($result) {
                     $this->Logger->Log("Ürün verileri getirildi.", FileLogger::NOTICE);

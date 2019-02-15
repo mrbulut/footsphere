@@ -25,7 +25,7 @@ interface ICustomerService
     function updateExtraFile($filePath);
     function deleteExtraFile($filePath);
 
-    function getProducts();
+    function getProducts($UserId);
     function updateProduct($array = array());
     function deleteProduct($array = array());
 
