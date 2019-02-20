@@ -14,17 +14,15 @@ define('ABSPATH',dirname(__FILE__)."/../../../");
 
 define('ROOT_PATH',__DIR__);
 
-include_once ROOT_PATH."/src/bussines/concrete/ProductManager.php";
-$ProductManager = new ProductManager();
+include_once ROOT_PATH."/src/bussines/concrete/MessageManager.php";
+$ProductManager = new MessageManager();
+echo "dasd".$ProductManager->getAllMessageForUser(1);
 
+die();
 
-
-  $array =  $ProductManager->getAllListForTheUser(3);
-
-foreach ($array[0] as $key => $value)
- echo $key.$value;
+ // $array =  $ProductManager->getAllListForTheUser(3);
+//
 ?>
-
 
 
 

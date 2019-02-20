@@ -50,16 +50,16 @@ class CustomerManager implements ICustomerService
             if ($customer) {
                 $result = $this->CustomerDal->getToObject();
                 if ($result) {
-                    $this->Logger->Log("Müşteri verileri getirildi.", FileLogger::NOTICE);
+                    $this->Logger->Log("Müşteri verileri getirildi".get_class($this)."_".__FUNCTION__.get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Müşteri verileri getiremedi.", FileLogger::ERROR);
+                    $this->Logger->Log("Müşteri verileri getiremedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
             ///
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp.get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -71,16 +71,16 @@ class CustomerManager implements ICustomerService
             if ($customer) {
                 $result = $this->CustomerDal->insertToObject();
                 if ($result) {
-                    $this->Logger->Log("Müşteri Oluşturuldu.", FileLogger::NOTICE);
+                    $this->Logger->Log("Müşteri Oluşturuldu.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Müşteri Oluşturulamadı.", FileLogger::ERROR);
+                    $this->Logger->Log("Müşteri Oluşturulamadı.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
 
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı.", FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
 
     }
@@ -92,16 +92,16 @@ class CustomerManager implements ICustomerService
             if ($customer) {
                 $result = $this->CustomerDal->updateToObject();
                 if ($result) {
-                    $this->Logger->Log("Müşteri Güncellendi..", FileLogger::NOTICE);
+                    $this->Logger->Log("Müşteri Güncellendi..".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Müşteri Güncellenemedi.", FileLogger::ERROR);
+                    $this->Logger->Log("Müşteri Güncellenemedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
             ///
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı.", FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -112,22 +112,36 @@ class CustomerManager implements ICustomerService
             if ($customer) {
                 $result = $this->CustomerDal->deleteToObject();
                 if ($result) {
-                    $this->Logger->Log("Müşteri Silindi.", FileLogger::NOTICE);
+                    $this->Logger->Log("Müşteri Silindi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Müşteri Silinemedi.", FileLogger::ERROR);
+                    $this->Logger->Log("Müşteri Silinemedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
             ///
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı.", FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 
     function getRole()
     {
-        return $this->UserDal->getUser()->getUserRole();
+        try {
+
+            $result = $this->UserDal->getUser()->getUserRole();
+            if ($result) {
+                $this->Logger->Log("Rol Çekildi Silindi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
+                return $result;
+            } else {
+                $this->Logger->Log("Rol Çekilemedi..".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
+                return false;
+            }
+
+            ///
+        } catch (\Exception $exp) {
+            $this->Logger->Log("Sorgu çalıştırılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
+        }
     }
 
     function getExtraFile()
@@ -294,7 +308,7 @@ class CustomerManager implements ICustomerService
             }
 
             if ($statusChange) {
-                $this->Logger->Log("Müşteri durumu tamamlandıya dönüştürüldü.", FileLogger::NOTICE);
+                $this->Logger->Log("Müşteri durumu tamamlandıya dönüştürüldü.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                 $this->CustomerDal->setCustomerStatus($this->UserId, "Complete");
             }
         }

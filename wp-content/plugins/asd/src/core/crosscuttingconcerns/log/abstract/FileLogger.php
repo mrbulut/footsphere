@@ -47,7 +47,7 @@ require_once('ILogger.php');
          * @param string $logfile The path to the loggable file.
          */
         public function __construct() {
-            $this->logfile = __DIR__ . '/logs/log.php';
+            $this->logfile = __DIR__ . '/log/log.php';
             if($this->fileHandle == NULL){
                 $this->openLogFile();
             }

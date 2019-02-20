@@ -16,7 +16,7 @@
 
 // ** MySQL ayarları - Bu bilgileri sunucunuzdan alabilirsiniz ** //
 /** WordPress için kullanılacak veritabanının adı */
-define('DB_NAME', 'techycompanydb');
+define('DB_NAME', 'yeniDB');
 
 /** MySQL veritabanı kullanıcısı */
 define('DB_USER', 'root');

@@ -187,16 +187,16 @@ class ProductManager implements IProductService
             if ($product) {
                 $result = $this->ProductDal->insertToObject();
                 if ($result) {
-                    $this->Logger->Log("Ürün Oluşturuldu.", FileLogger::NOTICE);
+                    $this->Logger->Log("Ürün Oluşturuldu.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Ürün Oluşturulamadı.", FileLogger::ERROR);
+                    $this->Logger->Log("Ürün Oluşturulamadı.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
 
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı." . $exp, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı." . $exp.get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
 
     }
@@ -211,16 +211,16 @@ class ProductManager implements IProductService
 
                 $result = $this->ProductDal->getToObject();
                 if ($result) {
-                    $this->Logger->Log("Ürün verileri getirildi.", FileLogger::NOTICE);
+                    $this->Logger->Log("Ürün verileri getirildi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Ürün verileri getiremedi.", FileLogger::ERROR);
+                    $this->Logger->Log("Ürün verileri getiremedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
             ///
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp.get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -231,16 +231,16 @@ class ProductManager implements IProductService
             if ($product) {
                 $result = $this->ProductDal->deleteToObject();
                 if ($result) {
-                    $this->Logger->Log("Ürün Silindi.", FileLogger::NOTICE);
+                    $this->Logger->Log("Ürün Silindi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Ürün Silinemedi.", FileLogger::ERROR);
+                    $this->Logger->Log("Ürün Silinemedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
             ///
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı.", FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -251,16 +251,16 @@ class ProductManager implements IProductService
             if ($product) {
                 $result = $this->ProductDal->updateToObject();
                 if ($result) {
-                    $this->Logger->Log("Ürün Güncellendi..", FileLogger::NOTICE);
+                    $this->Logger->Log("Ürün Güncellendi..".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Ürün Güncellenemedi.", FileLogger::ERROR);
+                    $this->Logger->Log("Ürün Güncellenemedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
             ///
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı.", FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 

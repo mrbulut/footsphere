@@ -10,7 +10,7 @@ $GLOBALS['databaseConfig'] = array(
         'host' => 'localhost',
         'user' => 'root',
         'pass' => '',
-        'db' => 'techycompanydb'
+        'db' => 'yeniDB'
     /*
 
         'host' => 'localhost',

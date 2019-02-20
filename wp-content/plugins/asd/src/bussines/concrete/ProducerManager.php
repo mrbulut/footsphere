@@ -149,15 +149,15 @@ class ProducerManager implements IProducerService
             if ($producer) {
                 $result = $this->ProducerDal->getToObject();
                 if ($result) {
-                    $this->Logger->Log("üretici verileri getirildi.", FileLogger::NOTICE);
+                    $this->Logger->Log("üretici verileri getirildi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("üretici verileri getiremedi.", FileLogger::ERROR);
+                    $this->Logger->Log("üretici verileri getiremedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp.get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -169,17 +169,17 @@ class ProducerManager implements IProducerService
                 if (!self::getProducerList($producer)) {
                     $result = $this->ProducerDal->insertToObject();
                     if ($result) {
-                        $this->Logger->Log("üretici  Oluşturuldu.", FileLogger::NOTICE);
+                        $this->Logger->Log("üretici  Oluşturuldu.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                         return $result;
                     } else {
-                        $this->Logger->Log("üretici  Oluşturulamadı.", FileLogger::ERROR);
+                        $this->Logger->Log("üretici  Oluşturulamadı.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                         return false;
                     }
                 }
 
             }
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp.get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -190,15 +190,15 @@ class ProducerManager implements IProducerService
             if ($producer) {
                 $result = $this->ProducerDal->updateToObject();
                 if ($result) {
-                    $this->Logger->Log("üretici  Güncellendi.", FileLogger::NOTICE);
+                    $this->Logger->Log("üretici  Güncellendi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("üretici  Güncellenemedi.", FileLogger::ERROR);
+                    $this->Logger->Log("üretici  Güncellenemedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp.get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -209,15 +209,15 @@ class ProducerManager implements IProducerService
             if ($producer) {
                 $result = $this->ProducerDal->deleteToObject();
                 if ($result) {
-                    $this->Logger->Log("üretici  Silindi.", FileLogger::NOTICE);
+                    $this->Logger->Log("üretici  Silindi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("üretici  Silinmedi.", FileLogger::ERROR);
+                    $this->Logger->Log("üretici  Silinmedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp.get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 }

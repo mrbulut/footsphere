@@ -153,16 +153,16 @@ class RequestManager implements IRequestService
             if ($Request) {
                 $result = $this->RequestDal->insertToObject();
                 if ($result) {
-                    $this->Logger->Log("Request Oluşturuldu.", FileLogger::NOTICE);
+                    $this->Logger->Log("Request Oluşturuldu.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Request Oluşturulamadı.", FileLogger::ERROR);
+                    $this->Logger->Log("Request Oluşturulamadı.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
 
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı." . $exp, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı." . $exp.get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
 
     }
@@ -174,16 +174,16 @@ class RequestManager implements IRequestService
             if ($Request) {
                 $result = $this->RequestDal->getToObject();
                 if ($result) {
-                    $this->Logger->Log("Request verileri getirildi.", FileLogger::NOTICE);
+                    $this->Logger->Log("Request verileri getirildi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Request verileri getiremedi.", FileLogger::ERROR);
+                    $this->Logger->Log("Request verileri getiremedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
             ///
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp.get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -194,16 +194,16 @@ class RequestManager implements IRequestService
             if ($Request) {
                 $result = $this->RequestDal->deleteToObject();
                 if ($result) {
-                    $this->Logger->Log("Request Silindi.", FileLogger::NOTICE);
+                    $this->Logger->Log("Request Silindi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Request Silinemedi.", FileLogger::ERROR);
+                    $this->Logger->Log("Request Silinemedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
             ///
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı.", FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -214,16 +214,16 @@ class RequestManager implements IRequestService
             if ($Request) {
                 $result = $this->RequestDal->updateToObject();
                 if ($result) {
-                    $this->Logger->Log("Request Güncellendi..", FileLogger::NOTICE);
+                    $this->Logger->Log("Request Güncellendi..".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Request Güncellenemedi.", FileLogger::ERROR);
+                    $this->Logger->Log("Request Güncellenemedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
             ///
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı.", FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
         }
     }
 }

@@ -131,7 +131,7 @@ abstract class DatabaseTableDao extends MysqliDb
     public function insert($array = array())
     {
 
-        $id = $this->database->insert($this->TableName, $array);
+        $id = $this->database->insertMysqliDb($this->TableName, $array);
         if ($id)
             return $id;
         else
@@ -141,7 +141,7 @@ abstract class DatabaseTableDao extends MysqliDb
     public function update($array = array(), $where = array())
     {
         self::where($where);
-        $id = $this->database->update($this->TableName, $array);
+        $id = $this->database->updateMysqliDb($this->TableName, $array);
         if ($id)
             return $id;
         else
@@ -164,7 +164,7 @@ abstract class DatabaseTableDao extends MysqliDb
     public function delete($where = array())
     {
         self::where($where);
-        if ($this->database->delete($this->TableName))
+        if ($this->database->deleteMysqliDb($this->TableName))
             return true;
         else
             return false;
@@ -178,7 +178,7 @@ abstract class DatabaseTableDao extends MysqliDb
 
         if ($where) {
             foreach ($where as $key => $value) {
-                $this->database->where($key, $value);
+                $this->database->whereMysqliDb($key, $value);
             }
         }
         if ($order) {
@@ -191,9 +191,11 @@ abstract class DatabaseTableDao extends MysqliDb
     public function createRowsAndTableName($TableName)
     {
         $i = 0;
-        foreach ($this->IEntity as $key => $value) {
-            $this->Rows[$i] = $key;
-            $i++;
+        if (!empty($this->IEntity)) {
+            foreach ($this->IEntity as $key => $value) {
+                $this->Rows[$i] = $key;
+                $i++;
+            }
         }
 
         if ($TableName == null) {

@@ -831,7 +831,7 @@ class MysqliDb implements IDatabaseDao
      * @return bool Boolean indicating whether the insert query was completed successfully.
      * @throws Exception
      */
-    public function insert($tableName, $insertData)
+    public function insertMysqliDb($tableName, $insertData)
     {
         return $this->_buildInsert($tableName, $insertData, 'INSERT');
     }
@@ -862,7 +862,7 @@ class MysqliDb implements IDatabaseDao
                 $insertData = array_combine($dataKeys, $insertData);
             }
 
-            $id = $this->insert($tableName, $insertData);
+            $id = $this->insertMysqliDb($tableName, $insertData);
             if (!$id) {
                 if ($autoCommit) {
                     $this->rollback();
@@ -918,7 +918,7 @@ class MysqliDb implements IDatabaseDao
      * @return bool
      * @throws Exception
      */
-    public function update($tableName, $tableData, $numRows = null)
+    public function updateMysqliDb($tableName, $tableData, $numRows = null)
     {
         if ($this->isSubQuery) {
             return;
@@ -946,7 +946,7 @@ class MysqliDb implements IDatabaseDao
      * @return bool Indicates success. 0 or 1.
      * @throws Exception
      */
-    public function delete($tableName, $numRows = null)
+    public function deleteMysqliDb($tableName, $numRows = null)
     {
         if ($this->isSubQuery) {
             return;
@@ -982,7 +982,7 @@ class MysqliDb implements IDatabaseDao
      *
      * @return MysqliDb
      */
-    public function where($whereProp, $whereValue = 'DBNULL', $operator = '=', $cond = 'AND')
+    public function whereMysqliDb($whereProp, $whereValue = 'DBNULL', $operator = '=', $cond = 'AND')
     {
         // forkaround for an old operation api
         if (is_array($whereValue) && ($key = key($whereValue)) != "0") {
@@ -1027,7 +1027,7 @@ class MysqliDb implements IDatabaseDao
      */
     public function orWhere($whereProp, $whereValue = 'DBNULL', $operator = '=')
     {
-        return $this->where($whereProp, $whereValue, $operator, 'OR');
+        return $this->whereMysqliDb($whereProp, $whereValue, $operator, 'OR');
     }
 
     /**
@@ -2389,8 +2389,8 @@ class MysqliDb implements IDatabaseDao
         foreach ($tables as $i => $value)
             $tables[$i] = self::$prefix . $value;
         $db = isset($this->connectionsSettings[$this->defConnectionName]) ? $this->connectionsSettings[$this->defConnectionName]['db'] : null;
-        $this->where('table_schema', $db);
-        $this->where('table_name', $tables, 'in');
+        $this->whereMysqliDb('table_schema', $db);
+        $this->whereMysqliDb('table_name', $tables, 'in');
         $this->get('information_schema.tables', $count);
 
 
