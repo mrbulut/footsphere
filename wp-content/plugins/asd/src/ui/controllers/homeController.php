@@ -4,24 +4,17 @@ class homeController
 {
     public function index()
     {
-$UserModel = new UserModel(11);
- $UserModel->updateProducer(
-    array(
-        "email" => "NewtestEmail@testsite.com",
-        "password"  =>"passwords",
-        "OfferLimit" =>"50-250",
-        'display_name' => "New",
-        'CompanyName' => "New",
-        'PhoneNumber' => "New",
-        'PhoneNumber2' => "New",
-        'Address' => "New",
-        'PaymentInformantion' => "New",
-        'CargoInformantion' => "New",
+        $UserModel = new RequestModel(11);
+        echo $UserModel->getProducerStatistcs(11);
+        /*
+        $UserModel->createRequest(array(
+            "ProducerNo"  => "1",
+            "RequestID"  => "1",
+            "Type"  => "1",
+            "Products"  => "1:222;12:444"
+        ));
 
-    )
-);
-
-
-   die();
+        */
+        die();
     }
 }

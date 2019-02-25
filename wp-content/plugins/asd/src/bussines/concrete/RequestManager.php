@@ -50,7 +50,8 @@ class RequestManager implements IRequestService,IManager
         return $this->RequestDal->selectAll();
     }
 
-    function createRequest($UserId, $ProducerNo, $RequestID, $Products, $Type)
+    public function createRequest($UserId, $ProducerNo, $RequestID,
+                           $Products, $Type)
     {
         $this->Request->ResetObject();
         $this->Request->setUserID($UserId);

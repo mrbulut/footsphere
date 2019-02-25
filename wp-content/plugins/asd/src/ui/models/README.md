@@ -116,7 +116,74 @@ $UserModel = new UserModel(11);
 );
 
 
+$UserModel = new UserModel(10);
+ $UserModel->removeProducer();
+ 
+ $UserModel = new UserModel(11); // 11 user id sine sahip üreticiye 2,4,6,7 IDli ürünleri ekliyor.
+  $UserModel->addProductToProducer(array(
+      2,4,6,7
+  ));
 
+
+$UserModel = new UserModel(11);
+ $UserModel->deleteProductToProducer(2); // 2 nolu ürün çıkarılıyor.
+
+
+</pre></code>
+
+
+<b>Using The RequestModel class in RequestModel.php</b> "/ui/models/RequestModel.php"
+
+<pre><code>
+
+
+ $UserModel = new RequestModel(11); // user'idsi 11 olan kullanıcıya ekliyor.
+        $UserModel->createRequest(array(
+            "ProducerNo"  => "1", // teklifi veren üreticinin userId si
+            "RequestID"  => "1",  // teklif oluşturan kullanıcının options_id si
+            "Type"  => "1",       // shoes or slipper
+            "Products"  => "1:222;12:444" // urunID:Price ; urunID2:Price2 ; .... 
+        ));
+
+  $UserModel = new RequestModel(11); // return array $data[][]
+        echo $UserModel->getAllRequest()[0]['ID'];
+  
+   $UserModel = new RequestModel(11);
+   
+          echo $UserModel->getRequest(
+              array(
+                  'ID' => 1
+              )
+          )['UserID'];
+        
+       echo $UserModel->getRequest(
+                      array(
+                          'ProducerNo' => 1
+                      )
+                  )['UserID'];
+       echo $UserModel->getRequest(
+                      array(
+                          'ID' => 1
+                      )
+                  )['UserID'];          
+       echo $UserModel->getRequest(
+                       array(
+                           'UserId' => 1
+                       )
+                   )[0]['ID'];         
+       echo $UserModel->getRequest(
+                                array(
+                                    'UserId' => 1,
+                                    'ProducerNo' => 1
+                                )
+                            )[0]['ID'];       
+                            
+   
+    $UserModel = new RequestModel(11); // 
+    $UserModel->setStatus("Checked"); // "Checked" or "UnChecked"
+    $UserModel->setStatus("Checked",$RequestID); //  
+    $UserModel->removeRequest($RequestId)       
+                  
 </pre></code>
 
 

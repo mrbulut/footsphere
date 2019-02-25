@@ -31,29 +31,11 @@ class UserModel implements IModel
         $this->User = new User();
         $this->Producer = new Producer();
         $this->ProducerWhere = new Producer();
-
         $this->User = new User();
 
     }
 
-    public function customerSetup()
-    {
-        $this->CustomerManager = new CustomerManager($this->UserId);
-        $this->UserManager = new UserManager();
-    }
 
-    public function producerSetup()
-    {
-        $this->ProducerManager = new ProducerManager($this->UserId);
-        $this->UserManager = new UserManager();
-
-    }
-
-    public function userSetup()
-    {
-        $this->UserManager = new UserManager();
-
-    }
 
     // about User
     public function getRole()
@@ -293,5 +275,25 @@ class UserModel implements IModel
         return $this->ProducerManager->deleteProduct($this->UserId, $ProductNo);
     }
     // about Producer
+
+
+    private function customerSetup()
+    {
+        $this->CustomerManager = new CustomerManager($this->UserId);
+        $this->UserManager = new UserManager();
+    }
+
+    private function producerSetup()
+    {
+        $this->ProducerManager = new ProducerManager($this->UserId);
+        $this->UserManager = new UserManager();
+
+    }
+
+    private function userSetup()
+    {
+        $this->UserManager = new UserManager();
+
+    }
 
 }

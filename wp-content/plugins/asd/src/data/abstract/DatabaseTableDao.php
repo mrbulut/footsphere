@@ -229,7 +229,7 @@ abstract class DatabaseTableDao extends MysqliDb
         $result = array();
         foreach ($Object as $key => $value) {
             if ($value) {
-                $result[$key] = $value;
+                 $result[$key] = $value;
             }
         }
         return $result;
