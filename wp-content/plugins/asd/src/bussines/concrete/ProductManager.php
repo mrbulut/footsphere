@@ -14,9 +14,9 @@ include_once ROOT_PATH . "/src/bussines/abstract/IProductService.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/FileLogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/ILogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/Logger.php";
+include_once ROOT_PATH . "/src/bussines/abstract/IManager.php";
 
-
-class ProductManager implements IProductService
+class ProductManager implements IProductService,IManager
 {
     private $Logger;
     private $ProductDal;

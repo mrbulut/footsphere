@@ -5,7 +5,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/wp-content/plugins/footsphere/classes
     $popupwindow->setRows("inputtext", "urunAdi", "Ürün başlığı");
     $popupwindow->setRows("textarea", "urunAciklamasi", "Ürün Açıklaması", 50);
     $popupwindow->setRows("popupmenu", "ureticiSec", "Üretici seç", array("asd", "asdsa"));
-    $popupwindow->setRows("file", "uploadFile", "Ürünün görselini Ekleyin.");
+    $popupwindow->setRows("file", "uploadFileg", "Ürünün görselini Ekleyin.");
  */
 class popupwindow
 {

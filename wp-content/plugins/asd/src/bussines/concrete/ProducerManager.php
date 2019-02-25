@@ -16,8 +16,9 @@ include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/FileLogger
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/ILogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/Logger.php";
 
+include_once ROOT_PATH . "/src/bussines/abstract/IManager.php";
 
-class ProducerManager implements IProducerService
+class ProducerManager implements IProducerService,IManager
 {
 
     private $Logger;
@@ -71,7 +72,6 @@ class ProducerManager implements IProducerService
         self::updateProducer($this->Producer, $this->ProducerWhere);
     }
 
-
     function deleteProduct($UserId, $ProductNo)
     {
         $this->ProducerWhere->ResetObject();
@@ -95,7 +95,7 @@ class ProducerManager implements IProducerService
             $this->UserId = $UserId;
         $this->ProducerWhere->ResetObject();
         $this->ProducerWhere->setUserId($this->UserId);
-        return self::getProducerAll($this->ProducerWhere);
+        return self::getProducerList($this->ProducerWhere);
 
     }
 
@@ -116,12 +116,12 @@ class ProducerManager implements IProducerService
 
     function createProducer($Name, $Email, $Pass, $OfferLimit)
     {
+
         $user = new User();
         $user->setUserName($Name);
         $user->setUserEmail($Email);
         $user->setUserPass($Pass);
         $ID = $this->UserDal->createUser($user, "editor");
-
         $this->Producer->ResetObject();
         $this->Producer->setUserId($ID);
         $this->Producer->setOfferLimit($OfferLimit);
@@ -134,7 +134,7 @@ class ProducerManager implements IProducerService
         if ($UserId)
             $this->UserId = $UserId;
         $this->UserDal->setUserId($this->UserId);
-        if ($this->UserDal->deleteUser()) {
+        if ($this->UserDal->deleteUser($this->UserId)) {
             $this->ProducerWhere->ResetObject();
             $this->ProducerWhere->setUserId($this->UserId);
             return self::deleteProducer($this->ProducerWhere);
@@ -165,8 +165,8 @@ class ProducerManager implements IProducerService
     {
         $this->ProducerDal->settingQuery($producer);
         try {
-            if ($producer) {
-                if (!self::getProducerList($producer)) {
+            if (!self::getProducerList($producer)) {
+
                     $result = $this->ProducerDal->insertToObject();
                     if ($result) {
                         $this->Logger->Log("üretici  Oluşturuldu.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
@@ -175,7 +175,7 @@ class ProducerManager implements IProducerService
                         $this->Logger->Log("üretici  Oluşturulamadı.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
                         return false;
                     }
-                }
+
 
             }
         } catch (\Exception $exp) {

@@ -14,14 +14,8 @@ define('ABSPATH',dirname(__FILE__)."/../../../");
 
 define('ROOT_PATH',__DIR__);
 
-include_once ROOT_PATH."/src/bussines/concrete/MessageManager.php";
-$ProductManager = new MessageManager();
-echo "dasd".$ProductManager->getAllMessageForUser(1);
+include ROOT_PATH.'/src/ui/core/autoloader.php';
 
-die();
-
- // $array =  $ProductManager->getAllListForTheUser(3);
-//
 ?>
 
 

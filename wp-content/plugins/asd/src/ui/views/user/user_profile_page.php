@@ -1,0 +1,1 @@
+<h1>Kullanıcı : <?php echo $_SESSION['username'] ?></h1>

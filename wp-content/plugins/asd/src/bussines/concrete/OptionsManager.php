@@ -16,8 +16,9 @@ include_once ROOT_PATH . "/src/core/lib/DateConverter.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/FileLogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/ILogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/Logger.php";
+include_once ROOT_PATH . "/src/bussines/abstract/IManager.php";
 
-class OptionsManager implements IOptionsService
+class OptionsManager implements IOptionsService,IManager
 {
     private $Logger;
     private $OptionsDal;

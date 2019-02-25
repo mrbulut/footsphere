@@ -82,17 +82,27 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
 
         if (!$user_id) {
             if (email_exists($user->getUserEmail()) == false) {
+
+                echo $user->getUserName()."<br>";
+                echo $user->getUserPass()."<br>";
+                echo $user->getUserName()."<br>";
+
+                echo $Cap;
+
                 $user_id = wp_create_user(
                     $user->getUserName(),
                     $user->getUserPass(),
                     $user->getUserEmail());
+
                 if ($user_id) {
                     wp_update_user(array('ID' => $user_id, 'role' => $Cap));
+                    wp_update_user(array('ID' => $user_id, 'display_name' => $user->getDisplayName()));
+
                     return $user_id;
                 } else
                     return false;
             } else {
-                return "email_var";
+                return false;
             }
 
 
@@ -151,18 +161,20 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getUserWP($UserId)
     {
-        $data = get_userdata($UserId);
-        $this->User->setID($data->ID);
-        $this->User->setUserName($data->user_login);
-        $this->User->setDisplayName($data->display_name);
-        $this->User->setUserEmail($data->user_email);
-        $this->User->setUserPass($data->user_pass);
-        $this->User->setUserRegistered($data->user_registered);
+        if ($UserId) {
+            $data = get_userdata($UserId);
+            $this->User->setID($data->ID);
+            $this->User->setUserName($data->user_login);
+            $this->User->setDisplayName($data->display_name);
+            $this->User->setUserEmail($data->user_email);
+            $this->User->setUserPass($data->user_pass);
+            $this->User->setUserRegistered($data->user_registered);
 
-        if (count($data->wp_capabilities) > 0) {
-            foreach ($data->wp_capabilities as $key => $value) {
-                $this->User->setUserRole($key);
-                break;
+            if (count($data->wp_capabilities) > 0) {
+                foreach ($data->wp_capabilities as $key => $value) {
+                    $this->User->setUserRole($key);
+                    break;
+                }
             }
         }
 

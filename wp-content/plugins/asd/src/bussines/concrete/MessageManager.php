@@ -15,8 +15,9 @@ include_once ROOT_PATH . "/src/bussines/abstract/IMessageService.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/FileLogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/ILogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/Logger.php";
+include_once ROOT_PATH . "/src/bussines/abstract/IManager.php";
 
-class MessageManager implements IMessageService
+class MessageManager implements IMessageService,IManager
 {
     private $Logger;
     private $MessageDal;
@@ -187,4 +188,5 @@ class MessageManager implements IMessageService
 
 
     }
+
 }

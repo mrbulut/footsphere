@@ -16,9 +16,9 @@ include_once ROOT_PATH . "/src/bussines/abstract/ICustomerService.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/FileLogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/ILogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/Logger.php";
+include_once ROOT_PATH . "/src/bussines/abstract/IManager.php";
 
-
-class CustomerManager implements ICustomerService
+class CustomerManager implements ICustomerService,IManager
 {
 
     private $Logger;
@@ -68,7 +68,7 @@ class CustomerManager implements ICustomerService
     {
         $this->CustomerDal->settingQuery($customer);
         try {
-            if ($customer) {
+            if (!self::getCustomerList($customer)) {
                 $result = $this->CustomerDal->insertToObject();
                 if ($result) {
                     $this->Logger->Log("Müşteri Oluşturuldu.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
@@ -146,7 +146,7 @@ class CustomerManager implements ICustomerService
 
     function getExtraFile()
     {
-        return $this->CustomerObjectData['ExtraFilePath'];
+        return $this->CustomerObjectData[0]['ExtraFilePath'];
     }
 
     function updateExtraFile($filePath)
@@ -163,7 +163,6 @@ class CustomerManager implements ICustomerService
         self::updateCustomer($this->Customer, $this->CustomerWhere);
     }
 
-
     function deleteExtraFile($filePath)
     {
 
@@ -172,10 +171,12 @@ class CustomerManager implements ICustomerService
 
         $this->CustomerWhere->setUserId($this->UserId);
         $ExtraFileArray = explode("+-+", self::getExtraFile());
-        $result = '';
+        $result = ' ';
         foreach ($ExtraFileArray as $key => $value) {
-            if ($value != $filePath && $value != '')
+
+            if ($value!=$filePath && $value != ''){
                 $result = $result . $value . "+-+";
+            }
 
 
         }
@@ -203,7 +204,7 @@ class CustomerManager implements ICustomerService
                 $result = $result . $value . ",";
         }
 
-        $ProductArray = self::getProducts() . $result;
+        $ProductArray = self::getProducts($this->UserId) . $result;
         $this->Customer->setCanUseProducts($ProductArray);
         self::updateCustomer($this->Customer, $this->CustomerWhere);
     }
@@ -216,7 +217,7 @@ class CustomerManager implements ICustomerService
         $result = '';
 
 
-        $ExtraFileArray = explode(",", self::getProducts());
+        $ExtraFileArray = explode(",", self::getProducts($this->UserId));
 
 
         foreach ($ExtraFileArray as $keyEx => $ValEx) {
@@ -280,7 +281,6 @@ class CustomerManager implements ICustomerService
         return $this->CustomerDal->setCustomerStatus($UserId, $Status);
 
     }
-
 
     function setCustomerStatusAutomatic()
     {
