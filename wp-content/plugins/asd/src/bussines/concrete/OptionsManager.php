@@ -63,7 +63,7 @@ class OptionsManager implements IOptionsService,IManager
     {
         if($UserId)
             $this->UserId = $UserId;
-        $this->OptionsDal->getLangueages($this->UserId);
+        return $this->OptionsDal->getLangueages($this->UserId);
     }
 
     function setLangueages($UserId, $langueages)
@@ -117,8 +117,7 @@ class OptionsManager implements IOptionsService,IManager
 
     function createRequestForUser($UserId,$RequestType)
     {
-
-        $date = $this->DateConverter->DateToHour(date("Y-m-d H:i:s"))+
+        $date = $this->DateConverter->DateToMilisecond(date("Y-m-d H:i:s"))+
             (60*60*self::getRequestTimeArea());
         return  $this->OptionsDal->addRequest($UserId,$RequestType,$date);
     }
@@ -136,13 +135,19 @@ class OptionsManager implements IOptionsService,IManager
         $Date = $this->OptionsDal->getRequest($UserId,$RequestType) ;
         $Minute = $this->DateConverter->DateToMinute($Date);
         if($Minute >59){
-            $text = ($Minute) . "_" . "hour";
+            $text = array(
+                ceil($Minute/60),"Hour"
+            );
             return $text;
-        }else if($Minute<=59){
-            $text = $Minute. "_" . "min" ;
+        }else if($Minute<=59 and $Minute>0){
+            $text = array(
+                ceil($Minute),"Min"
+            );
             return $text;
-        }else{
-            return "done";
+        }else {
+            return array(
+                0
+            );
         }
     }
 }

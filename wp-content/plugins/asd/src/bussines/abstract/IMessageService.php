@@ -19,7 +19,7 @@ interface IMessageService
     function isThereUnreadMessageForUser($UserId);
     function getAllMessage();
     function getAllMessageLenght();
-    function getAllUnDreadMessages();
+    function getAllUnreadMessages();
     function setTheUserMessagesRead($UserId);
     function writeMessage($UserId,$Message,$Who);
 

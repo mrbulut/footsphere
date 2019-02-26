@@ -4,8 +4,8 @@ class homeController
 {
     public function index()
     {
-        $ProductModel = new ProductModel(8);
-       $data = $ProductModel->addProductForUser(5);
+        $ProductModel = new OptionsModel(8);
+        echo $ProductModel->getTheRequestTime("Shoes")[0];
 
 
         /*

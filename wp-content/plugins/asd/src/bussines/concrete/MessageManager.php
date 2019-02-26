@@ -17,7 +17,7 @@ include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/ILogger.ph
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/Logger.php";
 include_once ROOT_PATH . "/src/bussines/abstract/IManager.php";
 
-class MessageManager implements IMessageService,IManager
+class MessageManager implements IMessageService, IManager
 {
     private $Logger;
     private $MessageDal;
@@ -46,16 +46,16 @@ class MessageManager implements IMessageService,IManager
             if ($message) {
                 $result = $this->MessageDal->getToObject();
                 if ($result) {
-                    $this->Logger->Log("Mesajlar getirildi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
+                    $this->Logger->Log("Mesajlar getirildi." . get_class($this) . "_" . __FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Mesajlar getirilemedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
+                    $this->Logger->Log("Mesajlar getirilemedi." . get_class($this) . "_" . __FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
             ///
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp.get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı:" . $exp . get_class($this) . "_" . __FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -66,16 +66,16 @@ class MessageManager implements IMessageService,IManager
             if ($message) {
                 $result = $this->MessageDal->insertToObject();
                 if ($result) {
-                    $this->Logger->Log("Mesaj Yazıldı.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
+                    $this->Logger->Log("Mesaj Yazıldı." . get_class($this) . "_" . __FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Mesaj Yazılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
+                    $this->Logger->Log("Mesaj Yazılamadı." . get_class($this) . "_" . __FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
 
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı." . get_class($this) . "_" . __FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -86,15 +86,15 @@ class MessageManager implements IMessageService,IManager
             if ($message) {
                 $result = $this->MessageDal->deleteToObject();
                 if ($result) {
-                    $this->Logger->Log("Mesaj Silindi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
+                    $this->Logger->Log("Mesaj Silindi." . get_class($this) . "_" . __FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Mesaj Silinemedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
+                    $this->Logger->Log("Mesaj Silinemedi." . get_class($this) . "_" . __FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı." . get_class($this) . "_" . __FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -105,15 +105,15 @@ class MessageManager implements IMessageService,IManager
             if ($message) {
                 $result = $this->MessageDal->updateToObject();
                 if ($result) {
-                    $this->Logger->Log("Mesaj Güncellendi.".get_class($this)."_".__FUNCTION__, FileLogger::NOTICE);
+                    $this->Logger->Log("Mesaj Güncellendi." . get_class($this) . "_" . __FUNCTION__, FileLogger::NOTICE);
                     return $result;
                 } else {
-                    $this->Logger->Log("Mesaj Güncelennemedi.".get_class($this)."_".__FUNCTION__, FileLogger::ERROR);
+                    $this->Logger->Log("Mesaj Güncelennemedi." . get_class($this) . "_" . __FUNCTION__, FileLogger::ERROR);
                     return false;
                 }
             }
         } catch (\Exception $exp) {
-            $this->Logger->Log("Sorgu çalıştırılamadı.".get_class($this)."_".__FUNCTION__, FileLogger::FATAL);
+            $this->Logger->Log("Sorgu çalıştırılamadı." . get_class($this) . "_" . __FUNCTION__, FileLogger::FATAL);
         }
     }
 
@@ -146,7 +146,7 @@ class MessageManager implements IMessageService,IManager
         return count($this->MessageDal->selectAll());
     }
 
-    function getAllUnDreadMessages()
+    function getAllUnreadMessages()
     {
         $this->MessageWhere->ResetObject();
         $this->MessageWhere->setStatus("Unread");
@@ -167,14 +167,14 @@ class MessageManager implements IMessageService,IManager
 
     function writeMessage($UserId, $Message, $Who)
     {
-        if($Message!='' || $Message!=null){
+        if ($Message != '' || $Message != null) {
             if ($UserId)
                 $this->UserId = $UserId;
             $this->Message->ResetObject();
 
-            if($Who=="Editor"){
+            if ($Who == "Editor") {
                 $this->Message->setStatus("Read");
-            }else{
+            } else {
                 $this->Message->setStatus("Unread");
             }
             $this->Message->setUserId($this->UserId);
@@ -182,7 +182,7 @@ class MessageManager implements IMessageService,IManager
             $this->Message->setDate(date("Y-m-d H:i:s"));
             $this->Message->setWhoIsMessage($Who);
             return self::addMessage($this->Message);
-        }else{
+        } else {
             return "empty_message";
         }
 

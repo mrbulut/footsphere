@@ -32,7 +32,7 @@ abstract class DatabaseTableDao extends MysqliDb
 
     // Databasede ana 4 işlemi(get,insert,update,delete) yapmak için sorgu ve girdileri oluşturuyor.
     public function settingQuery($Object = null, $Objectwhere = null,
-                                 $TableName=null)
+                                 $TableName = null)
     {
         if ($Object) {
             $this->Object = self::ClassConverter($Object);
@@ -43,8 +43,8 @@ abstract class DatabaseTableDao extends MysqliDb
             $this->ObjectWhere = self::ClassConverter($Objectwhere);
         }
 
-        if($TableName){
-            $this->TableName = $this->Extension.$TableName;
+        if ($TableName) {
+            $this->TableName = $this->Extension . $TableName;
         }
 
     }
@@ -65,11 +65,11 @@ abstract class DatabaseTableDao extends MysqliDb
     {
 
         if ($this->Object) {
-            if (!self::getToObject($this->Object)) {
-                return self::insert(
-                    $this->Object
-                );
-            }
+
+            return self::insert(
+                $this->Object
+            );
+
         } else
             return false;
     }
@@ -229,7 +229,7 @@ abstract class DatabaseTableDao extends MysqliDb
         $result = array();
         foreach ($Object as $key => $value) {
             if ($value) {
-                 $result[$key] = $value;
+                $result[$key] = $value;
             }
         }
         return $result;

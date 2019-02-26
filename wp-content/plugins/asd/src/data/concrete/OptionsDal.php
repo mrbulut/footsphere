@@ -14,7 +14,7 @@ include_once ROOT_PATH . "/src/data/abstract/IDatabaseTableDao.php";
 class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
 {
-    private $Rows;
+    private static $Rows;
 
     private $commission = "%100"; // komisyonumuz
     private $requestTimeLimit = 24; // isteğin 24 saat bekleme süresi
@@ -38,14 +38,13 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function defineSettings()
     {
-        if(!self::selectOption($this->OptionsNames['commission'])){
+        if (!self::selectOption($this->OptionsNames['commission'])) {
             self::addOption($this->OptionsNames['requestTimeLimit'], $this->requestTimeLimit);
             self::addOption($this->OptionsNames['modelLimit'], $this->modelLimit);
             self::addOption($this->OptionsNames['requestLimit'], $this->requestLimit);
             self::addOption($this->OptionsNames['commission'], $this->commission);
         }
     }
-
 
 
     public function getLangueages($userID)
@@ -58,22 +57,27 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
         return self::updateOptionToOptionName($this->OptionsNames['langueages'] . "_" . $userID, $langueages);
     }
 
-    public function getRequest($UserId,$RequestType)
+    public function getRequest($UserId, $RequestType)
     {
-        return self::selectOption($this->OptionsNames['request'] . "_" . $UserId."_".$RequestType)[$this->Rows[2]];;
+        return self::selectOption($this->OptionsNames['request'] . "_" . $UserId . "_" . $RequestType)[$this->Rows[2]];;
     }
 
-    public function setRequest($UserId, $RequestType,$date)
+    public function setRequest($UserId, $RequestType, $date)
     {
-        return self::updateOptionToOptionName($this->OptionsNames['request'] . "_" . $UserId. "_". $RequestType, $date);
+        return self::updateOptionToOptionName($this->OptionsNames['request'] . "_" . $UserId . "_" . $RequestType, $date);
     }
 
-    public function addRequest($UserId,$RequestType,$date){
-        return self::addOption($this->OptionsNames['request'] . "_" . $UserId. "_". $RequestType, $date);
+    public function addRequest($UserId, $RequestType, $date)
+    {
+        if(!self::selectOption($this->OptionsNames['request'] . "_" . $UserId . "_" . $RequestType)){
+            return self::addOption($this->OptionsNames['request'] . "_" . $UserId . "_" . $RequestType, $date);
+        }
 
     }
-    public function deleteRequest($UserId,$RequestType){
-        return self::deleteOptionToOptionName($this->OptionsNames['request'] . "_" . $UserId. "_". $RequestType);
+
+    public function deleteRequest($UserId, $RequestType)
+    {
+        return self::deleteOptionToOptionName($this->OptionsNames['request'] . "_" . $UserId . "_" . $RequestType);
     }
 
 
@@ -162,8 +166,6 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
     {
         if ($option_name) {
             if (self::selectOption($option_name)) {
-                echo "burda:".$option_name;
-
                 return false;
             } else {
                 return $this->insert(
@@ -202,21 +204,30 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function updateOptionToOptionName($option_name, $option_value)
     {
-        if ($option_name) {
+        if (self::selectOption($option_name)) {
             return $this->update(
+
                 array(
                     $this->Rows[1] => $option_name,
                     $this->Rows[2] => $option_value,
 
                 ),
                 array(
-                    $this->Rows[0] => $option_name
+                    $this->Rows[1] => $option_name
                 )
             );
 
 
-        } else
-            return false;
+        } else {
+            return $this->insert(
+
+                array(
+                    $this->Rows[1] => $option_name,
+                    $this->Rows[2] => $option_value,
+
+                )
+            );
+        }
     }
 
     public function addOptionPrual($array)

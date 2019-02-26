@@ -267,3 +267,44 @@ $ProductModel = new ProductModel();
                                
 
 </pre></code>
+
+<b>Using The MessageModel class in MessageModel.php</b> "/ui/models/MessageModel.php"
+
+<pre><code>
+
+$ProductModel = new MessageModel(8); // UserId
+         $ProductModel->writeMessage("message");
+         $ProductModel->getAllMessageForUser()[0]['Message']; // all message of system for user
+         $ProductModel->isThereUnreadMessageForUser()[0]['Message'] // Unread messages for user
+         $ProductModel->getAllMessage()
+         $ProductModel->getAllMessageLenght()
+         $ProductModel->getAllUnreadMessages()
+         $ProductModel->setTheUserMessagesRead()
+
+
+</pre></code>
+
+
+<b>Using The OptionsModel class in ProductModel.php</b> "/ui/models/OptionsModel.php"
+
+<pre><code>
+
+
+  $ProductModel = new OptionsModel(8); // User Id
+  $ProductModel->setLangueages("Turkish");
+  $ProductModel->getLangueages(); // Return "Turkish" or "English" .. 
+  $ProductModel->getProducerRequestLimit();
+  $ProductModel->getProducerModelLimit();
+  $ProductModel->getRequestTimeArea();
+  $ProductModel->getProducerRequestLimit(); 
+  $ProductModel->setProducerRequestLimit($value); 
+  $ProductModel->setProducerModelLimit($value); 
+  $ProductModel->setRequestTimeArea($value); 
+  $ProductModel->setCommissionArea($value); // %100 like
+
+  $ProductModel->createRequestForUser("Shoes"); // Shoes or Slipper
+  $ProductModel->getTheRequestTime("Shoes")[0]; // $data[0] => Time 
+                                                // $data[1] => Min or Hour
+                                                // Example; 23 Hour,55 Min
+
+</pre></code>
