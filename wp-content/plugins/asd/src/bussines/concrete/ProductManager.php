@@ -27,17 +27,15 @@ class ProductManager implements IProductService,IManager
     private $ProductWhere;
 
 
-    public function __construct()
+    public function __construct($UserId=null)
     {
 
         $this->Product = new Product();
         $this->ProductWhere = new Product();
-        $this->CustomerManager = new CustomerManager();
         $this->ProductDal = new ProductDal();
         $this->UserDal = new UserDal();
         $this->Logger = new Logger(new FileLogger());
-
-        $this->UserId = $this->UserDal->getUser()->getID();
+        $this->UserId = $UserId;
         //$this->ProductObjectData = self::getCustomerList($this->Customer);
     }
 
@@ -49,7 +47,7 @@ class ProductManager implements IProductService,IManager
             $this->ProductWhere->setType($Type);
             return self::getProductList($this->ProductWhere);
         } else {
-            return $this->ProductDal->select();
+            return $this->ProductDal->selectall();
         }
 
     }
@@ -82,7 +80,6 @@ class ProductManager implements IProductService,IManager
     function getProductById($ID)
     {
         if ($ID) {
-
             $this->ProductWhere->ResetObject();
             $this->ProductWhere->setID($ID);
            return  self::getProductList($this->ProductWhere)[0];
@@ -136,6 +133,11 @@ class ProductManager implements IProductService,IManager
         }
 
     }
+    function createProduct(Product $Product)
+    {
+
+        return $this->addProduct($Product);
+    }
 
     function addProductForUser($ProductId, $UserId)
     {
@@ -150,6 +152,7 @@ class ProductManager implements IProductService,IManager
 
         try {
             return $id = $this->ProductDal->addProductReal($this->Product, $UserId);
+
         } catch (Exception $exp) {
             return false;
         }
@@ -159,6 +162,7 @@ class ProductManager implements IProductService,IManager
 
     function getAllListForTheUser($UserId)
     {
+        self::customerSetup();
         $result = array();
         $data = $this->CustomerManager->getProducts($UserId);
         $data = explode(",",$data);
@@ -167,13 +171,9 @@ class ProductManager implements IProductService,IManager
             $result[$key]=self::getProductById($value);
         }
 
-        return $result;
+        return $result[0];
     }
 
-    function createProduct(Product $Product)
-    {
-        return $this->addProduct($Product);
-    }
 
     function removeProductPermissionForUser($ProductId, $UserId)
     {
@@ -182,6 +182,7 @@ class ProductManager implements IProductService,IManager
 
     private function addProduct(Product $product)
     {
+
         $this->ProductDal->settingQuery($product);
         try {
             if ($product) {
@@ -265,4 +266,7 @@ class ProductManager implements IProductService,IManager
     }
 
 
+    private function customerSetup(){
+        $this->CustomerManager = new CustomerManager($this->UserId);
+    }
 }

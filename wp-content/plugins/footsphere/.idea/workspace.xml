@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fb711fa5-61b1-4d66-9f3b-f368ae1cf3e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../asd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/concrete/RequestManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/RequestManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/concrete/CustomerManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/CustomerManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/bussines/concrete/ProductManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/bussines/concrete/ProductManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/core/crosscuttingconcerns/log/abstract/log/log.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/crosscuttingconcerns/log/abstract/log/log.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/data/abstract/DatabaseTableDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/abstract/DatabaseTableDao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/RequestDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/RequestDal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/ui/controllers/homeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/controllers/homeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/ui/models/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/models/ProductModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/ui/models/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/models/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/ui/models/RequestModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/models/RequestModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/ui/models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/models/UserModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -167,7 +166,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="167" />
+    <option name="x" value="70" />
+    <option name="y" value="199" />
     <option name="width" value="1708" />
     <option name="height" value="1032" />
   </component>
@@ -262,7 +262,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="167" width="1708" height="1032" extended-state="0" />
+    <frame x="70" y="199" width="1708" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12755716" />

@@ -20,11 +20,7 @@ include_once ROOT_PATH . '/src/bussines/concrete/ProducerManager.php';
 class RequestModel implements IModel
 {
 
-    private $UserManager;
     private $RequestManager;
-    private $CustomerManager;
-    private $ProducerManager;
-    private $User, $Customer, $CustomerWhere, $Producer, $ProducerWhere, $Request;
     private $UserId;
 
 
@@ -38,14 +34,6 @@ class RequestModel implements IModel
                 $this->UserId = $current_user->ID;
             }
         }
-        $this->Customer = new Customer();
-        $this->CustomerWhere = new Customer();
-        $this->User = new User();
-        $this->Producer = new Producer();
-        $this->ProducerWhere = new Producer();
-        $this->User = new User();
-        $this->Request = new Request();
-
     }
 
 
@@ -94,30 +82,16 @@ class RequestModel implements IModel
         }
     }
 
-    public function removeRequest($RequestID){
+    public function removeRequest($RequestID)
+    {
         self::requestSetup();
         return $this->RequestManager->removeRequest($RequestID);
     }
-    public function getProducerStatistcs($ProducerNo){
+
+    public function getProducerStatistcs($ProducerNo)
+    {
         self::requestSetup();
-       // $this->RequestManager->getProducerStatistics($ProducerNo);
-    }
-
-    private function customerSetup()
-    {
-        $this->CustomerManager = new CustomerManager($this->UserId);
-        $this->UserManager = new UserManager();
-    }
-
-    private function producerSetup()
-    {
-        $this->ProducerManager = new ProducerManager($this->UserId);
-        $this->UserManager = new UserManager();
-    }
-
-    private function userSetup()
-    {
-        $this->UserManager = new UserManager();
+        // $this->RequestManager->getProducerStatistics($ProducerNo);
     }
 
     private function requestSetup()

@@ -35,7 +35,7 @@ class CustomerManager implements ICustomerService,IManager
         $this->CustomerDal = new CustomerDal();
         $this->UserDal = new UserDal($UserID);
         $this->Logger = new Logger(new FileLogger());
-        $this->UserId = $this->UserDal->getUser()->getID();
+        $this->UserId = $UserID;
         $this->Customer = new Customer();
         $this->CustomerWhere = new Customer();
         $this->Customer->setUserId($this->UserDal->getUserId());
@@ -232,9 +232,7 @@ class CustomerManager implements ICustomerService,IManager
             }
         }
 
-
         $this->Customer->setCanUseProducts($result);
-
 
         self::updateCustomer($this->Customer, $this->CustomerWhere);
     }

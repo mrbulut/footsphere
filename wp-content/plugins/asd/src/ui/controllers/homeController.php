@@ -4,8 +4,10 @@ class homeController
 {
     public function index()
     {
-        $UserModel = new RequestModel(11);
-        echo $UserModel->getProducerStatistcs(11);
+        $ProductModel = new ProductModel(8);
+       $data = $ProductModel->addProductForUser(5);
+
+
         /*
         $UserModel->createRequest(array(
             "ProducerNo"  => "1",

@@ -187,3 +187,83 @@ $UserModel = new UserModel(11);
 </pre></code>
 
 
+
+
+<b>Using The ProductModel class in ProductModel.php</b> "/ui/models/ProductModel.php"
+
+<pre><code>
+$ProductModel = new ProductModel();
+        
+        $ProductModel->createProduct(array(
+            "PName"=>"2",
+            "DescProduct"=>"2",
+            "Price"=>"1",
+            "Image"=>"1",
+            "Image2"=>"1",
+            "Image3"=>"1",
+            "ProducerNO"=>"2",
+            "BSNO"=>"1",
+            "Features"=>"1",
+            "Type"=>"1",
+            "Status"=>"1",
+            "BaseMaterial"=>"1",
+            "ClosureType"=>"1",
+            "TopMeterial"=>"1",
+            "liningMeterial"=>"1",
+            "Season"=>"1",
+            "InsideBaseType"=>"1",
+            "InsideBaseMeterial"=>"1",
+            "ProductWp_PostsId" => "1"
+
+        ));
+        
+       $ProductModel->updateProduct(array(
+                   "PName"=>"2",
+                   "DescProduct"=>"1",
+                   "Price"=>"3",
+                   "Image"=>"4",
+                   "Image2"=>"1",
+                   "Image3"=>"1",
+                   "ProducerNO"=>"2",
+                   "BSNO"=>"1",
+                   "Features"=>"1",
+                   "Type"=>"1",
+                   "Status"=>"1",
+                   "BaseMaterial"=>"1",
+                   "ClosureType"=>"1",
+                   "TopMeterial"=>"1",
+                   "liningMeterial"=>"1",
+                   "Season"=>"1",
+                   "InsideBaseType"=>"1",
+                   "InsideBaseMeterial"=>"1",
+                   "ProductWp_PostsId" => "1"
+               ),1);
+       
+       
+   echo $ProductModel->getAllProduct(array(
+                   "ProducerNo" => "2"
+               ))[0]['ID'];
+   echo $ProductModel->getAllProduct(array(
+                      "Type" => "Shoes" // Shoes or Slipper
+                  ))[0]['ID'];            
+   echo $ProductModel->getAllProduct(array(
+                      "IdArray" => array(
+                      2,4,88
+                      )
+                  ))[0]['ID'];   
+                  
+   echo $ProductModel->getProduct(1)['PName']; // ProductID
+   echo $ProductModel->setProductStatus(1,"Approved");//Approved,Waiting,NoApproved
+   echo $ProductModel->getProductStatus(1);//Approved,Waiting,NoApproved
+   echo $ProductModel->removeProduct(1);
+              
+   $ProductModel = new ProductModel(155);// UserId
+   
+   $ProductModel->getAllListForTheUser(); //return productIdArray(2,3,4,..)
+   
+   $ProductModel->addProductForUser(5);  // urunId return true orfalse 
+   $ProductModel->removeProductForUser(5);  // urunId return true orfalse 
+
+                               
+
+</pre></code>
