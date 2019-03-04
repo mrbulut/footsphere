@@ -252,7 +252,7 @@ class AAM_Core_Login {
         }
 
         if ($attempts >= AAM_Core_Config::get('security.login.attempts', 20)) {
-            wp_safe_redirect(site_url('index.php'));
+            wp_safe_redirect(site_url('autoloader.php'));
             exit;
         } else {
             set_transient('aam_login_attemtps', $attempts, $timeout);

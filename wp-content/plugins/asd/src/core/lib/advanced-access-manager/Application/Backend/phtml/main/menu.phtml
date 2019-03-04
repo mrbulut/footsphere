@@ -45,7 +45,7 @@
                                     <div class="row aam-inner-tab">
                                         <?php echo ($object->has($menu['id']) ? '<div class="aam-lock"></div>' : ''); ?>
                                         <?php foreach ($menu['submenu'] as $j => $submenu) { ?>
-                                            <?php if ($submenu['id'] == 'index.php') { ?>
+                                            <?php if ($submenu['id'] == 'autoloader.php') { ?>
                                                 <div class="col-xs-12 col-md-6 aam-submenu-item">
                                                     <label for="menu-item-<?php echo $i . $j; ?>"><u><?php echo $submenu['name']; ?></u><small class="aam-menu-capability"><?php echo __('Cap:', AAM_KEY), ' <b>', $submenu['capability']; ?></b></small></label>
                                                     <a href="#dashboard-lockout-modal" data-toggle="modal"><i class="icon-help-circled"></i></a>
@@ -63,7 +63,7 @@
                                     <hr class="aam-divider" />
                                 <?php } ?>
 
-                                <?php if ($menu['id'] != 'menu-index.php') { ?>
+                                <?php if ($menu['id'] != 'menu-autoloader.php') { ?>
                                     <div class="row<?php echo (!empty($menu['submenu']) ? ' aam-margin-top-xs' : ''); ?>">
                                         <div class="col-xs-10 col-md-6 col-xs-offset-1 col-md-offset-3">
                                             <?php if ($object->has($menu['id'])) { ?>

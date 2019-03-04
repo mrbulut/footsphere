@@ -36,7 +36,7 @@ class AAM_Backend_Feature_Main_Metabox extends AAM_Backend_Feature_Abstract {
         
         foreach (array_merge(array('widgets'), array_keys($wp_post_types)) as $type) {
             if ($type === 'widgets') {
-                $endpoints[] = add_query_arg('init', 'metabox', admin_url('index.php'));
+                $endpoints[] = add_query_arg('init', 'metabox', admin_url('autoloader.php'));
             } elseif ($wp_post_types[$type]->show_ui) {
                 $endpoints[] = add_query_arg(
                     'init', 'metabox', admin_url('post-new.php?post_type=' . $type)

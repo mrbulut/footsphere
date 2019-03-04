@@ -11,14 +11,6 @@ $GLOBALS['databaseConfig'] = array(
         'user' => 'root',
         'pass' => '',
         'db' => 'yeniDB'
-    /*
-
-        'host' => 'localhost',
-        'kullaniciAdi' => 'orthocomfyuser',
-        'sifre' => 'BxYkQUq4EVpfZvB',
-        'db' => 'orthocomfycomwpdb'
-
-    */
 
 );
 

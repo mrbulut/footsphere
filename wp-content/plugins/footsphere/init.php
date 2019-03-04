@@ -14,7 +14,7 @@ $GLOBALS['config'] = array(
             'host' => 'localhost',
             'kullaniciAdi' => 'root',
             'sifre' => '',
-            'db' => 'techycompanydb'
+            'db' => 'yeniDB'
         ),
    /*
         'mysql' => array(

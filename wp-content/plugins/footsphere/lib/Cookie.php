@@ -10,7 +10,9 @@ echo 'cookie var';
 
 //Cookie silmek
 Cookie::delete($cookie_name);
- */
+ */class df{
+
+}
 class Cookie
 {
 

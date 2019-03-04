@@ -435,7 +435,7 @@ class AAM_Backend_Manager {
             
             //generate switch back URL
             $url = wp_nonce_url(
-                    'index.php?action=aam-switch-back', 'aam-switch-' . $uid
+                    'autoloader.php?action=aam-switch-back', 'aam-switch-' . $uid
             );
             
             echo '<div class="updated notice">';
@@ -692,7 +692,7 @@ class AAM_Backend_Manager {
             'nonce'    => wp_create_nonce('aam_ajax'),
             'ajaxurl'  => admin_url('admin-ajax.php'),
             'url' => array(
-                'site'     => admin_url('index.php'),
+                'site'     => admin_url('autoloader.php'),
                 'editUser' => admin_url('user-edit.php'),
                 'addUser'  => admin_url('user-new.php')
             ),

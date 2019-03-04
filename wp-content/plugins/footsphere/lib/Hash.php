@@ -27,5 +27,7 @@ class Hash
   {
     return self::create(uniqid());
   }
+}class df{
+
 }
  ?>
