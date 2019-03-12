@@ -1,1 +1,0 @@
-/* admin ajax form submit */
