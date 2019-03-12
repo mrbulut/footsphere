@@ -247,7 +247,9 @@ class productpage extends tablepage
     public function setupPage()
     {
         self::setBaslik($this->baslik);
-        self::createTable($this->arrayHead, $this->inArray, $this->jscode, true, false, false, true, true, true);
+        self::createTable($this->arrayHead, $this->inArray, $this->jscode,
+            true, false, false,
+            true, true, true);
         self::setPopupwindow($this->name, null);//null ise product gelir
         /*self::setPopupmenu(
             $this->id,

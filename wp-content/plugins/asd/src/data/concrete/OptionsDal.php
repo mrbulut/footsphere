@@ -49,7 +49,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getLangueages($userID)
     {
-        return self::selectOption($this->OptionsNames['langueages'] . "_" . $userID)[$this->Rows[2]];;
+        return self::selectOption($this->OptionsNames['langueages'] . "_" . $userID)["option_value"];;
     }
 
     public function setLangueages($userID, $langueages)
@@ -59,7 +59,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getRequest($UserId, $RequestType)
     {
-        return self::selectOption($this->OptionsNames['request'] . "_" . $UserId . "_" . $RequestType)[$this->Rows[2]];;
+        return self::selectOption($this->OptionsNames['request'] . "_" . $UserId . "_" . $RequestType)["option_value"];;
     }
 
     public function setRequest($UserId, $RequestType, $date)
@@ -84,7 +84,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
     public function getProducerRequestLimit()
     {
 
-        return self::selectOption($this->OptionsNames['requestLimit'])[$this->Rows[2]];
+        return self::selectOption($this->OptionsNames['requestLimit'])["option_value"];
     }
 
     public function setProducerRequestLimit($producerRequestLimit)
@@ -95,7 +95,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getProducerModelLimit()
     {
-        return self::selectOption($this->OptionsNames['modelLimit'])[$this->Rows[2]];;
+        return self::selectOption($this->OptionsNames['modelLimit'])["option_value"];;
     }
 
     public function setProducerModelLimit($producerModelLimit)
@@ -105,7 +105,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getRequestTimeArea()
     {
-        return self::selectOption($this->OptionsNames['requestTimeLimit'])[$this->Rows[2]];;
+        return self::selectOption($this->OptionsNames['requestTimeLimit'])["option_value"];;
     }
 
     public function setRequestTimeArea($requestTimeArea)
@@ -115,7 +115,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getCommissionArea()
     {
-        return self::selectOption($this->OptionsNames['commission'])[$this->Rows[2]];
+        return self::selectOption($this->OptionsNames['commission'])["option_value"];
     }
 
     public function setCommissionArea($commissionArea)
@@ -129,7 +129,7 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
         if ($option_name) {
             return $this->select(
                 array(
-                    $this->Rows[1] => $option_name
+                    "option_name" => $option_name
                 )
             );
         } else
@@ -170,9 +170,9 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
             } else {
                 return $this->insert(
                     array(
-                        $this->Rows[1] => $option_name,
-                        $this->Rows[2] => $options_value,
-                        $this->Rows[3] => "yes"
+                        "option_name" => $option_name,
+                        "option_value" => $options_value,
+                        "autoload" => "yes"
 
                     )
                 );
@@ -188,11 +188,11 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
         if ($option_id) {
             return $this->update(
                 array(
-                    $this->Rows[2] => $options_value,
+                    "option_value" => $options_value,
 
                 ),
                 array(
-                    $this->Rows[0] => $option_id
+                    "option_id" => $option_id
                 )
             );
 
@@ -208,12 +208,12 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
             return $this->update(
 
                 array(
-                    $this->Rows[1] => $option_name,
-                    $this->Rows[2] => $option_value,
+                    "option_name"  => $option_name,
+                    "option_value" => $option_value,
 
                 ),
                 array(
-                    $this->Rows[1] => $option_name
+                    "option_name"  => $option_name
                 )
             );
 
@@ -222,8 +222,8 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
             return $this->insert(
 
                 array(
-                    $this->Rows[1] => $option_name,
-                    $this->Rows[2] => $option_value,
+                    "option_name" => $option_name,
+                    "option_value"  => $option_value,
 
                 )
             );

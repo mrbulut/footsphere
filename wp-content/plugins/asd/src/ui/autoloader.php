@@ -15,10 +15,3 @@ $F->start();
 $F->ShowErrors();
 
 
-
-/*
- *
- *
-require 'system/router.php';
- *
-*/

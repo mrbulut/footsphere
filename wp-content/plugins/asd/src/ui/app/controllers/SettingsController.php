@@ -3,11 +3,12 @@
  * Created by PhpStorm.
  * User: muzaffer
  * Date: 01.03.2019
- * Time: 15:18
+ * Time: 11:59
  */
 
 
-class pageController extends Controller
+
+class settingsController extends Controller
 {
 
     public function __construct()
@@ -17,9 +18,7 @@ class pageController extends Controller
 
     public function home($data = false)
     {
-
-      Controller::$view->view("page",$data);
-
+        Controller::$view->view($this->userRole."/settings",$data);
     }
 
     public function existsMethods($str)

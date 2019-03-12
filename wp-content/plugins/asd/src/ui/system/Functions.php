@@ -6,6 +6,9 @@
  * Time: 14:52
  */
 
+include_once ROOT_PATH . "/src/ui/app/models/UserModel.php";
+include_once ROOT_PATH . "/src/ui/app/models/OptionsModel.php";
+include_once ROOT_PATH . "/src/core/lib/Session.php";
 
 class Functions
 {
@@ -19,41 +22,81 @@ class Functions
         self::$error = array();
     }
 
+
     public function start()
     {
+        self::whatIsTheUserRoleAndLanguage();
+
         $link = $_SERVER['REQUEST_URI'];
         $link = explode("?page=", $link)[1];
 
         if ($link) {
             $contName = $link;
             $expContName = explode("&", $contName);
+
+            if (!$expContName[1]) {
+                $expContName[1] = "Dashboard";
+            }
+
+            if (!$expContName[2]) {
+                $expContName[2] = "home";
+            }
             if ($this->existsController($expContName[1])) {
                 $expContName[1] .= "Controller";
                 $Cont = new $expContName[1]();
                 $methodName = $expContName[2];
                 if ($Cont->existsMethods($methodName)) {
-                    if($expContName[3]){
+                    if ($expContName[3]) {
                         $Cont->$methodName($expContName[3]);
-                    }else{
+                    } else {
                         $Cont->$methodName();
                     }
                 } else {
-                    self::$error[]= "Method Bulunamadı.";
+                    self::$error[] = "Method Bulunamadı.";
                 }
 
 
             } else {
-                self::$error[]=  "Sayfa Bulunamadı";
+                self::$error[] = "Sayfa Bulunamadı";
             }
         }
     }
 
-    public function ShowErrors(){
-        if (count(self::$error) <=0){
+    public function ShowErrors()
+    {
+        if (count(self::$error) <= 0) {
             return false;
         }
-        foreach (self::$error as $key => $value){
-            echo $value."<br>";
+        foreach (self::$error as $key => $value) {
+            echo $value . "<br>";
+        }
+    }
+
+
+    private static function whatIsTheUserRoleAndLanguage()
+    {
+        $user = new UserModel();
+        $session = new Session();
+        if (!$session->isthere("role")){
+            if($user->getRole()=="administrator" || $user->getRole()=="cons"){
+                $session->create("role", "operationmanager");
+            }else if ($user->getRole()=="editor"){
+                $session->create("role", "producer");
+            }else if ($user->getRole()=="subscriber"){
+                $session->create("role", "customer");
+            }
+        }
+
+        $options = new OptionsModel();
+
+        if($options->getLangueages()){
+            if(!$session->isthere("lang")){
+                $session->create("lang", $options->getLangueages());
+            }
+        }else{
+            $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2);
+            $options->setLangueages($lang);
+            $session->create("lang",$lang);
         }
     }
 
@@ -67,7 +110,6 @@ class Functions
             return false;
         }
     }
-
 
 
     /**

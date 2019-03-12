@@ -28,7 +28,7 @@ class GeneralCons
     }
 
 
-    public function GetString($key)
+    public function String($key)
     {
         return self::getArray()[$key];
     }
@@ -66,7 +66,7 @@ class GeneralCons
         foreach ($langArray as $key => $value) {
             $valueArray = explode(":", $value);
 
-            if ($LangValue == $key) {
+            if ($valueArray[0] == $LangValue) {
                 $this->langValueShortCode = $valueArray[0];
                 $this->currency = $valueArray[1];
                 $this->currencySymbol = $valueArray[2];

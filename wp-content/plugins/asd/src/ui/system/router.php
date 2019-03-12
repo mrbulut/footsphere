@@ -15,11 +15,14 @@ if ($url[1]) {
     $url = explode("&", $url);
     $url = $url[1];
 
+
+
     if (!$url) {
         $url = "Dashboard";
     }
 
-
+    echo "Url . " . $url."<br>";
+    echo "Value . " . $url."<br>";
 
     $controller = ROOT_PATH . "/src/ui/app/controllers/" . $url . "Controller.php";
     $header = ROOT_PATH . "/src/ui/app/header.php";

@@ -40,10 +40,20 @@ class UserModel implements IModel
     // about User
     public function getRole()
     {
-        self::userSetup();
+        self::customerSetup();
+
 
         return $this->CustomerManager->getRole();
     }
+
+    // about User
+    public function getLanguage()
+    {
+        self::customerSetup();
+
+        return $this->CustomerManager->getLanguages();
+    }
+
 
     public function getUser()
     {
