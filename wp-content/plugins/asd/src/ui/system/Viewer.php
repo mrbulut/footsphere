@@ -17,6 +17,7 @@ class Viewer
 
     public function view($str,$data=false){
 
+
         $FileName = ROOT_PATH.'/src/ui/app/views/'.$str.'.php';
         if(file_exists($FileName)){
             include ROOT_PATH . '/src/ui/app/views/templates/header.php';

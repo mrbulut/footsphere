@@ -13,11 +13,16 @@ class Controller
     public static $userRole;
     public static $userLang;
     public static $get;
+    public static $userId;
     public function __construct()
     {
         $this->userRole = $_SESSION['role'];
         $this->userLang = $_SESSION['lang'];
         $this->get = new GeneralCons($this->userLang);
+
+
+        $GLOBALS['string'] = $this->get->StringAll();
+        $GLOBALS['userId'] =1;
         self::$view = new Viewer();
     }
 

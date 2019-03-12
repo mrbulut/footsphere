@@ -2,95 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb711fa5-61b1-4d66-9f3b-f368ae1cf3e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../asd/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/controllers/HelpController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/controllers/MessagesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/controllers/OrdersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/controllers/ProducersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/controllers/RequestsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/operationmanager/dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/operationmanager/help.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/operationmanager/messages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/operationmanager/order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/operationmanager/producers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/operationmanager/products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/operationmanager/requests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/operationmanager/settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/producer/dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/producer/help.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/producer/messages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/producer/order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/producer/products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/producer/requests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/producer/settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/productlist.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/templates/classes/dashboardpage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/templates/classes/generalpage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/templates/classes/messagepage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/templates/classes/settingpage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/templates/classes/tablepage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/templates/classes/userpage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/templates/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/templates/table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/beklemede.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/change.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/click.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/clock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/cloud-computing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/compass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/garbage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/house.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/info.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/magnifying-glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/onaylandi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/onaylanmadi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/order.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/padlock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/phone-call.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/play-button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/request.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/smartphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/wrench.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/images/yapim-asamasinda.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/js/bespoke.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/js/message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/js/openPhoto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/js/popupwindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/js/productshow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/js/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../asd/src/ui/assets/js/teklifpage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/.idea/asd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/.idea/asd.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/footsphere.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/footsphere.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/core/crosscuttingconcerns/log/abstract/log/log.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/crosscuttingconcerns/log/abstract/log/log.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/core/res/values/GeneralCons.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/res/values/GeneralCons.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/data/concrete/OptionsDal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/data/concrete/OptionsDal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/ui/app/controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/app/controllers/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/ui/app/controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/app/controllers/SettingsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/core/res/values/language/tr.json" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/core/res/values/language/tr.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/ui/app/controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/app/controllers/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/ui/app/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/templates/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/ui/app/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/ui/app/models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/app/models/UserModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/ui/app/views/page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/ui/autoloader.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/autoloader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/ui/app/views/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/product/product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asd/src/ui/app/views/productlist.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/app/views/product/productlist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/ui/system/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/system/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/ui/system/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/system/Functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../asd/src/ui/system/Viewer.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/system/Viewer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../asd/src/ui/system/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/../asd/src/ui/system/router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/menu/producerspage/implement/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu/producerspage/implement/products.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +53,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bespoke/implement/bespoke.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1189">
+            <state relative-caret-position="757">
               <caret line="147" column="71" selection-start-line="147" selection-start-column="71" selection-end-line="147" selection-end-column="71" />
             </state>
           </provider>
@@ -411,11 +333,12 @@
       <workItem from="1552030195520" duration="736000" />
       <workItem from="1552291055944" duration="1225000" />
       <workItem from="1552372060495" duration="600000" />
+      <workItem from="1552375539891" duration="602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136764000" />
+    <option name="totallyTimeSpent" value="137366000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,8 +351,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="579" y="141" width="1237" height="897" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2779177" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2829555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -772,7 +696,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bespoke/implement/bespoke.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1189">
+        <state relative-caret-position="757">
           <caret line="147" column="71" selection-start-line="147" selection-start-column="71" selection-end-line="147" selection-end-column="71" />
         </state>
       </provider>

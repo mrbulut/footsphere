@@ -1,4 +1,5 @@
 {
+  "durum" : "Durum",
   "sirala" : "Sırala",
   "satinalbutton":"Satın al",
   "urunaciklama":"Ürün Açıklaması",
@@ -177,6 +178,6 @@
   "ureticiUrunLimitBaslik": "Üretici ürün sınırı",
   "ureticiUrunLimitAciklama": "Bir üreticinin maksimum kaç adet ürünü olabileceğini gösteren değer",
   "ureticiTeklifSiniriBaslik": "Üretici teklif sınırı",
-  "ureticiTeklifSiniriAciklama": "Bir üreticinin bir teklife en fazla kaç ürün teklif edebileceğinin sınırı"
+  "ureticiTeklifSiniriAciklama": "Bir üreticinin bir teklife en fazla kaç ürün teklif edebileceğinin sınırı",
 
 }

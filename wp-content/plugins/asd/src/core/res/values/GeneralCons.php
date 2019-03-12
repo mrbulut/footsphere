@@ -32,6 +32,10 @@ class GeneralCons
     {
         return self::getArray()[$key];
     }
+    public function StringAll()
+    {
+        return self::getArray();
+    }
 
     public function getLangValueShortCode()
     {
