@@ -38,6 +38,7 @@ class ProductModel implements IModel
                 $this->UserId = $current_user->ID;
             }
         }
+
         $this->Customer = new Customer();
         $this->CustomerWhere = new Customer();
         $this->User = new User();
@@ -51,45 +52,48 @@ class ProductModel implements IModel
         self::productSetup();
         $this->Product->ResetObject();
         foreach ($array as $key => $value){
-            if($key == 'PName'){
-                $this->Product->setPName($array['PName']);
-            }else if($key =='DescProduct'){
-                $this->Product->setDescProduct($array['DescProduct']);
-            }else if($key =='Price'){
-                $this->Product->setPrice($array['Price']);
-            }else if($key =='Image'){
-                $this->Product->setImage($array['Image']);
-            }else if($key =='Image2'){
-                $this->Product->setImage2($array['Image2']);
-            }else if($key =='Image3'){
-                $this->Product->setImage3($array['Image3']);
-            }else if($key =='ProducerNO'){
-                $this->Product->setProducerNO($array['ProducerNO']);
-            }else if($key =='BSNO'){
-                $this->Product->setBSNO($array['BSNO']);
-            }else if($key =='Features'){
-                $this->Product->setFeatures($array['Features']);
-            }else if($key =='Type'){
-                $this->Product->setType($array['Type']);
-            }else if($key =='Status'){
-                $this->Product->setStatus($array['Status']);
-            }else if($key =='BaseMaterial'){
-                $this->Product->setBaseMaterial($array['BaseMaterial']);
-            }else if($key =='ClosureType'){
-                $this->Product->setClosureType($array['ClosureType']);
-            }else if($key =='TopMeterial'){
-                $this->Product->setTopMeterial($array['TopMeterial']);
-            }else if($key =='liningMeterial'){
-                $this->Product->setLiningMeterial($array['liningMeterial']);
-            }else if($key =='Season'){
-                $this->Product->setSeason($array['Season']);
-            }else if($key =='InsideBaseType'){
-                $this->Product->setInsideBaseType($array['InsideBaseType']);
-            }else if($key =='InsideBaseMeterial'){
-                $this->Product->setInsideBaseMeterial($array['InsideBaseMeterial']);
-            }else if($key =='ProductWp_PostsId'){
-                $this->Product->setProductWpPostsId($array['ProductWp_PostsId']);
+            if($value){
+                if($key == 'PName'){
+                    $this->Product->setPName($array['PName']);
+                }else if($key =='DescProduct'){
+                    $this->Product->setDescProduct($array['DescProduct']);
+                }else if($key =='Price'){
+                    $this->Product->setPrice($array['Price']);
+                }else if($key =='Image'){
+                    $this->Product->setImage($array['Image']);
+                }else if($key =='Image2'){
+                    $this->Product->setImage2($array['Image2']);
+                }else if($key =='Image3'){
+                    $this->Product->setImage3($array['Image3']);
+                }else if($key =='ProducerNO'){
+                    $this->Product->setProducerNO($array['ProducerNO']);
+                }else if($key =='BSNO'){
+                    $this->Product->setBSNO($array['BSNO']);
+                }else if($key =='Features'){
+                    $this->Product->setFeatures($array['Features']);
+                }else if($key =='Type'){
+                    $this->Product->setType($array['Type']);
+                }else if($key =='Status'){
+                    $this->Product->setStatus($array['Status']);
+                }else if($key =='BaseMaterial'){
+                    $this->Product->setBaseMaterial($array['BaseMaterial']);
+                }else if($key =='ClosureType'){
+                    $this->Product->setClosureType($array['ClosureType']);
+                }else if($key =='TopMeterial'){
+                    $this->Product->setTopMeterial($array['TopMeterial']);
+                }else if($key =='liningMeterial'){
+                    $this->Product->setLiningMeterial($array['liningMeterial']);
+                }else if($key =='Season'){
+                    $this->Product->setSeason($array['Season']);
+                }else if($key =='InsideBaseType'){
+                    $this->Product->setInsideBaseType($array['InsideBaseType']);
+                }else if($key =='InsideBaseMeterial'){
+                    $this->Product->setInsideBaseMeterial($array['InsideBaseMeterial']);
+                }else if($key =='ProductWp_PostsId'){
+                    $this->Product->setProductWpPostsId($array['ProductWp_PostsId']);
+                }
             }
+
 
         }
 
@@ -97,6 +101,7 @@ class ProductModel implements IModel
     }
 
     public function updateProduct($array=array(),$ID=null){
+
         self::productSetup();
         $this->Product->ResetObject();
         foreach ($array as $key => $value){
@@ -141,6 +146,7 @@ class ProductModel implements IModel
             }
 
         }
+
         return $this->ProductManager->upgradeProduct($this->Product,$ID);
     }
 
@@ -152,6 +158,8 @@ class ProductModel implements IModel
             return $this->ProductManager->getAllProduct($array['Type']);
         }else if($array['IdArray']){
             return $this->ProductManager->getProductByIdArray($array['IdArray']);
+        }else if($array==null){
+            return $this->ProductManager->getAllProduct();
         }
     }
 

@@ -18,9 +18,10 @@ class ProductDal extends DatabaseTableDao
 
     public function __construct()
     {
-        $this->Rows = parent::CreateTable(Container::getInstance(new Product()));
+        $this->Rows = parent::CreateTable(Container::getInstance(new Product()),"a_fs_Product");
         $this->wp_postDal = new wp_postsDal();
     }
+
 
     public function addProductReal(Product $product, $UserId)
     {

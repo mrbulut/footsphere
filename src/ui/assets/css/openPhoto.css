@@ -1,0 +1,59 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  html, body {
+    font-family: "Ubuntu Mono", monospace;
+    margin: 0px;
+    height: 100%;
+    width: 100%; }
+  
+  body {
+    padding: 20px;
+    padding-top: 40px;
+    min-width: 600px; }
+  
+  header h1, footer h1 {
+    font-weight: normal;
+    width: 464px;
+    background: #222222;
+    color: #fff;
+    font-size: 14px;
+    height: 55px;
+    line-height: 55px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;}
+  
+  .demos {
+    text-align: center;
+    margin-top: 20px;
+    width: 490px;
+    margin: auto;}
+  
+  .demo-image {
+    cursor: url("http://tholman.com/intense-images/img/plus_cursor.png") 25 25, auto;
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 16px; }
+    .demo-image.first {
+      background-image: url("http://tholman.com/intense-images/img/h1_small.jpg"); }
+    .demo-image.second {
+      background-position: 50% 10%;
+      background-image: url("http://tholman.com/intense-images/img/v1_small.jpg"); }
+  
+  footer h1 {
+    padding-left: 20px;
+    background: #e9e9e9;
+    color: #222222;
+    font-size: 14px; }
+    footer h1 a {
+      color: #222222; }
+  

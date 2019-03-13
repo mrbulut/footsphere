@@ -16,6 +16,27 @@ class UserModel implements IModel
     private $User, $Customer, $CustomerWhere, $Producer, $ProducerWhere;
     private $UserId;
 
+    /**
+     * @return mixed
+     */
+    public function getUserId()
+    {
+        return $this->UserId;
+    }
+
+    /**
+     * @param mixed $UserId
+     */
+    public function setUserId($UserId)
+    {
+        $this->UserId = $UserId;
+    }
+
+    public function __destruct()
+    {
+       self::ResetObject();
+    }
+
     public function __construct($UserId = null)
     {
         if ($UserId)
@@ -35,7 +56,11 @@ class UserModel implements IModel
 
     }
 
-
+    function ResetObject() {
+        foreach ($this as $key => $value) {
+            unset($this->$key);
+        }
+    }
 
     // about User
     public function getRole()

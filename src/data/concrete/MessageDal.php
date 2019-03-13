@@ -17,7 +17,7 @@ class MessageDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function __construct()
     {
-        $this->Rows = parent::CreateTable(Container::getInstance(new Message()));
+        $this->Rows = parent::CreateTable(Container::getInstance(new Message()),"a_fs_Message");
     }
 
 

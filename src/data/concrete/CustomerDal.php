@@ -18,7 +18,13 @@ class CustomerDal extends DatabaseTableDao implements IDatabaseTableDao
     public function __construct()
     {
 
-        $this->Rows = parent::CreateTable(Container::getInstance(new Customer()));
+        $this->Rows = parent::CreateTable(Container::getInstance(new Customer()),"a_fs_Customer");
+
+    }
+
+
+    public function __destruct()
+    {
 
     }
 

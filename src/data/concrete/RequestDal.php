@@ -25,7 +25,7 @@ class RequestDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function __construct()
     {
-        $this->Rows = parent::CreateTable(Container::getInstance(new Request()));
+        $this->Rows = parent::CreateTable(Container::getInstance(new Request()),"a_fs_Request");
     }
 
 

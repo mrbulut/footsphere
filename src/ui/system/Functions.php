@@ -75,8 +75,17 @@ class Functions
 
     private static function whatIsTheUserRoleAndLanguage()
     {
-        $user = new UserModel();
+        $userId=null;
         $session = new Session();
+
+        $user = new UserModel();
+        if (is_user_logged_in()) {
+            $current_user = wp_get_current_user();
+            $userId = $current_user->ID;
+        }
+
+
+
         if (!$session->isthere("role")){
             if($user->getRole()=="administrator" || $user->getRole()=="cons"){
                 $session->create("role", "operationmanager");
@@ -86,6 +95,12 @@ class Functions
                 $session->create("role", "customer");
             }
         }
+
+        if(!$session->isthere("userId")){
+            $session->create("userId", $userId);
+        }
+
+
 
         $options = new OptionsModel();
 
@@ -98,6 +113,15 @@ class Functions
             $options->setLangueages($lang);
             $session->create("lang",$lang);
         }
+
+
+
+
+
+
+
+
+
     }
 
     function existsController($ControllerName)

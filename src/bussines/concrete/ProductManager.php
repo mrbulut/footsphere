@@ -47,6 +47,7 @@ class ProductManager implements IProductService,IManager
             $this->ProductWhere->setType($Type);
             return self::getProductList($this->ProductWhere);
         } else {
+
             return $this->ProductDal->selectall();
         }
 

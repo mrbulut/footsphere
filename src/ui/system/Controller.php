@@ -20,9 +20,10 @@ class Controller
         $this->userLang = $_SESSION['lang'];
         $this->get = new GeneralCons($this->userLang);
 
-
         $GLOBALS['string'] = $this->get->StringAll();
-        $GLOBALS['userId'] =1;
+        $GLOBALS['userId'] =$_SESSION['userId'];
+
+
         self::$view = new Viewer();
     }
 

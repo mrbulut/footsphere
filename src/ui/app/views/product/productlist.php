@@ -19,7 +19,9 @@
                   <h3 class="panel-title"><?php echo $GLOBALS['string']['menu_producer_urunler']?></h3>
                 </div>
                 <div class="col col-xs-6 text-right">
-                    <button type="button" class="btn btn-sm btn-primary btn-create">Create New</button>
+
+                        <a class="btn btn-sm btn-primary btn-create" href="/wp-admin/admin.php?page=footsphere&Products&home&0-create">
+                          <?php echo $GLOBALS['string']['yeniUrunEkle']?></a>
                 </div>
             </div>
         </div>
@@ -118,6 +120,33 @@
 
     .panel-table .panel-body .table-bordered > tbody > tr > td{
         line-height: 34px;
+    }
+
+
+    #thumbwrap {
+        margin:75px auto;
+        width:500px; height:500px;
+    }
+    .thumb {
+        float:left; /* must be floated for same cross browser position of larger image */
+        position:relative;
+        margin:3px;
+    }
+    .thumb img {
+        border:1px solid #000;
+        vertical-align:bottom;
+    }
+    .thumb:hover {
+        border:0; /* IE6 needs this to show large image */
+        z-index:1;
+    }
+    .thumb span {
+        position:absolute;
+        visibility:hidden;
+    }
+    .thumb:hover span {
+        visibility:visible;
+        top:37px; left:37px;
     }
 
 
