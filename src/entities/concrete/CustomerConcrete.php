@@ -7,7 +7,7 @@
  */
 include_once ROOT_PATH . "/src/entities/concrete/UserConcrete.php";
 
-class Customer extends User implements IEntity
+class Customer implements IEntity
 {
     // WP USER //
     public $ID;

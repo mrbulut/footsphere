@@ -152,6 +152,7 @@ class ProductModel implements IModel
 
     public function getAllProduct($array=array()){
         self::productSetup();
+
         if($array['ProducerNo']){
             return $this->ProductManager->getAllProductByProducerNo($array['ProducerNo']);
         }else if($array['Type']) {

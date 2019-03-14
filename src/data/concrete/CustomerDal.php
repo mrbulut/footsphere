@@ -23,9 +23,11 @@ class CustomerDal extends DatabaseTableDao implements IDatabaseTableDao
     }
 
 
-    public function __destruct()
+    public function cleaner()
     {
-
+        foreach ($this as $key => $value) {
+            unset($this->$key);
+        }
     }
 
 

@@ -83,11 +83,6 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
         if (!$user_id) {
             if (email_exists($user->getUserEmail()) == false) {
 
-                echo $user->getUserName()."<br>";
-                echo $user->getUserPass()."<br>";
-                echo $user->getUserName()."<br>";
-
-                echo $Cap;
 
                 $user_id = wp_create_user(
                     $user->getUserName(),

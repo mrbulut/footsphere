@@ -103,14 +103,15 @@ abstract class DatabaseTableDao extends MysqliDb
 
     public function CreateTable(IEntity $IEntity, $TableName = null)
     {
-        $this->database = MySqliDb::getInstance();
-        $this->IEntity = $IEntity;
-        $this->_instance = $this->IEntity;
 
+
+        $this->database = MySqliDb::getInstance();
         self::createRowsAndTableName($TableName);
 
 
+
         if (!$this->database->tableExists($this->TableName)) {
+
             $id = 'ID';
             if ($this->Rows[0] == "option_id") {
                 $id = "option_id";
@@ -190,13 +191,37 @@ abstract class DatabaseTableDao extends MysqliDb
 
     public function createRowsAndTableName($TableName)
     {
+
+        if($TableName=="a_fs_Message"){
+            include_once ROOT_PATH . "/src/entities/concrete/MessageConcrete.php";
+            $this->IEntity = new Message();
+        }else if($TableName=="a_fs_Product"){
+            include_once ROOT_PATH . "/src/entities/concrete/ProductConcrete.php";
+            $this->IEntity = new Product();
+        }else if($TableName=="a_fs_Customer"){
+            include_once ROOT_PATH . "/src/entities/concrete/CustomerConcrete.php";
+            $this->IEntity = new Customer();
+        }else if($TableName=="a_fs_Producer"){
+            include_once ROOT_PATH . "/src/entities/concrete/ProducerConcrete.php";
+            $this->IEntity = new Producer();
+        }else if($TableName=="wp_users" || $TableName=="a_fs_Users"){
+            include_once ROOT_PATH . "/src/entities/concrete/UserConcrete.php";
+            $this->IEntity = new User();
+        }else if($TableName=="a_fs_Request"){
+            include_once ROOT_PATH . "/src/entities/concrete/RequestConcrete.php";
+            $this->IEntity = new Request();
+        }else if($TableName=="wp_options" || $TableName=="a_fs_Options"){
+            include_once ROOT_PATH . "/src/entities/concrete/OptionsConcrete.php";
+            $this->IEntity = new Options();
+        }
+
         $i = 0;
-        if (!empty($this->IEntity)) {
+
+
             foreach ($this->IEntity as $key => $value) {
                 $this->Rows[$i] = $key;
                 $i++;
             }
-        }
 
         if ($TableName == null) {
             $this->TableName = $this->Extension . get_class($this->IEntity);
@@ -211,17 +236,20 @@ abstract class DatabaseTableDao extends MysqliDb
     private function createRows()
     {
         //  will to begin from 1 because id  be first
-        for ($i = 1; $i < count($this->Rows); $i++) {
+        if($this->Rows >1){
+            for ($i = 1; $i < count($this->Rows); $i++) {
 
-            if ($i == (count($this->Rows) - 1)) {
-                $this->value = $this->value . "" . $this->Rows[$i] . " " . "TEXT";
+                if ($i == (count($this->Rows) - 1)) {
+                    $this->value = $this->value . "" . $this->Rows[$i] . " " . "TEXT";
 
-            } else {
+                } else {
 
-                $this->value = $this->value . "" . $this->Rows[$i] . " " . "TEXT" . ",";
+                    $this->value = $this->value . "" . $this->Rows[$i] . " " . "TEXT" . ",";
+                }
+
             }
-
         }
+
     }
 
     private function ClassConverter($Object)

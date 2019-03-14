@@ -15,14 +15,7 @@
     <div class="panel panel-default panel-table">
         <div class="panel-heading">
             <div class="row">
-                <div class="col col-xs-6">
 
-                    <a class="btn btn-sm btn-primary btn-create" href="/wp-admin/admin.php?page=footsphere&Products&home&0-create">
-                        <?php echo $GLOBALS['string']['yeniUrunEkle']?></a>
-                </div>
-                <div class="col col-xs-6 text-left">
-
-                </div>
             </div>
         </div>
         <div class="panel-body">
@@ -30,7 +23,6 @@
                 <thead>
                 <tr>
                     <?php echo $data['columns']; ?>
-                    <th><em class="fa fa-cog"></em></th>
 
                 </tr>
                 </thead>
@@ -149,7 +141,6 @@
         visibility:visible;
         top:37px; left:37px;
     }
-
 
 </style>
 

@@ -7,7 +7,7 @@
  */
 include_once ROOT_PATH . "/src/entities/concrete/UserConcrete.php";
 
-class Producer extends User implements IEntity
+class Producer implements IEntity
 {
     // WP PRODUCER //
     public $ID;

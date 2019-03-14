@@ -38,6 +38,7 @@ class UserManager implements IUserService,IManager
 
     function getUser($UserId)
     {
+
         $this->UserDal->getUserWP($UserId);
         return $this->UserDal->getUser();
     }

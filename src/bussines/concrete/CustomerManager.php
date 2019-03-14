@@ -40,6 +40,7 @@ class CustomerManager implements ICustomerService,IManager
         $this->CustomerWhere = new Customer();
         $this->Customer->setUserId($this->UserDal->getUserId());
         $this->CustomerObjectData = self::getCustomerList($this->Customer);
+        $this->CustomerDal->cleaner();
 
     }
 

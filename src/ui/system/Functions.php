@@ -31,6 +31,9 @@ class Functions
         $link = explode("?page=", $link)[1];
 
         if ($link) {
+            if($link=="footsphere&translation"){
+                header("Location: ".$_POST['nowpage']);
+            }
             $contName = $link;
             $expContName = explode("&", $contName);
 

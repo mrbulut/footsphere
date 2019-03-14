@@ -85,8 +85,6 @@ class productsController extends Controller
             );
         }
 
-
-
         if(isset($_POST['deleteProduct'])){
             $this->productModel->removeProduct( $_POST['urunId']);
         }
@@ -117,7 +115,7 @@ class productsController extends Controller
     {
         $result = '';
         if ($this->userRole == "producer") {
-            $PArray = $this->productModel->getAllProduct(                array("ProducerNo" => $GLOBALS['userId']));
+            $PArray = $this->productModel->getAllProduct(array("ProducerNo" => $GLOBALS['userId']));
         } else if ($this->userRole == "operationmanager") {
             $PArray = $this->productModel->getAllProduct();
 
@@ -125,11 +123,14 @@ class productsController extends Controller
             $PArray = null;
         };
 
-        $result = self::prepareProductsArray($PArray);
+        if ($PArray){
+            $result = self::prepareProductsArray($PArray);
 
 
-        $this->sendData['products'] = $result;
-        Controller::$view->view("product/productlist", $this->sendData);
+            $this->sendData['products'] = $result;
+            Controller::$view->view("product/productlist", $this->sendData);
+        }
+
     }
 
 
@@ -393,10 +394,27 @@ class productsController extends Controller
     public function showing($data)
     {
 
-
         $data = explode("-",$data);
         $id = $data[0];
         $proces = $data[1];
+
+        if($this->userRole=="producer"){
+
+            $cap = false;
+
+            $PArray = $this->productModel->getAllProduct(array("ProducerNo" => $GLOBALS['userId']));
+            foreach ($PArray as $key => $value){
+                if($id==$value['ID']){
+                    $cap=true;
+                }
+            }
+            if($cap)die();
+
+        }
+
+
+
+
         if($proces=="create"){
             self::createCreatePage($id);
         }else if ($proces=="edit" || $proces=="delete"){
@@ -430,6 +448,17 @@ class productsController extends Controller
     {
         $returnlast =" ";
 
+        $id = $_POST['hiddenValueProductId'];
+        if(isset($_POST['changeButtonClickOnayla'])){
+            $this->productModel->setProductStatus($id,"1");
+        }
+
+        if(isset($_POST['changeButtonClickReddet'])){
+            $this->productModel->setProductStatus($id,"2");
+        }
+
+
+
         foreach ($productArray as $key => $value) {
             $result = null;
             $ImageArray = "";
@@ -445,7 +474,14 @@ class productsController extends Controller
             $ID = $value['ID'];
             $editButton = '<a href="/wp-admin/admin.php?page=footsphere&Products&home&'.$ID.'-edit" class="btn btn-warning"><em class="fa fa-pencil"></em></a>';
             $deleteButton = '<a href="/wp-admin/admin.php?page=footsphere&Products&home&'.$ID.'-delete" class="btn btn-danger"><em class="fa fa-trash"></em></a>';
+            if($this->userRole=="operationmanager")
+            {
+                $changeButton = '<button type="button" onclick="hiddenValueProductId('.$ID.');" id="statusButton" name="statusButton" class="btn btn-info btn-xs" data-toggle="modal" data-target="#openStatusDialog" >'.$GLOBALS['string']['degistir'].'</button>';
 
+                $producerNo =    $value['ProducerNO'];
+                $produerColumn = ' <td align="center"><a href="/wp-admin/admin.php?page=footsphere&Producer&home&'.$producerNo.'-edit" class="btn btn-warning"><em class="fa fa-external-link"></em></a></td>'
+                ;
+            }
 
             $result =
                 "<td>" . $ImageArray . "</td>".
@@ -459,7 +495,8 @@ class productsController extends Controller
                 "<td>" .  $this->productFeaturesArray['Season'][$value['Season']-1] . "</td>".
                 "<td>" .  $this->productFeaturesArray['InsideBaseType'][$value['InsideBaseType']-1] . "</td>".
                 "<td>" .  $this->productFeaturesArray['InsideBaseMeterial'][$value['InsideBaseMeterial']-1] . "</td>".
-                "<td>" .  $value['Status'] . "</td>";
+                "<td align='center'>" .  $this->productFeaturesArray['Status'][$value['Status']]."<br>".$changeButton. "</td>"
+                .$produerColumn;
 
 
             $returnlast =  $returnlast . "<tr>" .$result .'
@@ -563,7 +600,7 @@ class productsController extends Controller
         $this->productModel->createProduct($array);
     }
 
-    public function createColumns()
+    private function createColumns()
     {
 
 
@@ -584,6 +621,10 @@ class productsController extends Controller
         $columNameTitles = null;
         foreach ($columTitleNameArray as $key => $value) {
             $columNameTitles = $columNameTitles . "<th>" . $value . "</th>";
+        }
+
+        if($this->userRole="operationmanager"){
+            $columNameTitles = $columNameTitles . "<th>" . $GLOBALS['string']['üretici'] . "</th>";
         }
 
         $this->sendData['columns'] = $columNameTitles;
@@ -626,6 +667,12 @@ class productsController extends Controller
                 $GLOBALS['string']['deri'],
                 $GLOBALS['string']['sunger'],
                 $GLOBALS['string']['hafizalisunger']
+            ),
+
+            "Status" => array(
+                $GLOBALS['string']['beklemede'],
+                $GLOBALS['string']['onaylandi'],
+                $GLOBALS['string']['onaylanmadi']
             )
         );
     }

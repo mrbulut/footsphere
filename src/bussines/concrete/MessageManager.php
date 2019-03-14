@@ -167,6 +167,9 @@ class MessageManager implements IMessageService, IManager
 
     function writeMessage($UserId, $Message, $Who)
     {
+        echo "gelenuser.".$UserId;
+
+        echo $Who;
         if ($Message != '' || $Message != null) {
             if ($UserId)
                 $this->UserId = $UserId;

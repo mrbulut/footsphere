@@ -35,6 +35,7 @@ foreach ($OperationManagerNavBarArray as $key => $value) {
 <head>
     <meta charset="UTF-8">
     <title>Footsphere</title>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>

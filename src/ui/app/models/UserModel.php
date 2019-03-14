@@ -80,11 +80,18 @@ class UserModel implements IModel
     }
 
 
-    public function getUser()
+    public function getUser($UserId=null)
     {
         self::userSetup();
-        return $this->UserManager->getUser($this->UserId);
+        echo $UserId;
+        if($UserId)
+            return $this->UserManager->getUser($UserId);
+        else
+            return $this->UserManager->getUser($this->UserId);
+
+
     }
+
     // about User
 
     // about Customer
@@ -239,11 +246,15 @@ class UserModel implements IModel
             $array['offer']);
     }
 
-    public function getProducer()
+    public function getProducer($UserId=null)
     {
         self::producerSetup();
+        if($UserId)
+            return $this->ProducerManager->getProducerByUserId($UserId)[0];
 
-        return $this->ProducerManager->getProducerByUserId($this->UserId)[0];
+        else
+                return $this->ProducerManager->getProducerByUserId($this->UserId)[0];
+
     }
 
     public function updateProducer($array = array())

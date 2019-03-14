@@ -26,7 +26,7 @@ class MessageModel implements IModel
         else {
             if (is_user_logged_in()) {
                 $current_user = wp_get_current_user();
-                $this->UserId = $current_user->ID;
+                $this->UserId = $current_user->ID[0];
             }
         }
     }
@@ -59,13 +59,13 @@ class MessageModel implements IModel
     {
         self::messageSetup();
         return $this->MessageManager->writeMessage($this->UserId, $Message,
-            self::getRole());
+            self::getRole(true));
     }
 
-    public function setTheUserMessagesRead()
+    public function setTheUserMessagesRead($UserId)
     {
         $this->messageSetup();
-        return $this->MessageManager->setTheUserMessagesRead($this->UserId);
+        return $this->MessageManager->setTheUserMessagesRead($UserId);
     }
 
     public function isThereUnreadMessageForUser()
@@ -74,9 +74,12 @@ class MessageModel implements IModel
         return $this->MessageManager->isThereUnreadMessageForUser($this->UserId);
     }
 
-    private function getRole()
+    private function getRole($girisyapankullanici=false)
     {
-        $user = new CustomerManager($this->UserId);
+        if($girisyapankullanici)
+        $user = new CustomerManager();
+        else
+            $user= new CustomerManager($this->UserId);
         return $user->getRole();
     }
 
