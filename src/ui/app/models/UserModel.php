@@ -83,7 +83,6 @@ class UserModel implements IModel
     public function getUser($UserId=null)
     {
         self::userSetup();
-        echo $UserId;
         if($UserId)
             return $this->UserManager->getUser($UserId);
         else
@@ -239,11 +238,15 @@ class UserModel implements IModel
     {
         self::producerSetup();
 
-        return $this->ProducerManager->createProducer(
+        $Id=  $this->ProducerManager->createProducer(
             $array['username'],
             $array['email'],
             $array['password'],
-            $array['offer']);
+            $array['OfferLimit']);
+
+        if($Id){
+            return self::updateProducer($array,$Id);
+        }
     }
 
     public function getProducer($UserId=null)
@@ -257,7 +260,7 @@ class UserModel implements IModel
 
     }
 
-    public function updateProducer($array = array())
+    public function updateProducer($array = array(),$Id)
 
     {
         self::producerSetup();
@@ -266,45 +269,49 @@ class UserModel implements IModel
         $this->Producer->ResetObject();
 
         foreach ($array as $key => $value) {
-            $this->User->ResetObject();
-            $this->Producer->ResetObject();
-            if ($key == "email") {
-                $this->User->setUserEmail($value);
-            } else if ($key == "display_name") {
-                $this->User->setDisplayName($value);
-            } else if ($key == "password") {
-                $this->User->setUserPass($value);
-            } else if ($key == "CompanyName") {
-                $this->Producer->setCompanyName($value);
-            } else if ($key == "PhoneNumber") {
-                $this->Producer->setPhoneNumber($value);
-            } else if ($key == "PhoneNumber2") {
-                $this->Producer->setPhoneNumber2($value);
-            } else if ($key == "Address") {
-                $this->Producer->setAddress($value);
-            } else if ($key == "PaymentInformantion") {
-                $this->Producer->setPaymentInformantion($value);
-            } else if ($key == "CargoInformantion") {
-                $this->Producer->setCargoInformantion($value);
-            } else if ($key == "OfferLimit") {
-                $this->Producer->setOfferLimit($value);
-            }
+            if($value){
+                $this->User->ResetObject();
+                $this->Producer->ResetObject();
+                if ($key == "email") {
+                    $this->User->setUserEmail($value);
+                } else if ($key == "display_name") {
+                    $this->User->setDisplayName($value);
+                } else if ($key == "password") {
+                    $this->User->setUserPass($value);
+                } else if ($key == "CompanyName") {
+                    $this->Producer->setCompanyName($value);
+                } else if ($key == "PhoneNumber") {
+                    $this->Producer->setPhoneNumber($value);
+                } else if ($key == "PhoneNumber2") {
+                    $this->Producer->setPhoneNumber2($value);
+                } else if ($key == "Address") {
+                    $this->Producer->setAddress($value);
+                } else if ($key == "PaymentInformantion") {
+                    $this->Producer->setPaymentInformantion($value);
+                } else if ($key == "CargoInformantion") {
+                    $this->Producer->setCargoInformantion($value);
+                } else if ($key == "OfferLimit") {
+                    $this->Producer->setOfferLimit($value);
+                }
 
-            if ($this->Producer) {
-                $this->ProducerManager->updateProducerByUserId($this->Producer, $this->UserId);
-            }
-            if ($this->User) {
-                $this->UserManager->updateUser($this->User, $this->UserId);
+
+
+                if ($this->Producer) {
+                    $this->ProducerManager->updateProducerByUserId($this->Producer,$Id);
+                }
+                if ($this->User) {
+                    $this->UserManager->updateUser($this->User, $Id);
+                }
             }
 
         }
     }
 
-    public function removeProducer()
+    public function removeProducer($UserId)
     {
         self::producerSetup();
 
-        return $this->ProducerManager->removeProducer($this->UserId);
+        return $this->ProducerManager->removeProducer($UserId);
     }
 
     public function addProductToProducer($array = array())

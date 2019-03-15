@@ -217,12 +217,12 @@ abstract class DatabaseTableDao extends MysqliDb
 
         $i = 0;
 
-
+        if (is_array($this->IEntity) || is_object($this->IEntity)){
             foreach ($this->IEntity as $key => $value) {
                 $this->Rows[$i] = $key;
                 $i++;
             }
-
+          }
         if ($TableName == null) {
             $this->TableName = $this->Extension . get_class($this->IEntity);
         } else {

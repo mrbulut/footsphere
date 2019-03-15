@@ -80,13 +80,18 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
     {
         $user_id = username_exists($user->getUserName());
 
+
+
+
         if (!$user_id) {
             if (email_exists($user->getUserEmail()) == false) {
 
+                $sifre = wp_hash_password($user->getUserPass());
+                $user->setUserPass($sifre);
 
                 $user_id = wp_create_user(
                     $user->getUserName(),
-                    $user->getUserPass(),
+                     $user->getUserPass(),
                     $user->getUserEmail());
 
                 if ($user_id) {
@@ -104,6 +109,8 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
         } else {
             return $user_id;
         }
+
+
     }
 
     public function deleteUser($UserId)

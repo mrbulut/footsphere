@@ -6,123 +6,78 @@
     <div class="row">
 
         <div class="col-md-6">
-            <form role="form" action="/wp-admin/admin.php?page=footsphere&Products" method="POST" enctype="multipart/form-data">
+            <form role="form" action="/wp-admin/admin.php?page=footsphere&Producers" method="POST" enctype="multipart/form-data">
 
-                <div class="form-group">
-                    <label for="PName" class="loginFormElement"><? echo $GLOBALS['string']['backend_comp_urunBasligiText'];?></label>
-                    <input class="form-control" id="PName" name="PName"type="text" value="<? echo $data['PName'];?>">
+                <? echo  $data['username'];?>
+
+
+                <div class="form-group"><label for="Adi" class="loginFormElement">
+                        <? echo $GLOBALS['string']['Adi'];?></label>
+                    <input class="form-control" id="Adi" name="Adi" type="text"
+                              value="<? echo $data['Adi'];?>">
                 </div>
 
-                <div class="form-group">
-                    <label for="DescProduct" class="loginFormElement">
-                        <? echo $GLOBALS['string']['backend_comp_urunAciklamasiText'];?></label>
-                    <input class="form-control" id="DescProduct" name="DescProduct" type="text" value="<? echo $data['DescProduct'];?>">
+                <div class="form-group"><label for="mail" class="loginFormElement">
+                        <? echo $GLOBALS['string']['mail'];?></label>
+                    <input class="form-control" id="mail" name="mail" type="text"
+                           value="<? echo $data['mail'];?>">
                 </div>
 
-                <div>
-
-                <div class="form-group">
-                    <label for="Type" >
-                        <? echo $GLOBALS['string']['backend_comp_turuText'];?></label>
-                    <select class="form-control" name="Type" id="Type">
-                        <? echo $data['Type_options'];?>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="BaseMaterial" class="loginFormElement">
-                        <? echo $GLOBALS['string']['backend_comp_tabanMalzemeText'];?></label>
-                    <select class="form-control" name="BaseMaterial" id="BaseMaterial">
-                        <? echo $data['BaseMaterial_options']?>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="ClosureType" class="loginFormElement">
-                        <? echo $GLOBALS['string']['backend_comp_kapanisTuru'];?></label>
-                    <select class="form-control" name="ClosureType" id="ClosureType">
-                        <? echo $data['ClosureType_options'];?>
-                    </select>
+                <div class="form-group"><label for="password" class="loginFormElement">
+                        <? echo $GLOBALS['string']['sifre'];?></label>
+                    <input class="form-control" id="password" name="password" type="text"
+                           value="">
                 </div>
 
 
+                <div class="form-group"><label for="sirketAdi" class="loginFormElement">
+                        <? echo $GLOBALS['string']['sirketAdi'];?></label>
+                    <input class="form-control" id="sirketAdi" name="sirketAdi" type="text"
+                           value="<? echo $data['sirketAdi'];?>">
+                </div>
 
-                <div class="form-group">
-                    <label for="TopMeterial" class="loginFormElement"><? echo $GLOBALS['string']['backend_comp_ustMalzeme'];?></label>
-                    <select class="form-control" name="TopMeterial" id="TopMeterial">
-                        <? echo $data['TopMeterial_options'];?>
-                    </select>
+                <? echo  $data['maxminlayer'];?>
+
+
+
+                <div class="form-group"><label for="tel" class="loginFormElement">
+                        <? echo $GLOBALS['string']['tel'];?></label>
+                    <input class="form-control" id="tel" name="tel" type="text"
+                           value="<? echo $data['tel'];?>">
+                </div>
+
+                <div class="form-group"><label for="tel2" class="loginFormElement">
+                        <? echo $GLOBALS['string']['tel'];?> - 2</label>
+                    <input class="form-control" id="tel2" name="tel2" type="text"
+                           value="<? echo $data['tel2'];?>">
+                </div>
+
+                <div class="form-group"><label for="adres" class="loginFormElement">
+                        <? echo $GLOBALS['string']['adres'];?></label>
+                    <input class="form-control" id="adres" name="adres" type="text"
+                           value="<? echo $data['adres'];?>">
+                </div>
+
+                <div class="form-group"><label for="odemeBilgi" class="loginFormElement">
+                        <? echo $GLOBALS['string']['odemeBilgi'];?></label>
+                    <input class="form-control" id="odemeBilgi" name="odemeBilgi"type="text"
+                           value="<? echo $data['odemeBilgi'];?>">
+                </div>
+
+                <div class="form-group"><label for="kargoBilgi" class="loginFormElement">
+                        <? echo $GLOBALS['string']['kargoBilgi'];?></label>
+                    <input class="form-control" id="kargoBilgi" name="kargoBilgi"type="text"
+                           value="<? echo $data['kargoBilgi'];?>">
                 </div>
 
 
-                <div class="form-group">
-                    <label for="liningMeterial" class="loginFormElement"><? echo $GLOBALS['string']['backend_comp_astarMalzemesi'];?></label>
-                    <select class="form-control" name="liningMeterial" id="liningMeterial">
-                        <? echo $data['liningMeterial_options'];?>
-                    </select>
-                </div>
-
-
-                <div class="form-group">
-                    <label for="Season" class="loginFormElement"><? echo $GLOBALS['string']['backend_comp_sezon'];?></label>
-                    <select class="form-control" name="Season" id="Season">
-                        <? echo $data['Season_options'];?>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="InsideBaseType" class="loginFormElement"><? echo $GLOBALS['string']['backend_comp_icTabanturu'];?></label>
-                    <select class="form-control" name="InsideBaseType" id="InsideBaseType">
-                        <? echo $data['InsideBaseType_options'];?>
-                    </select>
-                </div>
-
-
-                <div class="form-group">
-                    <label for="InsideBaseMeterial" class="loginFormElement"><? echo $GLOBALS['string']['backend_comp_icTabanMalzemesi'];?></label>
-                    <select class="form-control" name="InsideBaseMeterial"  id="InsideBaseMeterial">
-                        <? echo $data['InsideBaseMeterial_options'];?>
-                    </select>
-                </div>
-
-
-
-
-
-
-                <div class="form-group">
-                    <label class="control-label"><?php echo $GLOBALS['string']['urun']." ".$GLOBALS['string']['resimyazisi']?> 1</label>
-                    <?php echo $data['Image']; ?>
-
-                    <input id="image" name="image" class="uploadfiles" data-icon="false" type="file">
-                </div>
-
-
-                <div class="form-group">
-                    <label class="control-label"><?php echo $GLOBALS['string']['urun']. " ".$GLOBALS['string']['resimyazisi']?> 2</label>
-                    <?php echo $data['Image2']; ?>
-
-                    <input id="image2" name="image2" class="uploadfiles" data-icon="false" type="file">
-                </div>
-
-
-
-                <div class="form-group">
-                    <label class="control-label"><?php echo $GLOBALS['string']['urun']." ".$GLOBALS['string']['resimyazisi']?> 3</label>
-                    <?php echo $data['Image3']; ?>
-
-                    <input id="image3" name="image3" class="uploadfiles" data-icon="false" type="file">
-                </div>
 
 
                 <?php echo $data['editButton']; ?>
-                <a href="/wp-admin/admin.php?page=footsphere&Products" class="btn btn-danger">
+                <a href="/wp-admin/admin.php?page=footsphere&Producers" class="btn btn-danger">
                     <?php echo $GLOBALS['string']['kapatYazisi'];?></a>
 
-                <input type="hidden" id="urunId" name="urunId" value="<?php echo $data['ID']?>">
-                <input type="hidden" id="userId" name="userId" value="<?php echo $GLOBALS['userId']?>">
-                <input type="hidden" id="ProducerNO" name="ProducerNO" value="<?php echo $data['ProducerNO']?>">
-                <input type="hidden" id="Status" name="Status" value="<?php echo $data['Status']?>">
+                <input type="hidden" id="userId" name="userId" value="<?php echo $data['userId']?>">
 
 
 

@@ -104,8 +104,10 @@ class productsController extends Controller
         if($productArray){
             if (!$data) {
                 self::listing($productArray);
+
             } else {
                 self::showing($data);
+
             }
         }
 

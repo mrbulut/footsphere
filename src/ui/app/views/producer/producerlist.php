@@ -17,7 +17,8 @@
             <div class="row">
                 <div class="col col-xs-6">
 
-                    <a class="btn btn-sm btn-primary btn-create" href="/wp-admin/admin.php?page=footsphere&Products&home&0-create">
+                    <a class="btn btn-sm btn-primary btn-create"
+                       href="/wp-admin/admin.php?page=footsphere&Producers&home&0-create">
                         <?php echo $GLOBALS['string']['ureticiEkle']?></a>
                 </div>
                 <div class="col col-xs-6 text-left">

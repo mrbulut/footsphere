@@ -121,11 +121,21 @@ class ProducerManager implements IProducerService,IManager
         $user->setUserName($Name);
         $user->setUserEmail($Email);
         $user->setUserPass($Pass);
+
         $ID = $this->UserDal->createUser($user, "editor");
-        $this->Producer->ResetObject();
-        $this->Producer->setUserId($ID);
-        $this->Producer->setOfferLimit($OfferLimit);
-        return self::addProducer($this->Producer);
+
+
+
+        if($ID){
+            $this->Producer->ResetObject();
+            $this->Producer->setUserId($ID);
+            $this->Producer->setOfferLimit($OfferLimit);
+            $oldu = self::addProducer($this->Producer);
+            if($oldu){
+                return $ID;
+            }
+        }
+
         //  return $this->ProducerDal->addProducer($user,$OfferLimit);
     }
 

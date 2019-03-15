@@ -16,11 +16,16 @@ foreach ($OperationManagerNavBarArray as $key => $value) {
     }
 
     if ($_SESSION['role'] == "producer") {
-        if ($value == "Settings")
-            $value = "Profil";
         if ($value == "Producers")
             continue;
-        $navBarResult = $navBarResult . '<li class="' . $click . '"><a class="nav-link" href="admin.php?page=footsphere&' . $value . '">' . $value . '</a> </li>';
+
+        if ($value == "Settings")
+            $navBarResult = $navBarResult . '<li class="' . $click . '"><a class="nav-link" href="admin.php?page=footsphere&Producers"&>' . $value . '</a> </li>';
+        else{
+            $navBarResult = $navBarResult . '<li class="' . $click . '"><a class="nav-link" href="admin.php?page=footsphere&' . $value . '">' . $value . '</a> </li>';
+
+        }
+
 
     } else {
         $navBarResult = $navBarResult . '<li class="' . $click . '"><a class="nav-link" href="admin.php?page=footsphere&' . $value . '">' . $value . '</a> </li>';
