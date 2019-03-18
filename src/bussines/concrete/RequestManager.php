@@ -87,6 +87,16 @@ class RequestManager implements IRequestService,IManager
         return self::getRequestList($this->RequestWhere)[0];
     }
 
+
+    function getRequestByRequestNoAndProducerNo($requestno,$ProducerNo)
+    {
+        $this->RequestWhere->ResetObject();
+        $this->RequestWhere->setRequestNo($requestno);
+        $this->RequestWhere->setProducerNo($ProducerNo);
+
+        return self::getRequestList($this->RequestWhere);
+    }
+
     function getRequestByUserIdAndProducerNo($UserId, $ProducerNo)
     {
         $this->RequestWhere->ResetObject();

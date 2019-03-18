@@ -22,7 +22,7 @@ class DateConverter
             $time = ceil($Date - $time);
             return $time/60;
         }
-        require false;
+        return false;
     }
 
     public function DateToHour($Date)

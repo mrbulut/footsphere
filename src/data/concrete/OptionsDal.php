@@ -123,6 +123,11 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
         return self::updateOptionToOptionName($this->OptionsNames['commission'], $commissionArea);
     }
 
+    public function getAllRequest(){
+         return $this->likeWhere("option_name", $this->OptionsNames['request']."%", 'like');
+
+  //   echo "brda";$this->get();
+    }
 
     private function selectOption($option_name)
     {

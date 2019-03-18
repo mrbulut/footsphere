@@ -150,4 +150,8 @@ class OptionsManager implements IOptionsService,IManager
             );
         }
     }
+
+    function getAllRequest(){
+        return   $this->OptionsDal->getAllRequest();
+    }
 }

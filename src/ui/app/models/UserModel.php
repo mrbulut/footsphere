@@ -186,15 +186,21 @@ class UserModel implements IModel
         $resultArray = array();
         $this->CustomerWhere->ResetObject();
         $this->CustomerWhere->setUserId($this->UserId);
-        $data = $this->CustomerManager->getCustomerList($this->CustomerWhere);
+        $data0 = $this->CustomerManager->getCustomerList($this->CustomerWhere);
+        $data1= $this->UserManager->getUser($this->UserId);
+
+        $resultArray[0] = $data0[0];
+        $resultArray[1] = $data1;
+
+
+        /*
         foreach ($data as $key => $value) {
             $resultArray[$key] = $value;
         }
-        $data = $this->UserManager->getUser($this->UserId);
         foreach ($data as $key => $value) {
             $resultArray[$key] = $value;
-        }
-        return $resultArray[0];
+        }*/
+        return $resultArray;
     }
 
     public function deleteExtraFileCustomer($filePath)

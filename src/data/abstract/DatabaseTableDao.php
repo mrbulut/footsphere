@@ -189,6 +189,11 @@ abstract class DatabaseTableDao extends MysqliDb
         }
     }
 
+    public function likeWhere($key,$value,$type){
+        $this->database->whereMysqliDb($key,$value,$type);
+        return $this->database->get($this->TableName);
+    }
+
     public function createRowsAndTableName($TableName)
     {
 

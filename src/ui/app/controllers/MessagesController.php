@@ -135,7 +135,7 @@ class messagesController extends Controller
         "<td>" . $message. "</td>".
         "<td>" . $value['Date'] . "</td>";
         return  "<tr>" .$result .'
-                      </tr> ' ;;
+                      </tr> ' ;
     }
 
     public function showing($data)

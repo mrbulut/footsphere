@@ -31,6 +31,11 @@ class OptionsModel implements IModel
     }
 
 
+    public function getAllRequest(){
+        self::optionsSetup();
+        return $this->OptionsManager->getAllRequest();
+    }
+
     public function getLangueages(){
         self::optionsSetup();
         return $this->OptionsManager->getLangueages($this->UserId);
@@ -92,6 +97,13 @@ class OptionsModel implements IModel
         $this->optionsSetup();
         return $this->OptionsManager->createRequestForUser($this->UserId, $RequestType);
     }
+
+    public function createRequest($RequestType,$UserId)
+    {
+        $this->optionsSetup();
+        return $this->OptionsManager->createRequestForUser($UserId, $RequestType);
+    }
+
 
     public function getTheRequestTime($RequestType)
     {
