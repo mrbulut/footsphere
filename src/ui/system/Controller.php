@@ -21,6 +21,9 @@ class Controller
         $this->get = new GeneralCons($this->userLang);
 
         $GLOBALS['string'] = $this->get->StringAll();
+        $GLOBALS['PriceSymbol'] = $this->get->getCurrencySymbol();
+        $GLOBALS['PriceShortCode'] = $this->get->getCurrency();
+
         $GLOBALS['userId'] =$_SESSION['userId'];
 
 

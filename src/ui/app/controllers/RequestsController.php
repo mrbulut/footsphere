@@ -10,6 +10,7 @@
 include_once ROOT_PATH . '/src/ui/app/models/RequestModel.php';
 include_once ROOT_PATH . '/src/ui/app/models/OptionsModel.php';
 include_once ROOT_PATH . '/src/ui/app/models/UserModel.php';
+include_once ROOT_PATH . '/src/ui/app/models/ProductModel.php';
 
 class requestsController extends Controller
 {
@@ -18,6 +19,8 @@ class requestsController extends Controller
 
     private $requestModel;
     private $optionsModel;
+    private $productModel;
+    private $teklifedilenurunler;
 
 
     public function __construct()
@@ -29,7 +32,9 @@ class requestsController extends Controller
         );
         $this->userRole = $_SESSION['role'];
 
+
         $this->optionsModel = new OptionsModel();
+        $this->productModel = new ProductModel();
 
         $this->sendData['StatusArray']= array(
             "" => $GLOBALS['string']['requestStatusDevam'],
@@ -44,10 +49,16 @@ class requestsController extends Controller
 
 
 
+
     public function home($data = false)
     {
         $this->requestModel = new RequestModel($data);
 
+        if(isset($_POST['UpdateButton'])){
+            $requestID = $_POST['RequestID'];
+            $PandP = $_POST['hiddenValueProductAndPrices'];
+            $this->requestModel->setRequestProduct($requestID,$PandP);
+        }
         if (!$data) {
             self::listing();
         } else {
@@ -82,7 +93,7 @@ class requestsController extends Controller
                 "<td>" . $inceleButton . "</td>".
                 "<td>" . $requestNo . "</td>".
                 "<td>" . $productType . "</td>".
-                "<td>" . $date[0] . "</td>".
+                "<td>" . $date[0] ." ".$date[1] . "</td>".
                 "<td>" . $userId . "</td>".
                 "<td>" . $producerNo . "</td>".
                 "<td>" . $status . "</td>".
@@ -171,10 +182,22 @@ class requestsController extends Controller
                 "ProducerNo"=>$GLOBALS['userId']));
 
         }
-       $UserId = $requests['UserID'];
+        $ID=$requests['ID'];
+        $UserId = $requests['UserID'];
         $ProducerNo = $requests['ProducerNo'];
-        $RequestNo = $requests['RequestNo'];
         $ProductsAndPrices = $requests['ProductsAndPrices'];
+        self::setupProducerProducts($ProducerNo,$ProductsAndPrices);
+        $RequestNo = $requests['RequestNo'];
+        $deleteText =$GLOBALS['string']['sil'];
+        $hiddenValue = ' 
+        
+        <input type="hidden" id="hiddenValueProductAndPrices" name="hiddenValueProductAndPrices" value="'.$ProductsAndPrices.'">';
+        $requestID = ' 
+        <input type="hidden" id="deleteText" name="deleteText" value="'.$deleteText.'">
+        <input type="hidden" id="RequestID" name="RequestID" value="'.$ID.'">';
+
+        $ProductsAndPrices =explode(";", $ProductsAndPrices);
+        self::showProducts($ProductsAndPrices);
         $Status = $requests['Status'];
         $Type = $requests['Type'];
 
@@ -189,12 +212,152 @@ class requestsController extends Controller
         $this->sendData['image2'] = $customer[0]['FootImage2'];
         $this->sendData['image3'] = $customer[0]['FootImage3'];
         $this->sendData['extrainfo'] = $customer[0]['ExtraInfo'];
+        $this->sendData['hiddenValueProductAndPrices'] = $hiddenValue;
 
+        $this->sendData['RequestID'] = $requestID;
 
 
         Controller::$view->view("requests/request", $this->sendData);
     }
 
+
+    private  function showProducts($ProductsAndPrices)
+    {
+        $result = '';
+        foreach ($ProductsAndPrices as $key => $value){
+            $value = explode(":",$value);
+            $ProductID=$value[0];
+            $this->teklifedilenurunler[$key] = $ProductID;
+
+            $ProductPriceType=$value[2];
+            $ProductPriceTypeSymbol=$value[3];
+            $Product = $this->productModel->getProduct($ProductID);
+            $image=$Product['Image'];
+            $image2=$Product['Image2'];
+            $image3=$Product['Image3'];
+            $PName = $Product['PName'];
+            $DescProduct= $Product['DescProduct'];
+            $ProductPrice=$value[1];
+
+            $deleteText=$GLOBALS['string']['sil'];
+            if($image){
+                $result = $result . '
+            
+            <div id="'.$ProductID.'_div" name="'.$ProductID.'_div"class="profile-activity clearfix">
+                            <div>
+
+                                <img class="pull-left"  src="'.$image.'">
+                                <img class="pull-left"  src="'.$image2.'">
+                                <img class="pull-left"  src="'.$image3.'">
+
+                                <b>'.$PName.'  </b>
+                                '.$DescProduct.'
+                                
+                                <button  type="button" onclick="deleteFunction('.$ProductID.')"  class=" btn btn-sm btn-danger tools action-buttons">
+                                    '.$deleteText.'
+                                </button>
+                                
+                                <div class="time">
+                                    <i class="fa fa-money" ></i>
+                                     '.$ProductPrice.' '.$ProductPriceTypeSymbol.' 
+                                </div>
+                            </div>
+
+                            <div class="tools action-buttons-xl">
+                                <a href="#" class="red">
+                                    <i class="ace-icon fa fa-times bigger-125"></i>
+                                </a>
+                            </div>
+
+                        </div>
+            
+            ';
+            }
+
+
+        }
+
+        $this->sendData['teklifedilenurunler'] = $result ;
+
+    }
+
+
+    private  function setupProducerProducts($ProducerNo,$ProductsAndPrices)
+    {
+
+        $ProductsAndPrices = explode(";",$ProductsAndPrices);
+
+        $result = '<div class="row" >' ;
+        $Products = $this->productModel->getAllProduct(array("ProducerNo" => $ProducerNo));
+
+        foreach ($Products as $key => $value){
+
+
+            $gecerli = true;
+            $status = $value['Status'];
+
+            if($status!=1){
+                continue;
+            }
+            foreach ($ProductsAndPrices as $key2 => $value2){
+                $ID = explode(":",$value2)[0];
+
+                if($value['ID']==$ID){
+                    $gecerli=false;
+                }else{
+
+
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+            if($value && $gecerli){
+                $image=$value['Image'];
+                $sendimage="'".$image."'";
+                $image2=$value['Image'];
+                $sendimage2="'".$image2."'";
+                $image3=$value['Image'];
+                $sendimage3="'".$image3."'";
+
+                $ID= $value['ID'];
+                $Pname =$value['PName'];
+                $Pname="'".$Pname."'";
+                $DescProduct =$value['DescProduct'];
+                $DescProduct="'".$DescProduct."'";
+
+                $result = $result. '
+                
+                  <img data-dismiss="modal" 
+                  data-toggle="modal" 
+                  data-target="#addProduct"  
+                  class="col-md-4"  
+               
+                 
+                  onclick="openModalAddProduct('.$ID.','.$Pname.','.$DescProduct.','.$sendimage.','.$sendimage2.','.$sendimage3.')" 
+              
+               
+                  src="'.$image.'">
+
+                ';
+
+            }
+
+
+        }
+
+
+        $this->sendData['modalProductImages'] = $result ."</div>";
+
+    }
 
     private function createColumnsForOperationManager()
     {

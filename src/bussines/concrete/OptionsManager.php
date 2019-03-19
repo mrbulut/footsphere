@@ -133,15 +133,15 @@ class OptionsManager implements IOptionsService,IManager
 
 
         $Date = $this->OptionsDal->getRequest($UserId,$RequestType) ;
-        $Minute = $this->DateConverter->DateToMinute($Date);
+        $Minute = $this->DateConverter->DateToMinute($Date)/60;
         if($Minute >59){
             $text = array(
-                ceil($Minute/60),"Hour"
+                ceil($Minute/60),$GLOBALS['string']['saat']
             );
             return $text;
         }else if($Minute<=59 and $Minute>0){
             $text = array(
-                ceil($Minute),"Min"
+                ceil($Minute),$GLOBALS['string']['dakika']
             );
             return $text;
         }else {

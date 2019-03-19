@@ -108,7 +108,11 @@ class OptionsModel implements IModel
     public function getTheRequestTime($RequestType)
     {
         $this->optionsSetup();
+
         return $this->OptionsManager->getTheRequestTime($this->UserId, $RequestType);
+
+
+
     }
 
     private function optionsSetup()

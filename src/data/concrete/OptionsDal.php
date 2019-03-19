@@ -59,7 +59,8 @@ class OptionsDal extends DatabaseTableDao implements IDatabaseTableDao
 
     public function getRequest($UserId, $RequestType)
     {
-        return self::selectOption($this->OptionsNames['request'] . "_" . $UserId . "_" . $RequestType)["option_value"];;
+
+        return self::selectOption($this->OptionsNames['request'] . "_" . $UserId . "_" . $RequestType)["option_value"];
     }
 
     public function setRequest($UserId, $RequestType, $date)

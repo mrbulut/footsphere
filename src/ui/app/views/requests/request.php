@@ -98,51 +98,134 @@
                 <div class="profile-feed row">
                     <div class="col-sm-9">
                         <div align="left" style="padding: 5px;">
-                            <button type="button" class="btn btn-sm btn-primary btn-white btn-round">
-                                Yeni ürün ekle
+                            <button type="button"  data-toggle="modal" data-target="#productImages" class="btn btn-sm btn-primary btn-white btn-round">
+                                <?php echo $GLOBALS['string']['yeniUrunEkle'];?>
                             </button>
 
                         </div>
+                        <?php echo $GLOBALS['string']['teklifedilenurunlerbaslik'];?>
 
                         <div id = "teklifedilenurunler" name="teklifedilenurunler" >
 
                             <?php echo $data['teklifedilenurunler'];?>
 
                         </div>
-                        <div class="profile-activity clearfix">
-                            <div>
 
-                                <img class="pull-left"  src="http://bootdey.com/img/Content/avatar/avatar1.png">
-                                <img class="pull-left"  src="http://bootdey.com/img/Content/avatar/avatar1.png">
-                                <img class="pull-left"  src="http://bootdey.com/img/Content/avatar/avatar1.png">
 
-                                <b>Ürün adı  </b>
-                                 Ürünün uzunca bir açıklamasıııı
-                                <div class="time">
-                                    <i class="fa fa-money"></i>
-                                     Fiyatı
-                                </div>
-                            </div>
 
-                            <div class="tools action-buttons-xl">
-                                <a href="#" class="red">
-                                    <i class="ace-icon fa fa-times bigger-125"></i>
-                                </a>
-                            </div>
 
-                        </div>
+
+
 
 
                         <div align="right" style="padding: 5px;">
-                            <button type="button" class="btn btn-sm btn-primary btn-white btn-round">
-                                Teklif ver & güncelle
+                            <form method="POST" action="/wp-admin/admin.php?page=footsphere&Requests">
+
+                            <?php echo $data['hiddenValueProductAndPrices'];?>
+                                <?php echo $data['RequestID'];?>
+
+
+                            <button id="UpdateButton" name="UpdateButton" type="submit" class="btn btn-sm btn-primary btn-white btn-round">
+                                <?php echo $GLOBALS['string']['backend_teklifpage_teklifverButton'];?>
+
                             </button>
-                            <button type="button" class="btn btn-sm btn-danger btn-white btn-round">
-                                Kapat
+
+                            <button type="submit" class="btn btn-sm btn-danger btn-white btn-round">
+                                <?php echo $GLOBALS['string']['kapatYazisi'];?>
                             </button>
+                            </form>
+
                         </div>
+
                     </div><!-- /.col -->
                 </div><!-- /.row -->
+
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="productImages" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title"><?php echo $GLOBALS['string']['menu_producer_urunler'];?></h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <?php echo $data['modalProductImages'];?>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo $GLOBALS['string']['kapatYazisi'];?></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- /.modal -->
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="addProduct" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title"></h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <h5 id="addProductSubject" name="addProductSubject" class="modal-title"></h5>
+                                        <p id="addProductDesc" name="addProductDesc" class="modal-title"></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img id="addProductImage" height="100px" weight="150px" name="addProductImage" src="" >
+                                        <input type="hidden" id="addProductHiddenValue" name="addProductHiddenValue" value="">
+                                        <input type="hidden" id="addProductImageHidden" name="addProductImage2Hidden" value="">
+                                        <input type="hidden" id="addProductImage2Hidden" name="addProductImage2Hidden" value="">
+                                        <input type="hidden" id="addProductImage3Hidden" name="addProductImage3Hidden" value="">
+
+                                        <input type="hidden" id="PriceShortCode" name="PriceShortCode" value="<?php echo $GLOBALS['PriceShortCode'];?>">
+                                        <input type="hidden" id="PriceSymbol" name="PriceSymbol" value="<?php echo $GLOBALS['PriceSymbol'];?>">
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="productPrice">Price
+                                           (<?php echo $GLOBALS['PriceShortCode'];?>)
+                                            (<?php echo $GLOBALS['PriceSymbol'];?>)
+
+                                        </label>
+                                        <input type="number" class="form-control" id="productPrice" name="productPrice" placeholder="">
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" onclick="addProduct()" data-dismiss="modal"><?php echo $GLOBALS['string']['backend_comp_UrunEklebuttonText'];?></button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo $GLOBALS['string']['kapatYazisi'];?></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- /.modal -->
 
 
 
@@ -176,11 +259,8 @@
                               "<?php echo $data['image3'];?>">
 
                             </a>
-                            <div id="myModal" class="modal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="img01">
-                                <div id="caption"></div>
-                            </div>
+
+
                         </li>
                     </ul>
                 </div>
@@ -218,41 +298,96 @@
     </div>
 </div>
 
+
+
 <script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
+    function deleteFunction(ProductID) {
+        var hiddenValueProductAndPrices =document.getElementById("hiddenValueProductAndPrices").value;
+        var productArray = hiddenValueProductAndPrices.split(";");
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('myImg');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    document.getElementById('myImg').onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
+
+        var result='';
+        for (var i = 0; i < productArray.length -1 ; i++) {
+            var productDetailArray = productArray[i].split(":");
+
+            if(ProductID!=productDetailArray[0]){
+                result = result + productArray[i] + ";" ;
+            }
+
+
+
+        }
+
+        console.log(result);
+
+        document.getElementById("hiddenValueProductAndPrices").value = result;
+        document.getElementById(ProductID+"_div").style.display = 'none';
     }
 
-    document.getElementById('myImg2').onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
+</script>
+<script>
+
+    function openModalAddProduct(ID,ProductName,ProductDesc,Image,Image2,Image3) {
+
+        document.getElementById("addProductSubject").innerText= ProductName;
+        document.getElementById("addProductHiddenValue").value= ID;
+        document.getElementById("addProductDesc").innerText= ProductDesc;
+        document.getElementById("addProductImage").src= Image;
+        document.getElementById("addProductImageHidden").value= Image;
+        document.getElementById("addProductImage2Hidden").value= Image2;
+        document.getElementById("addProductImage3Hidden").value= Image3;
+
+        // alert(ID+ProductDesc+ProductName+Image);
     }
 
-    document.getElementById('myImg3').onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
+
+</script>
+<script>
+
+    function addProduct() {
+
+        ID = document.getElementById("addProductHiddenValue").value;
+        Scode = document.getElementById("PriceShortCode").value;
+        Symbol = document.getElementById("PriceSymbol").value;
+        Price = document.getElementById("productPrice").value;
+        Image = document.getElementById("addProductImageHidden").value;
+        Image2 = document.getElementById("addProductImage2Hidden").value;
+        Image3 = document.getElementById("addProductImage3Hidden").value;
+        deleteText=  document.getElementById("deleteText").textContent;
+        oldData = document.getElementById("hiddenValueProductAndPrices").value;
+
+        PName = document.getElementById("addProductSubject").textContent;
+        DescProduct = document.getElementById("addProductDesc").textContent;
+        result = ID + ":" + Price + ":" + Scode + ":" + Symbol + ";";
+        document.getElementById("hiddenValueProductAndPrices").value = oldData + result;
+
+
+        imageArea = '  <img class="pull-left"  src="' + Image + '"> <img class="pull-left"  src="' + Image2 + '"> <img class="pull-left"  src="' + Image3 + '">';
+        NameAndDesc=   '<b>'+PName+'  </b>'+DescProduct;
+        Button =  '<button type="button" onclick="deleteFunction('+ID+')"  ' +
+            'class=" btn btn-sm btn-danger tools action-buttons">' +
+            '      '+deleteText+
+            '    </button>';
+
+        Price ='<div class="time"> <i class="fa fa-money" ></i>'+Price+' '+Symbol+' </div>';
+
+        theDiv = document.getElementById("teklifedilenurunler");
+        theDiv.innerHTML = theDiv.innerHTML +
+            '<div id="'+ID+'_div" name="'+ID+'_div" class="profile-activity clearfix" >' +
+            imageArea + NameAndDesc + Button + Price
+            +'</div>';
     }
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
+
+
 </script>
 <style>
+
+    .modal-body {
+        max-height: calc(100vh - 210px);
+        overflow-y: auto;
+    }
 
 
     #myImg {
@@ -264,47 +399,7 @@
     #myImg:hover {opacity: 0.7;}
 
     /* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-    }
 
-    /* Modal Content (image) */
-    .modal-content {
-        margin: auto;
-        display: block;
-        width: 90%;
-        max-width: 900px;
-    }
-
-    /* Caption of Modal Image */
-    #caption {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-        text-align: center;
-        color: #ccc;
-        padding: 10px 0;
-        height: 150px;
-    }
-
-    /* Add Animation */
-    .modal-content, #caption {
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-    }
 
     @-webkit-keyframes zoom {
         from {-webkit-transform:scale(0)}

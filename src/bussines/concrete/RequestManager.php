@@ -139,6 +139,17 @@ class RequestManager implements IRequestService,IManager
         return self::updateRequest($this->Request,$this->RequestWhere);
     }
 
+    function setRequestProduct($ID, $PandP)
+    {
+        if($PandP=="")
+            $PandP=" ";
+        $this->Request->ResetObject();
+        $this->Request->setProductsAndPrices($PandP);
+        $this->RequestWhere->ResetObject();
+        $this->RequestWhere->setID($ID);
+        return self::updateRequest($this->Request,$this->RequestWhere);
+    }
+
     function getRequestStatusByRequestNo($RequestNo)
     {
         $this->RequestWhere->ResetObject();

@@ -84,6 +84,12 @@ class RequestModel implements IModel
         }
     }
 
+    public function setRequestProduct($ID,$PandP){
+        self::requestSetup();
+        return $this->RequestManager->setRequestProduct($ID, $PandP);
+
+    }
+
     public function removeRequest($RequestID)
     {
         self::requestSetup();
