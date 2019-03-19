@@ -16,7 +16,7 @@ class ordersController extends Controller
 
     public function home($data = false)
     {
-        Controller::$view->view($this->userRole."/order",$data);
+        Controller::$view->view("orders/orders",$data);
     }
 
     public function existsMethods($str)

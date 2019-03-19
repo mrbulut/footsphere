@@ -164,29 +164,32 @@ class messagesController extends Controller
         $out =  ' <div class="outgoing_msg"> <div class="sent_msg">';
 
         $return = '';
-        foreach ($Messages as $key => $value){
-            $message = $value['Message'];
-            $date= $value['Date'];
-            $WhoIsMessage = $value['WhoIsMessage'];
+        if($Messages){
+            foreach ($Messages as $key => $value){
+                $message = $value['Message'];
+                $date= $value['Date'];
+                $WhoIsMessage = $value['WhoIsMessage'];
 
-            $result = '';
-            if($this->userRole=="operationmanager"){
-                if($WhoIsMessage=="editor"){
-                    $result  = $in . '<p>' .$message.'</p>';
+                $result = '';
+                if($this->userRole=="operationmanager"){
+                    if($WhoIsMessage=="editor"){
+                        $result  = $in . '<p>' .$message.'</p>';
+                    }else{
+                        $result  = $out . '<p>' .$message.'</p>';
+                    }
                 }else{
-                    $result  = $out . '<p>' .$message.'</p>';
+                    if($WhoIsMessage=="administrator"){
+                        $result  = $in . '<p>' .$message.'</p>';
+                    }else{
+                        $result  = $out . '<p>' .$message.'</p>';
+                    }
                 }
-            }else{
-                if($WhoIsMessage=="administrator"){
-                    $result  = $in . '<p>' .$message.'</p>';
-                }else{
-                    $result  = $out . '<p>' .$message.'</p>';
-                }
+
+
+                $return = $return.$result . " <span class=\"time_date\">".$date."</span> </div> </div>";
             }
-
-
-            $return = $return.$result . " <span class=\"time_date\">".$date."</span> </div> </div>";
         }
+
 
 
 

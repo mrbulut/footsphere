@@ -482,7 +482,7 @@ class productsController extends Controller
                 $changeButton = '<button type="button" onclick="hiddenValueProductId('.$ID.');" id="statusButton" name="statusButton" class="btn btn-info btn-xs" data-toggle="modal" data-target="#openStatusDialog" >'.$GLOBALS['string']['degistir'].'</button>';
 
                 $producerNo =    $value['ProducerNO'];
-                $produerColumn = ' <td align="center"><a href="/wp-admin/admin.php?page=footsphere&Producer&home&'.$producerNo.'-edit" class="btn btn-warning"><em class="fa fa-external-link"></em></a></td>'
+                $produerColumn = ' <td align="center"><a href="/wp-admin/admin.php?page=footsphere&Producers&home&'.$producerNo.'-edit" class="btn btn-warning"><em class="fa fa-external-link"></em></a></td>'
                 ;
             }
 
