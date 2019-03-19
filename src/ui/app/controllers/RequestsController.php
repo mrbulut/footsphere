@@ -27,14 +27,16 @@ class requestsController extends Controller
             $GLOBALS['string']['ayakkabi'],
             $GLOBALS['string']['terlik']
         );
+        $this->userRole = $_SESSION['role'];
 
         $this->optionsModel = new OptionsModel();
 
         $this->sendData['StatusArray']= array(
-            $GLOBALS['string']['requestStatusDevam'],
-            $GLOBALS['string']['requestStatusKabul'],
-            $GLOBALS['string']['requestStatusChecked'],
-            $GLOBALS['string']['requestStatusUnChecked']
+            "" => $GLOBALS['string']['requestStatusDevam'],
+            0=>$GLOBALS['string']['requestStatusDevam'],
+            1=>$GLOBALS['string']['requestStatusKabul'],
+            2=>$GLOBALS['string']['requestStatusChecked'],
+            3=>$GLOBALS['string']['requestStatusUnChecked']
         );
 
 
@@ -114,13 +116,14 @@ class requestsController extends Controller
 
         $result = '';
         if($this->userRole=="operationmanager"){
+
             $requests = $this->requestModel->getAllRequest();
             self::createColumnsForOperationManager();
             foreach ($requests as $key => $value){
                 $result = $result . self::fixColumn($value);
             }
 
-        }else{
+        }else if($this->userRole=="producer"){
             $this->optionsModel = new OptionsModel();
             self::createColumnsForProducer();
             $requests = $this->optionsModel->getAllRequest();
@@ -130,8 +133,10 @@ class requestsController extends Controller
 
         }
 
-
         $this->sendData['request'] =$result ;
+
+
+
 
 
 
@@ -151,7 +156,7 @@ class requestsController extends Controller
         if($this->userRole!="operationmanager"){
 
             if($id!=$GLOBALS['userId']){
-                die();
+
             }
         }
 
@@ -160,9 +165,13 @@ class requestsController extends Controller
         if($this->userRole == "operationmanager"){
             $requests = $this->requestModel->getRequest(array("ID"=>$id));
         }else if ($this->userRole=="producer"){
-            $requests = $this->requestModel->getRequest(array("RequestNo"=>$id,"ProducerNo"=>$GLOBALS['userId']));
+
+
+            $requests = $this->requestModel->getRequest(array("RequestNo"=>$id,
+                "ProducerNo"=>$GLOBALS['userId']));
+
         }
-        $UserId = $requests['UserID'];
+       $UserId = $requests['UserID'];
         $ProducerNo = $requests['ProducerNo'];
         $RequestNo = $requests['RequestNo'];
         $ProductsAndPrices = $requests['ProductsAndPrices'];
@@ -171,15 +180,14 @@ class requestsController extends Controller
 
         $UserModel = new UserModel($UserId);
         $customer = $UserModel->getCustomer();
-        print_r($customer[0]);
-        echo "<br>";
-        print_r($customer[1]);
 
         $this->sendData['age'] = $customer[0]['Age'];
-
         $this->sendData['lenght'] = $customer[0]['Length'];
         $this->sendData['weight'] = $customer[0]['Weight'];
         $this->sendData['footsize'] = $customer[0]['FootSize'];
+        $this->sendData['image'] = $customer[0]['FootImage'];
+        $this->sendData['image2'] = $customer[0]['FootImage2'];
+        $this->sendData['image3'] = $customer[0]['FootImage3'];
         $this->sendData['extrainfo'] = $customer[0]['ExtraInfo'];
 
 

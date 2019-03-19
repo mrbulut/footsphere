@@ -12,6 +12,9 @@ include "system/Viewer.php";
 
 $F = new Functions();
 $F->start();
+$F->createRulesInAAM();// Roller Tanımlanıyor.
 $F->ShowErrors();
 
 
+//$F->createTestPlace();
+// BU FONKSİYON TEST ORTAMI YARATIYOR //

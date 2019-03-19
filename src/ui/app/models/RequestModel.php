@@ -34,16 +34,19 @@ class RequestModel implements IModel
     }
 
 
-    public function createRequest($array = array())
+    public function createRequest($array = array(),$UserId=null)
     {
 
+        if($UserId)
+            $this->UserId = $UserId;
         self::requestSetup();
         return $this->RequestManager->createRequest(
             $this->UserId,
             $array['ProducerNo'],
             $array['RequestID'],
             $array['Products'],
-            $array['Type']
+            $array['Type'],
+            $array['Status']
         );
     }
 
@@ -57,7 +60,7 @@ class RequestModel implements IModel
     {
         self::requestSetup();
         if ($array['RequestNo']) {
-            return $this->RequestManager->getRequestByRequestNoAndProducerNo($array['RequestNo'],$array['ProducerNo']);
+            return $this->RequestManager->getRequestByRequestNoAndProducerNo($array['RequestNo'],$array['ProducerNo'])[0];
         } else if ($array['ProducerNo'] && $array['UserId']) {
             return $this->RequestManager->getRequestByUserIdAndProducerNo($array['ProducerNo'], $array['UserId']);
         } else if ($array['ID']) {

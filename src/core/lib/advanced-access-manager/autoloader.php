@@ -13,6 +13,7 @@
  * @package AAM
  * @author Vasyl Martyniuk <vasyl@vasyltech.com>
  */
+AAM_Autoloader::register();
 class AAM_Autoloader {
 
     /**

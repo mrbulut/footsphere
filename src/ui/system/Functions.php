@@ -30,6 +30,10 @@ class Functions
         $link = $_SERVER['REQUEST_URI'];
         $link = explode("?page=", $link)[1];
 
+        if($link=="footsphere"){
+
+            $link="footsphere&Dashboard";
+        }
         if ($link) {
             if($link=="footsphere&translation"){
                 header("Location: ".$_POST['nowpage']);
@@ -90,7 +94,7 @@ class Functions
 
 
         if (!$session->isthere("role")){
-            if($user->getRole()=="administrator" || $user->getRole()=="cons"){
+            if($user->getRole()=="administrator" || $user->getRole()=="contributor"){
                 $session->create("role", "operationmanager");
             }else if ($user->getRole()=="editor"){
                 $session->create("role", "producer");
@@ -278,5 +282,357 @@ class Functions
         }
         return $html;
     }
+
+
+    public function createTestPlace(){
+
+//TEST DATALARI
+
+        /*
+         * Operasyon yoneticisi
+         * username : useroperationmanager
+         * password : ViewSonic.444
+         *
+         * Ureticiler
+         * username : testproducer  - 3 adet ürün sahibi // 1 onaylanmamış , 1 reddedilmiş , 1 onaylanmış.
+         * password : ViewSonic.444
+         *
+         * username : testproducer2 - 3 adet ürün sahibi  // hepsi onaylı
+         * password : ViewSonic.444
+         *
+         * Müşteriler
+         * username : testuser  - Verilerini tamamlamamış. (Fotoğraf ve bilgiler.)
+         * password : ViewSonic.444
+         *
+         * username : testuser2 - Verilerini tamamlamış ve istekde bulunmuş ürün bekliyor. ve
+         * password : ViewSonic.444                   birinci üretici üçüncü ürününü teklif etmiş ikinci üretici birinci ürünü teklif etmiş
+         *
+         *
+         * username : testuser3 - Teklif edilen ürünler onaylanmış ve gösteriliyor.kullanıcının istek süresi bitmiş
+         * password : ViewSonic.444
+         *
+         */
+
+
+
+        include_once ROOT_PATH.'/src/data/concrete/UserDal.php';
+        include_once ROOT_PATH.'/src/entities/concrete/UserConcrete.php';
+        include_once ROOT_PATH.'/src/data/concrete/CustomerDal.php';
+        include_once ROOT_PATH.'/src/entities/concrete/CustomerConcrete.php';
+        include_once ROOT_PATH.'/src/data/concrete/OptionsDal.php';
+        include_once ROOT_PATH.'/src/entities/concrete/OptionsConcrete.php';
+        include_once ROOT_PATH.'/src/data/concrete/ProductDal.php';
+        include_once ROOT_PATH.'/src/entities/concrete/ProductConcrete.php';
+        include_once ROOT_PATH.'/src/data/concrete/MessageDal.php';
+        include_once ROOT_PATH.'/src/entities/concrete/MessageConcrete.php';
+        include_once ROOT_PATH.'/src/data/concrete/ProducerDal.php';
+        include_once ROOT_PATH.'/src/entities/concrete/ProducerConcrete.php';
+        include_once ROOT_PATH.'/src/ui/app/models/RequestModel.php';
+        include_once ROOT_PATH.'/src/ui/app/models/UserModel.php';
+        include_once ROOT_PATH.'/src/entities/concrete/RequestConcrete.php';
+        include_once ROOT_PATH.'/src/data/concrete/RequestDal.php';
+        $userDal = new UserDal();
+        $user = new User();
+        $customerDal = new CustomerDal();
+        $cutomer = new Customer();
+        $requestDal = new RequestDal();
+        $request = new Request();
+        $optionsDal = new OptionsDal();
+        $options = new Options();
+        $productDal = new ProductDal();
+        $product = new Product();
+        $messageDal= new MessageDal();
+        $message = new Message();
+        $producerDal= new ProducerDal();
+        $producer = new Producer();
+        $requestModel= new RequestModel();
+        $usermodel = new UserModel();
+
+// Operation manager ve üreticiler tanımlanıyor
+        $user->setUserName("useroperationmanager");
+        $user->setUserPass("ViewSonic.444");
+        $user->setUserEmail("add@dd.com");
+        $omanagerId = $userDal->createUser(
+            $user,"contributor"
+        );
+
+        $producerId= $usermodel->addProducer(
+            array(
+                "username" => "testproducer",
+                "email"    => "adddd@dd.com",
+                "password" => "ViewSonic.444",
+                "OfferLimit" => "5-15"
+            )
+
+        );
+
+
+        $producerId2= $usermodel->addProducer(
+            array(
+                "username" => "testproducer2",
+                "email"    => "adddddd@dd.com",
+                "password" => "ViewSonic.444",
+                "OfferLimit" => "5-15"
+            )
+
+        );
+
+
+// Birinci üreticinin ürünlerini giriyoruz.
+        $product->setProducerNO($producerId);
+        $product->setPName("Test ürünü Bekliyor");
+        $product->setDescProduct("Test ürünü açıklaması Bekliyor");
+        $product->setType("1");
+        $product->setStatus("o");
+        $productDal->settingQuery($product);
+        $productDal->insertToObject();
+        $product->setProducerNO($producerId);
+        $product->setPName("Test ürünü yanlış girilmiş");
+        $product->setDescProduct("Test ürünü açıklaması yanlış girişmiş");
+        $product->setType("1");
+        $product->setStatus("2");
+        $productDal->settingQuery($product);
+        $productDal->insertToObject();
+        $product->setProducerNO($producerId);
+        $product->setPName("Test ürünü Doğru Onaylı.");
+        $product->setDescProduct("Test ürünü Onaylı");
+        $product->setType("1");
+        $product->setBaseMaterial("1");
+        $product->setClosureType("1");
+        $product->setInsideBaseMeterial("1");
+        $product->setInsideBaseType("1");
+        $product->setLiningMeterial("1");
+        $product->setSeason("1");
+        $product->setTopMeterial("1");
+        $product->setImage("https://www.adimadim.com.tr/dr-comfort-erkek-ortopedik-ayakkabi-a18ekcft00099-comfort-backsz-dr-comfort-comfort47-28-106810-68-K.jpg");
+        $product->setImage2("https://n11scdn.akamaized.net/a1/450/giyim-ayakkabi/klasik-erkek-ayakkabi/dr-comfort-erkek-ortopedik-ayakkabi__1566973758749191.jpg");
+        $product->setImage3("https://www.hapshoe.com/Uploads/UrunResimleri/libano-hakiki-deri-siyah-bordo-ortopedik-0ffe.jpg");
+        $product->setStatus("1");
+        $productDal->settingQuery($product);
+        $firstproducerproductID = $productDal->insertToObject();
+
+// İkinci üreticinin ürünlerini giriyoruz.
+
+        $product->setProducerNO($producerId2);
+        $product->setPName("İkinci üreticinin Test ürünü bir ");
+        $product->setDescProduct("İkinci üreticinin Test ürünü açıklaması bir ");
+        $product->setType("1");
+        $product->setBaseMaterial("1");
+        $product->setClosureType("1");
+        $product->setInsideBaseMeterial("1");
+        $product->setInsideBaseType("1");
+        $product->setLiningMeterial("1");
+        $product->setSeason("1");
+        $product->setTopMeterial("1");
+        $product->setImage("https://www.adimadim.com.tr/dr-comfort-erkek-ortopedik-ayakkabi-a18ekcft00099-comfort-backsz-dr-comfort-comfort47-28-106810-68-K.jpg");
+        $product->setImage2("https://n11scdn.akamaized.net/a1/450/giyim-ayakkabi/klasik-erkek-ayakkabi/dr-comfort-erkek-ortopedik-ayakkabi__1566973758749191.jpg");
+        $product->setImage3("https://www.hapshoe.com/Uploads/UrunResimleri/libano-hakiki-deri-siyah-bordo-ortopedik-0ffe.jpg");
+        $product->setStatus("1");
+        $productDal->settingQuery($product);
+        $product1ID = $productDal->insertToObject();
+        $product->setProducerNO($producerId2);
+        $product->setPName("İkinci üreticinin Test ürünü iki ");
+        $product->setDescProduct("İkinci üreticinin Test ürünü açıklaması iki ");
+        $product->setType("1");
+        $product->setBaseMaterial("1");
+        $product->setClosureType("1");
+        $product->setInsideBaseMeterial("1");
+        $product->setInsideBaseType("1");
+        $product->setLiningMeterial("1");
+        $product->setSeason("1");
+        $product->setTopMeterial("1");
+        $product->setImage("https://www.adimadim.com.tr/dr-comfort-erkek-ortopedik-ayakkabi-a18ekcft00099-comfort-backsz-dr-comfort-comfort47-28-106810-68-K.jpg");
+        $product->setImage2("https://n11scdn.akamaized.net/a1/450/giyim-ayakkabi/klasik-erkek-ayakkabi/dr-comfort-erkek-ortopedik-ayakkabi__1566973758749191.jpg");
+        $product->setImage3("https://www.hapshoe.com/Uploads/UrunResimleri/libano-hakiki-deri-siyah-bordo-ortopedik-0ffe.jpg");
+        $product->setStatus("1");
+        $productDal->settingQuery($product);
+        $product2ID = $productDal->insertToObject();
+        $product->setProducerNO($producerId2);
+        $product->setPName("İkinci üreticinin Test ürünü bir ");
+        $product->setDescProduct("İkinci üreticinin Test ürünü açıklaması üç ");
+        $product->setType("1");
+        $product->setBaseMaterial("1");
+        $product->setClosureType("1");
+        $product->setInsideBaseMeterial("1");
+        $product->setInsideBaseType("1");
+        $product->setLiningMeterial("1");
+        $product->setSeason("1");
+        $product->setTopMeterial("1");
+        $product->setImage("https://www.adimadim.com.tr/dr-comfort-erkek-ortopedik-ayakkabi-a18ekcft00099-comfort-backsz-dr-comfort-comfort47-28-106810-68-K.jpg");
+        $product->setImage2("https://n11scdn.akamaized.net/a1/450/giyim-ayakkabi/klasik-erkek-ayakkabi/dr-comfort-erkek-ortopedik-ayakkabi__1566973758749191.jpg");
+        $product->setImage3("https://www.hapshoe.com/Uploads/UrunResimleri/libano-hakiki-deri-siyah-bordo-ortopedik-0ffe.jpg");
+        $product->setStatus("1");
+        $productDal->settingQuery($product);
+        $product3ID = $productDal->insertToObject();
+
+
+
+
+
+
+
+
+
+
+
+// İlk test kullanıcısı oluşturuluyor
+        $user->setUserName("testuser");
+        $user->setUserEmail("a@bc.com");
+        $user1ID = $userDal->createUser(
+            $user,"subscriber"
+        );
+        $cutomer->setUserId($user1ID);
+        $cutomer->setBespokeStatus("NoCompolete");
+        $customerDal->settingQuery($cutomer); // make input and query
+        $customerDal->insertToObject();
+
+
+
+// İkinci test kullanıcısı oluşturuluyor
+        $user->setUserName("testuser2");
+        $user->setUserEmail("ab@bc.com");
+        $user2ID = $userDal->createUser(
+            $user,"subscriber"
+        );
+        $cutomer->setUserId($user2ID);
+        $cutomer->setAge("37");
+        $cutomer->setBespokeStatus("Waiting");
+        $cutomer->setExtraFilePath("http://localhost/wp-content/plugins/mega-main-menu/framework/src/img/megamain-logo-120x120.png+-+http://localhost/wp-content/plugins/woocommerce-shipstation-integration/assets/images/shipstation-logo-blue.png+-+");
+        $cutomer->setExtraInfo("Doktor ayağımın taraklı olduğunu söyledi ve deri tabanlık koku yapıyor.");
+        $cutomer->setFootImage("https://cdn.iha.com.tr/Contents/images/2016/06/1508383.jpg");
+        $cutomer->setFootImage2("http://www.saglikbilgileri.net/wp-content/uploads/ayak-agrisi3-620x304.jpg");
+        $cutomer->setFootImage3("https://www.alternatifterapi.com/Uploads/PageContentImages/13998/b/nocanvas_ayak-mantari-84bcc.jpg");
+        $cutomer->setFootSize("42");
+        $cutomer->setFootsphereFilePath("https://img1.cgtrader.com/items/240780/8492f96bd1/human-foot-3d-model-max-obj-3ds-fbx-stl-dwg.jpg");
+        $cutomer->setLength("183");
+        $cutomer->setWeight("79");
+        $customerDal->settingQuery($cutomer); // make input and query
+        $customerDal->insertToObject();
+        $datetime = date('Y-m-d H:i:s');
+        $requestOptionsID1= $optionsDal->addRequest($user2ID,"0", (strtotime($datetime)));
+
+        $requestModel->createRequest(
+            array(
+                "ProducerNo" => $producerId,
+                "RequestID" => $requestOptionsID1,
+                "Products" => $firstproducerproductID.":"."50".":"."USD".":"."$".";",
+                "Type" => "1",
+                "Status"=> "0"
+
+            ),
+            $user2ID
+        );
+
+        $requestModel->createRequest(
+            array(
+                "ProducerNo" => $producerId2,
+                "RequestID" => $requestOptionsID1,
+                "Products" => $product1ID.":"."80".":"."USD".":"."$".";",
+                "Type" => "1",
+                "Status"=> "0"
+
+            ),
+            $user2ID
+        );
+
+        $user->setUserName("testuser3");
+        $user->setUserEmail("abc@bc.com");
+        $user3ID = $userDal->createUser(
+            $user,"subscriber"
+        );
+        $cutomer->setUserId($user3ID);
+        $customerDal->settingQuery($cutomer); // make input and query
+        $customerDal->insertToObject();
+        $requestOptionsID2 = $optionsDal->addRequest($user3ID,"0", (strtotime($datetime) -(100000)));
+
+        $requestModel->createRequest(
+            array(
+                "ProducerNo" => $producerId2,
+                "RequestID" => $requestOptionsID2,
+                "Products" => $product1ID.":"."60".":"."USD".":"."$".";".$product2ID.":"."80".":"."USD".":"."$".";".$product3ID.":"."100".":"."USD".":"."$".";",
+                "Type" => "1",
+                "Status"=> "2"
+            ),
+            $user3ID
+        );
+
+        $PName = $product->getPName();
+        $DescProduct = $product->getDescProduct();
+        $Image = $product->getImage();
+        $ProducerNO = $producerId2;
+        $product->ResetObject();
+        $product->setPName($PName);
+        $product->setDescProduct($DescProduct);
+        $product->setImage($Image);
+        $product->setPrice("60");
+        $product->setID($product1ID);
+        $product->setProducerNO($ProducerNO);
+
+        $productDal->addProductReal($product,$user3ID);
+        $product->setPrice("80");
+        $product->setID($product2ID);
+        $productDal->addProductReal($product,$user3ID);
+        $product->setPrice("100");
+        $product->setID($product3ID);
+        $productDal->addProductReal($product,$user3ID);
+        $product->setPrice("2500");
+        $product->setID($product3ID);
+        $productDal->addProductReal($product,$user2ID);
+
+
+
+        // Mesajlar oluşturuluyor.
+
+
+        // Üretici ile Operasyon yöneticisi ile arasında geçen dialog
+        $message->setDate(date("Y-m-d H:i:s"));
+        $message->setStatus(1);
+
+        $message->setUserId(3);
+        $message->setWhoIsMessage(1);
+        $message->setMessage("Merhaba üreticiyim. yardım istiyorum");
+        $messageDal->settingQuery($message);
+        $messageDal->insertToObject();
+        $message->setWhoIsMessage(1);
+        $message->setMessage("Hemen Yardımcı olayım.");
+        $messageDal->settingQuery($message);
+        $messageDal->insertToObject();
+        $message->setStatus(1);
+        $message->setWhoIsMessage(1);
+        $message->setMessage("Bekliyorum ");
+        $messageDal->settingQuery($message);
+        $messageDal->insertToObject();
+
+
+        // MÜşteri ile Operasyon yöneticisi ile arasında geçen dialog
+
+        $message->setDate(date("Y-m-d H:i:s"));
+        $message->setStatus(1);
+        $message->setUserId($user1ID);
+        $message->setWhoIsMessage(1);
+        $message->setMessage("Merhaba");
+        $messageDal->settingQuery($message);
+        $messageDal->insertToObject();
+        $message->setWhoIsMessage(1);
+        $message->setMessage("Merhaba");
+        $messageDal->settingQuery($message);
+        $messageDal->insertToObject();
+        $message->setStatus(1);
+        $message->setWhoIsMessage(1);
+        $message->setMessage("ürün alamıyorum ");
+        $messageDal->settingQuery($message);
+        $messageDal->insertToObject();
+
+
+        //TEST DATALARI
+
+
+    }
+
+    public function createRulesInAAM(){
+        include_once ROOT_PATH.'/src/core/lib/AamUserRoles.php';
+        $roles = new AamUserRoles();
+    }
+
 
 }

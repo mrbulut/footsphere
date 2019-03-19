@@ -19,6 +19,7 @@
  * @package AAM
  * @author Vasyl Martyniuk <vasyl@vasyltech.com>
  */
+
 class AAM {
 
     /**
@@ -275,7 +276,7 @@ if (defined('ABSPATH')) {
         wp_schedule_event(time(), 'daily', 'aam-cron');
     }
     add_action('aam-cron', 'AAM::cron');
-    
+
     //activation & deactivation hooks
     register_activation_hook(__FILE__, array('AAM', 'activate'));
     register_uninstall_hook(__FILE__, array('AAM', 'uninstall'));

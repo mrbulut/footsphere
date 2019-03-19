@@ -1,4 +1,7 @@
+
+
 <?php
+ob_start();
 
 /**
 Plugin Name: DENEMEPLGUSİB
@@ -9,11 +12,15 @@ Version: 11.0
 Author URI: ---
 License: MIT
  **/
-//SETUP MUST //
-define('ABSPATH',dirname(__FILE__)."/../../../");
-
+define('ABSPATH',__DIR__);
 define('ROOT_PATH',__DIR__);
+define('WORD_PATH',dirname(__FILE__)."/../../../");
 
+// AAM Üyelik sistemi aktifleştiriliyor.
+include ROOT_PATH.'/src/core/lib/advanced-access-manager/aam.php';
+
+
+// Menuler oluşturuluyor.
 add_action('admin_menu', 'fs_modifymenu');
 
 function fs_modifymenu()
@@ -32,55 +39,6 @@ function my_custom_menu_page(){
     include ROOT_PATH . '/src/ui/autoloader.php';
 }
 
-
-
-/*
- *
- *
- * herşeyi ezberinden söylüyon
- * rap yaptığını sanıyon
- * şimdi bana kulak veriyon
- * izle seni nasıl sikiyom
- *
- *
- * trap trap
- *
- * bitti mi sanıyon
- * bomba gibi geliyom
- *
- * beat beat
- *
- * ordan burdan çaldığın sözleri
- * gelip bana satıyon
- * ben bunu takmıyom
- * çünkü seni böyle bile sikiyom
- *
- * trap trap
- *
- * bitti mi sanıyon
- * kusura bakma biraz geç geliyom
- *
- * beat beat
- *
- * yaptığın rap değil
- * sadece bana küfür ediyon
- * şimdi seni anlıyom
- * sen beni kıskanıyon
- *
- *
- * trap trap
- *
- * tamam tamam bitiriyom
- * biliyom sana ağır geliyom
- *
- * beat beat
- *
- *
- * şimdi ağlıcan biliyom
- * rapi ezberden söylemek sanıyon
- * istersen sana ders vereyim
- * biliyon rapi senden daha iyi biliyom.
- */
 
 ?>
 

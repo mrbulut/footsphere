@@ -27,7 +27,7 @@ class productsController extends Controller
         parent::__construct();
         self::createColumns();
 
-
+       $this->userRole = $_SESSION['role'];
 
 
     }
@@ -115,6 +115,7 @@ class productsController extends Controller
 
     private function listing($PArray)
     {
+
         $result = '';
         if ($this->userRole == "producer") {
             $PArray = $this->productModel->getAllProduct(array("ProducerNo" => $GLOBALS['userId']));
@@ -410,7 +411,7 @@ class productsController extends Controller
                     $cap=true;
                 }
             }
-            if($cap)die();
+            if(!$cap)die();
 
         }
 
@@ -672,9 +673,10 @@ class productsController extends Controller
             ),
 
             "Status" => array(
-                $GLOBALS['string']['beklemede'],
-                $GLOBALS['string']['onaylandi'],
-                $GLOBALS['string']['onaylanmadi']
+                "" => $GLOBALS['string']['beklemede'],
+                0=>$GLOBALS['string']['beklemede'],
+                1=>$GLOBALS['string']['onaylandi'],
+                2=>$GLOBALS['string']['onaylanmadi']
             )
         );
     }

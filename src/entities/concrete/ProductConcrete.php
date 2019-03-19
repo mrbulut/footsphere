@@ -277,7 +277,12 @@ class Product implements IEntity{
      */
     public function setStatus($Status)
     {
+        if($Status !="o")
         $this->Status = $Status;
+        else
+            $this->Status = 0;
+
+
     }
 
     /**

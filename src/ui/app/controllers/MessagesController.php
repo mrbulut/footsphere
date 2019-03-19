@@ -39,7 +39,10 @@ class messagesController extends Controller
 
 
             }else{
+                ob_start();
               header("Location: /wp-admin/admin.php?page=footsphere&Messages&home&".$GLOBALS['userId']);
+                ob_end_flush();
+
 
             }
         } else {

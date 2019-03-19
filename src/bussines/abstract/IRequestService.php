@@ -21,7 +21,7 @@ interface IRequestService
 
     function setRequestByUserId($UserId, $Status);
 
-    function createRequest($UserId, $ProducerNo, $RequestID, $Products, $Type);
+    function createRequest($UserId, $ProducerNo, $RequestID, $Products, $Type,$Status);
 
     function removeRequest($RequestID);
 

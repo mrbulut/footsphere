@@ -51,7 +51,7 @@ class RequestManager implements IRequestService,IManager
     }
 
     public function createRequest($UserId, $ProducerNo, $RequestID,
-                           $Products, $Type)
+                           $Products, $Type,$Status)
     {
         $this->Request->ResetObject();
         $this->Request->setUserID($UserId);
@@ -59,6 +59,7 @@ class RequestManager implements IRequestService,IManager
         $this->Request->setRequestNo($RequestID);
         $this->Request->setProductsAndPrices($Products);
         $this->Request->setType($Type);
+        $this->Request->setStatus($Status);
         return self::addRequest($this->Request);
 
 

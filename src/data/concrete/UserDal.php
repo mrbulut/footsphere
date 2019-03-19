@@ -10,10 +10,10 @@ include_once ROOT_PATH . "/src/entities/concrete/UserConcrete.php";
 include_once ROOT_PATH . "/src/entities/abstract/Container.php";
 include_once ROOT_PATH . "/src/data/abstract/DatabaseTableDao.php";
 include_once ROOT_PATH . "/src/data/abstract/IDatabaseTableDao.php";
-include_once ABSPATH . "wp-includes/pluggable.php";
-require_once ABSPATH . "wp-admin/upgrade-functions.php";
-require_once ABSPATH . "wp-includes/registration.php";
-require_once ABSPATH . "wp-admin/includes/user.php";
+include_once WORD_PATH . "wp-includes/pluggable.php";
+require_once WORD_PATH . "wp-admin/upgrade-functions.php";
+require_once WORD_PATH . "wp-includes/registration.php";
+require_once WORD_PATH . "wp-admin/includes/user.php";
 
 /*
      * $this->Rows[0] => $Id;
@@ -86,8 +86,7 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
         if (!$user_id) {
             if (email_exists($user->getUserEmail()) == false) {
 
-                $sifre = wp_hash_password($user->getUserPass());
-                $user->setUserPass($sifre);
+
 
                 $user_id = wp_create_user(
                     $user->getUserName(),
@@ -172,12 +171,15 @@ class UserDal extends DatabaseTableDao implements IDatabaseTableDao
             $this->User->setUserPass($data->user_pass);
             $this->User->setUserRegistered($data->user_registered);
 
-            if (count($data->wp_capabilities) > 0) {
-                foreach ($data->wp_capabilities as $key => $value) {
-                    $this->User->setUserRole($key);
-                    break;
+            if($data->wp_capabilities){
+                if (count($data->wp_capabilities) > 0) {
+                    foreach ($data->wp_capabilities as $key => $value) {
+                        $this->User->setUserRole($key);
+                        break;
+                    }
                 }
             }
+
         }
 
 

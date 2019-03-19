@@ -244,15 +244,18 @@ class UserModel implements IModel
     {
         self::producerSetup();
 
-        $Id=  $this->ProducerManager->createProducer(
-            $array['username'],
-            $array['email'],
-            $array['password'],
+
+        $Id = $this->ProducerManager->createProducer($array['username'],
+            $array['email'],$array['password'],
             $array['OfferLimit']);
 
+
+
         if($Id){
-            return self::updateProducer($array,$Id);
-        }
+            self::updateProducer($array,$Id);
+       }
+
+        return $Id;
     }
 
     public function getProducer($UserId=null)
@@ -283,7 +286,7 @@ class UserModel implements IModel
                 } else if ($key == "display_name") {
                     $this->User->setDisplayName($value);
                 } else if ($key == "password") {
-                    $this->User->setUserPass($value);
+                    $this->User->setUserPass(wp_hash_password($value));
                 } else if ($key == "CompanyName") {
                     $this->Producer->setCompanyName($value);
                 } else if ($key == "PhoneNumber") {

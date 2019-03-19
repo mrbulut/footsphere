@@ -22,6 +22,8 @@ class producersController extends Controller
         parent::__construct();
 
         self::createColumns();
+
+        $this->userRole = $_SESSION['role'];
     }
 
     public function home($data = false)
@@ -160,6 +162,7 @@ class producersController extends Controller
             $this->sendData['editButton'] = '<button type="submit" id="editProducer" name="editProducer" class="btn btn-success">' . $GLOBALS['string']['degistir'] . '</button>';
         else
             $this->sendData['editButton'] = '<button type="submit" id="deleteProducer" name="deleteProducer" class="btn btn-warning">' . $GLOBALS['string']['sil'] . '</button>';
+
 
         foreach ($product as $key => $value) {
 

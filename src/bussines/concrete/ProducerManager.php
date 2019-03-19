@@ -130,7 +130,7 @@ class ProducerManager implements IProducerService,IManager
             $this->Producer->ResetObject();
             $this->Producer->setUserId($ID);
             $this->Producer->setOfferLimit($OfferLimit);
-            $oldu = self::addProducer($this->Producer);
+            $oldu = self::addedProducer($this->Producer);
             if($oldu){
                 return $ID;
             }
@@ -171,7 +171,7 @@ class ProducerManager implements IProducerService,IManager
         }
     }
 
-    private function addProducer(Producer $producer)
+    private function addedProducer(Producer $producer)
     {
         $this->ProducerDal->settingQuery($producer);
         try {

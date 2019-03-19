@@ -124,29 +124,12 @@
                                 </div>
                             </div>
 
-                        </div>
-
-                        <div class="profile-activity clearfix">
-                            <div>
-                                <img class="pull-left" alt="Susan Smith's avatar" src="http://bootdey.com/img/Content/avatar/avatar2.png">
-                                <a class="user" href="#"> Susan Smith </a>
-
-                                is now friends with Alex Doe.
-                                <div class="time">
-                                    <i class="ace-icon fa fa-clock-o bigger-110"></i>
-                                    2 hours ago
-                                </div>
-                            </div>
-
-                            <div class="tools action-buttons">
-                                <a href="#" class="blue">
-                                    <i class="ace-icon fa fa-pencil bigger-125"></i>
-                                </a>
-
+                            <div class="tools action-buttons-xl">
                                 <a href="#" class="red">
                                     <i class="ace-icon fa fa-times bigger-125"></i>
                                 </a>
                             </div>
+
                         </div>
 
 
@@ -183,13 +166,13 @@
                         <li>
                             <a href="#" data-rel="colorbox">
                                 <img id="myImg2" width="150px" height="150px"
-                                     src=""<?php echo $data['image2'];?>">
+                                     src="<?php echo $data['image2'];?>">
 
                             </a>
 
                         </li> <li>
                             <a href="#" data-rel="colorbox">
-                                <img  id="myImg3" width="150px" height="150px" src="
+                                <img  id="myImg3" width="150px" height="150px" src=
                               "<?php echo $data['image3'];?>">
 
                             </a>

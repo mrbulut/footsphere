@@ -18,7 +18,7 @@ class dashboardController extends Controller
 
     public function home($data = false)
     {
-        Controller::$view->view($this->userRole."/dashboard",$data);
+        Controller::$view->view("dashboard/product",$data);
     }
 
     public function existsMethods($str)
