@@ -25,9 +25,12 @@ class Functions
 
     public function start()
     {
+
+
         self::whatIsTheUserRoleAndLanguage();
 
         $link = $_SERVER['REQUEST_URI'];
+
         $link = explode("?page=", $link)[1];
 
         if($link=="footsphere"){
@@ -306,10 +309,11 @@ class Functions
          *
          * username : testuser2 - Verilerini tamamlamış ve istekde bulunmuş ürün bekliyor. ve
          * password : ViewSonic.444                   birinci üretici üçüncü ürününü teklif etmiş ikinci üretici birinci ürünü teklif etmiş
+         *                                            ayrıca 1 adet ürün görüntüleyebiliyor 2500 liralık
          *
          *
          * username : testuser3 - Teklif edilen ürünler onaylanmış ve gösteriliyor.kullanıcının istek süresi bitmiş
-         * password : ViewSonic.444
+         * password : ViewSonic.444            3 ürün görüntüleyebiliyor 60,80,100 liralık
          *
          */
 
@@ -567,17 +571,23 @@ class Functions
         $product->setPrice("60");
         $product->setID($product1ID);
         $product->setProducerNO($ProducerNO);
+        $ReadProductID = $productDal->addProductReal($product,$user3ID);
+        $customerDal->addProductToUser($ReadProductID,$user3ID);
 
-        $productDal->addProductReal($product,$user3ID);
         $product->setPrice("80");
         $product->setID($product2ID);
-        $productDal->addProductReal($product,$user3ID);
+        $ReadProductID2 = $productDal->addProductReal($product,$user3ID);
+        $customerDal->addProductToUser($ReadProductID2,$user3ID);
+
         $product->setPrice("100");
         $product->setID($product3ID);
-        $productDal->addProductReal($product,$user3ID);
+        $ReadProductID3 = $productDal->addProductReal($product,$user3ID);
+        $customerDal->addProductToUser($ReadProductID3,$user3ID);
+
         $product->setPrice("2500");
         $product->setID($product3ID);
-        $productDal->addProductReal($product,$user2ID);
+        $ReadProductID4 = $productDal->addProductReal($product,$user2ID);
+        $customerDal->addProductToUser($ReadProductID4,$user2ID);
 
 
 

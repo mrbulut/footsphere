@@ -26,4 +26,17 @@ class Viewer
 
         }
     }
+
+    public function viewShortCode($shortcode){
+
+        add_shortcode( "footsphere_bespoke", 'Bespoke');
+
+        function Bespoke(){
+            ob_start();
+            include( ROOT_PATH.'/src/ui/app/views/templates/header.php' );
+            $output = ob_get_contents();;
+            ob_end_clean();
+            return $output;
+        }
+    }
 }

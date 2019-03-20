@@ -469,9 +469,9 @@ class productsController extends Controller
             $ImageArray = $ImageArray
                 . '  <a class="thumb"> <img src="'.$value['Image'].'"  width="25px" class="img-rounded">
                      <span><img src="' . $value['Image']. '" width="600px" height="600px"></span></a>'
-                . '  <a class="thumb"> <img src="'.$value['Image'].'"  width="25px" class="img-rounded">
+                . '  <a class="thumb"> <img src="'.$value['Image2'].'"  width="25px" class="img-rounded">
                      <span><img src="' . $value['Image2']. '" width="600px" height="600px"></span></a>'
-                . '  <a class="thumb"> <img src="'.$value['Image'].'"  width="25px" class="img-rounded">
+                . '  <a class="thumb"> <img src="'.$value['Image3'].'"  width="25px" class="img-rounded">
                      <span><img src="' . $value['Image3']. '" width="600px" height="600px"></span></a>';
 
             $ID = $value['ID'];

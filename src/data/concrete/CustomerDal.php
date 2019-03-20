@@ -18,7 +18,7 @@ class CustomerDal extends DatabaseTableDao implements IDatabaseTableDao
     public function __construct()
     {
 
-        $this->Rows = parent::CreateTable(Container::getInstance(new Customer()),"a_fs_Customer");
+        $this->Rows = parent::CreateTable(Container::getInstance(new Customer()), "a_fs_Customer");
 
     }
 
@@ -30,6 +30,31 @@ class CustomerDal extends DatabaseTableDao implements IDatabaseTableDao
         }
     }
 
+    public function getProducts($UserId)
+    {
+        return $this->select(
+            array(
+                'UserId' => $UserId
+            )
+        )['CanUseProducts'];
+    }
+
+    public function addProductToUser($proId, $UserId)
+    {
+        if ($UserId) {
+            $products = self::getProducts($UserId) . $proId . ",";
+            return $this->update(
+                array(
+                    'CanUseProducts' => $products
+                ),
+                array(
+                    'UserId' => $UserId
+                )
+            );
+        } else {
+            return false;
+        }
+    }
 
     public function setCustomerStatus($UserId, $status)
     {

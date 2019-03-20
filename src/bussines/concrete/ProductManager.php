@@ -39,6 +39,14 @@ class ProductManager implements IProductService,IManager
         //$this->ProductObjectData = self::getCustomerList($this->Customer);
     }
 
+    function getPrice($PostId){
+        return $this->ProductDal->getPrice($PostId);
+    }
+    function getIdOfRealProductById($Id){
+        return $this->ProductDal->getIdOfRealProduct($Id);
+    }
+
+
     function getAllProduct($Type = null)
     {
         // TODO: Implement getAllProduct() method.
@@ -80,6 +88,7 @@ class ProductManager implements IProductService,IManager
 
     function getProductById($ID)
     {
+
         if ($ID) {
             $this->ProductWhere->ResetObject();
             $this->ProductWhere->setID($ID);

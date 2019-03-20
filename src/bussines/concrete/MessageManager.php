@@ -167,17 +167,17 @@ class MessageManager implements IMessageService, IManager
 
     function writeMessage($UserId, $Message, $Who)
     {
-        echo "gelenuser.".$UserId;
 
-        echo $Who;
         if ($Message != '' || $Message != null) {
             if ($UserId)
                 $this->UserId = $UserId;
             $this->Message->ResetObject();
 
             if ($Who == "Editor") {
+                $Who = 0;
                 $this->Message->setStatus("Read");
             } else {
+                $Who= 1;
                 $this->Message->setStatus("Unread");
             }
             $this->Message->setUserId($this->UserId);

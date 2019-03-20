@@ -22,6 +22,15 @@ class ProductDal extends DatabaseTableDao
         $this->wp_postDal = new wp_postsDal();
     }
 
+    public function getPrice($PostId){
+        return $this->wp_postDal->getPrice($PostId);
+    }
+
+    public function getIdOfRealProduct($Id){
+
+        return $this->wp_postDal->getPostIdById($Id);
+    }
+
 
     public function addProductReal(Product $product, $UserId)
     {
@@ -39,6 +48,8 @@ class ProductDal extends DatabaseTableDao
         } else
             return false;
     }
+
+
 
     public function updateProductReal(Product $product)
     {
@@ -116,6 +127,19 @@ class wp_postsDal extends DatabaseTableDao
 
     }
 
+    public function getPostIdById($ID){
+
+        if ($ID) {
+            $product = $this->select(
+                array(
+                    'ID' => $ID
+                )
+            );
+            return explode("bespoke_",$product['pinged'])[1];
+        } else
+            return false;
+    }
+
     public function getProduct($ID)
     {
         if ($ID) {
@@ -131,6 +155,63 @@ class wp_postsDal extends DatabaseTableDao
         } else
             return false;
 
+
+    }
+
+    public function AddedallPages(){
+
+        self::addPages("footsphere_bespoke","Bespoke");
+        self::addPages("footsphere_profil","Profil");
+        self::addPages("footsphere_message","Message");
+    }
+
+    public function addPages($ShortCode,$PageName){
+
+        $result= $this->select(
+            array(
+                'post_content' => '[' . $ShortCode. ']'
+            )
+        );
+
+        if($result){
+
+        }else{
+            $arrayValue = array(
+                1,
+                $this->now(),
+                $this->now(),
+                '[' . $ShortCode . ']',
+                ucwords($PageName),
+                '',
+                'publish',
+                'closed',
+                'closed',
+                '',
+                $ShortCode,
+                '',
+                '',
+                $this->now(),
+                $this->now(),
+                '',
+                0,
+                '',
+                0,
+                'page',
+                '',
+                0
+            );
+
+            $dateArray = array();
+            $i = 1;
+
+            foreach ($arrayValue as $key => $value) {
+                $dateArray[$this->Column[$i]] = $value;
+                $i++;
+
+            }
+            $this->insert($dateArray);
+
+        }
 
     }
 
@@ -313,6 +394,8 @@ class wp_postsDal extends DatabaseTableDao
 
         return $ImageID;
     }
+
+
 
     public function getProductLink($PostId)
     {

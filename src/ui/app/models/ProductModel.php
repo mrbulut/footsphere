@@ -164,6 +164,13 @@ class ProductModel implements IModel
         }
     }
 
+    public function getIdOfRealProduct($Id){
+
+        self::productSetup();
+
+        return $this->ProductManager->getIdOfRealProductById($Id);
+    }
+
     public function getProduct($ID){
         self::productSetup();
         return $this->ProductManager->getProductById($ID);
@@ -192,6 +199,9 @@ class ProductModel implements IModel
         }
     }
 
+    public function getPriceById($PostId){
+        return $this->ProductManager->getPrice($PostId);
+    }
     public function removeProductForUser($ProductId){
         self::customerSetup();
         self::productSetup();

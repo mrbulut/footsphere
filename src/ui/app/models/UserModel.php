@@ -189,6 +189,7 @@ class UserModel implements IModel
         $data0 = $this->CustomerManager->getCustomerList($this->CustomerWhere);
         $data1= $this->UserManager->getUser($this->UserId);
 
+
         $resultArray[0] = $data0[0];
         $resultArray[1] = $data1;
 

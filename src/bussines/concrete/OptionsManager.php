@@ -133,6 +133,7 @@ class OptionsManager implements IOptionsService,IManager
 
 
         $Date = $this->OptionsDal->getRequest($UserId,$RequestType) ;
+        print_r($Date) ;
         $Minute = $this->DateConverter->DateToMinute($Date)/60;
         if($Minute >59){
             $text = array(

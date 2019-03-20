@@ -51,7 +51,6 @@ class messagesController extends Controller
 
 
         if(isset($_POST['sendingButton'])){
-            echo "girdi";
             $this->messageModel->writeMessage($_POST['messageBox']);
         }
 
