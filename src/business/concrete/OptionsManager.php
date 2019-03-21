@@ -8,7 +8,7 @@
 
 
 
-include_once ROOT_PATH . "/src/bussines/abstract/IOptionsService.php";
+include_once ROOT_PATH . "/src/business/abstract/IOptionsService.php";
 include_once ROOT_PATH . "/src/data/concrete/OptionsDal.php";
 include_once ROOT_PATH . "/src/data/concrete/UserDal.php";
 include_once ROOT_PATH . "/src/entities/concrete/OptionsConcrete.php";
@@ -16,7 +16,7 @@ include_once ROOT_PATH . "/src/core/lib/DateConverter.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/FileLogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/ILogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/Logger.php";
-include_once ROOT_PATH . "/src/bussines/abstract/IManager.php";
+include_once ROOT_PATH . "/src/business/abstract/IManager.php";
 
 class OptionsManager implements IOptionsService,IManager
 {

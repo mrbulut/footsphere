@@ -7,7 +7,7 @@
  */
 
 
-include_once ROOT_PATH . "/src/bussines/abstract/IProducerService.php";
+include_once ROOT_PATH . "/src/business/abstract/IProducerService.php";
 include_once ROOT_PATH . "/src/data/concrete/ProducerDal.php";
 include_once ROOT_PATH . "/src/data/concrete/OptionsDal.php";
 include_once ROOT_PATH . "/src/data/concrete/UserDal.php";
@@ -16,7 +16,7 @@ include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/FileLogger
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/abstract/ILogger.php";
 include_once ROOT_PATH . "/src/core/crosscuttingconcerns/log/Logger.php";
 
-include_once ROOT_PATH . "/src/bussines/abstract/IManager.php";
+include_once ROOT_PATH . "/src/business/abstract/IManager.php";
 
 class ProducerManager implements IProducerService,IManager
 {

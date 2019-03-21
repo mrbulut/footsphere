@@ -12,10 +12,10 @@ include_once ROOT_PATH . '/src/entities/concrete/ProductConcrete.php';
 include_once ROOT_PATH . '/src/entities/concrete/CustomerConcrete.php';
 include_once ROOT_PATH . '/src/entities/concrete/UserConcrete.php';
 include_once ROOT_PATH . '/src/entities/concrete/ProducerConcrete.php';
-include_once ROOT_PATH . '/src/bussines/concrete/UserManager.php';
-include_once ROOT_PATH . '/src/bussines/concrete/CustomerManager.php';
-include_once ROOT_PATH . '/src/bussines/concrete/ProducerManager.php';
-include_once ROOT_PATH . '/src/bussines/concrete/ProductManager.php';
+include_once ROOT_PATH . '/src/business/concrete/UserManager.php';
+include_once ROOT_PATH . '/src/business/concrete/CustomerManager.php';
+include_once ROOT_PATH . '/src/business/concrete/ProducerManager.php';
+include_once ROOT_PATH . '/src/business/concrete/ProductManager.php';
 
 class ProductModel implements IModel
 {

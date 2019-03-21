@@ -10,8 +10,8 @@ include_once 'IModel.php';
 
 include_once ROOT_PATH . '/src/entities/concrete/MessageConcrete.php';
 include_once ROOT_PATH . '/src/entities/concrete/UserConcrete.php';
-include_once ROOT_PATH . '/src/bussines/concrete/CustomerManager.php';
-include_once ROOT_PATH . '/src/bussines/concrete/MessageManager.php';
+include_once ROOT_PATH . '/src/business/concrete/CustomerManager.php';
+include_once ROOT_PATH . '/src/business/concrete/MessageManager.php';
 
 class MessageModel implements IModel
 {

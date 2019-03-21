@@ -40,7 +40,7 @@
         overflow: hidden;
         width: 40%; border-right:1px solid #c4c4c4;
     }
-    .inbox_msg { width: 57%;
+    .inbox_msg { width: 100%;
         border: 14px solid #c4c4c4;
         clear: both;
         overflow: hidden;

@@ -27,7 +27,6 @@ class Customer implements IEntity
     public $FootImage;
     public $FootImage2;
     public $FootImage3;
-    public $Language;
 
     function ResetObject() {
         foreach ($this as $key => $value) {
@@ -51,21 +50,6 @@ class Customer implements IEntity
     }
 
 
-    /**
-     * @return mixed
-     */
-    public function getLanguage()
-    {
-        return $this->Language;
-    }
-
-    /**
-     * @param mixed $Language
-     */
-    public function setLanguage($Language)
-    {
-        $this->Language = $Language;
-    }
     /**
      * Customer constructor.
      * @param $Length

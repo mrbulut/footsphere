@@ -9,8 +9,8 @@ include_once 'IModel.php';
 
 include_once ROOT_PATH . '/src/entities/concrete/OptionsConcrete.php';
 include_once ROOT_PATH . '/src/entities/concrete/UserConcrete.php';
-include_once ROOT_PATH . '/src/bussines/concrete/CustomerManager.php';
-include_once ROOT_PATH . '/src/bussines/concrete/OptionsManager.php';
+include_once ROOT_PATH . '/src/business/concrete/CustomerManager.php';
+include_once ROOT_PATH . '/src/business/concrete/OptionsManager.php';
 
 
 class OptionsModel implements IModel

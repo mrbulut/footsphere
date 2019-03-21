@@ -289,35 +289,6 @@ class Functions
 
     public function createTestPlace(){
 
-//TEST DATALARI
-
-        /*
-         * Operasyon yoneticisi
-         * username : useroperationmanager
-         * password : ViewSonic.444
-         *
-         * Ureticiler
-         * username : testproducer  - 3 adet ürün sahibi // 1 onaylanmamış , 1 reddedilmiş , 1 onaylanmış.
-         * password : ViewSonic.444
-         *
-         * username : testproducer2 - 3 adet ürün sahibi  // hepsi onaylı
-         * password : ViewSonic.444
-         *
-         * Müşteriler
-         * username : testuser  - Verilerini tamamlamamış. (Fotoğraf ve bilgiler.)
-         * password : ViewSonic.444
-         *
-         * username : testuser2 - Verilerini tamamlamış ve istekde bulunmuş ürün bekliyor. ve
-         * password : ViewSonic.444                   birinci üretici üçüncü ürününü teklif etmiş ikinci üretici birinci ürünü teklif etmiş
-         *                                            ayrıca 1 adet ürün görüntüleyebiliyor 2500 liralık
-         *
-         *
-         * username : testuser3 - Teklif edilen ürünler onaylanmış ve gösteriliyor.kullanıcının istek süresi bitmiş
-         * password : ViewSonic.444            3 ürün görüntüleyebiliyor 60,80,100 liralık
-         *
-         */
-
-
 
         include_once ROOT_PATH.'/src/data/concrete/UserDal.php';
         include_once ROOT_PATH.'/src/entities/concrete/UserConcrete.php';
@@ -352,6 +323,10 @@ class Functions
         $requestModel= new RequestModel();
         $usermodel = new UserModel();
 
+
+        if($usermodel->getAllProducer()){
+            return false;
+        }
 // Operation manager ve üreticiler tanımlanıyor
         $user->setUserName("useroperationmanager");
         $user->setUserPass("ViewSonic.444");

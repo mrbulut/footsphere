@@ -37,7 +37,7 @@ function fs_modifymenu()
 }
 
 function my_custom_menu_page(){
-    include ROOT_PATH . '/src/ui/autoloader.php';
+    include ROOT_PATH . '/src/autoloader.php';
 }
 
 

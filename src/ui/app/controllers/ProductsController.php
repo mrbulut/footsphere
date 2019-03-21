@@ -27,7 +27,10 @@ class productsController extends Controller
         parent::__construct();
         self::createColumns();
 
-       $this->userRole = $_SESSION['role'];
+        echo "<pre>";
+        print_r($this->productFeaturesArray);
+        echo "</pre>";
+        $this->userRole = $_SESSION['role'];
 
 
     }
@@ -401,7 +404,8 @@ class productsController extends Controller
         $id = $data[0];
         $proces = $data[1];
 
-        if($this->userRole=="producer"){
+
+        if($this->userRole=="producer" && $id!=0){
 
             $cap = false;
 
