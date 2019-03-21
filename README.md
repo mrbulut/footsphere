@@ -185,13 +185,18 @@ görüntüleniyor
 - a_fs_Request tablosu müşteri verilerinin tutulduğu yer.
 
   UserId sutunu hangi kullanıcıya teklif edildiğinin kayıtını tutar 
-  ProducerNo sutunu teklif yapan üreticininin degerini tutar 
-  RequestNo  wp_options tablosu içerisindeki teklifin option_idsi 
-  Status     0,1,2   olabilir  0  ise teklif süresi devam ediyor ve 1 ise operasyon yöneticisi tarafından reddedilmiş. 2 ise teklif kabul edilmiş 
-  Type       0 ise ayakkabı 1 ise terlik isteği 
-  ProductsAndPrices tablosu    şu şekilde teklif edilen ürünleri tutar 
   
-      $UrunID:$Price:$UserLocalCurrentyShortCode:$Symbol;... 
+  ProducerNo sutunu teklif yapan üreticininin degerini tutar 
+  
+  RequestNo  wp_options tablosu içerisindeki teklifin option_idsi 
+  
+  Status     0,1,2   olabilir  0  ise teklif süresi devam ediyor ve 1 ise operasyon yöneticisi tarafından reddedilmiş. 2 ise teklif kabul edilmiş 
+  
+  Type       0 ise ayakkabı 1 ise terlik isteği 
+  
+  ProductsAndPrices tablosu    şu şekilde teklif edilen ürünleri tutar 
+        
+          $UrunID:$Price:$UserLocalCurrentyShortCode:$Symbol;... 
   
     
 
