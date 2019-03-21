@@ -19,7 +19,7 @@ define('WORD_PATH',dirname(__FILE__)."/../../../");
 // AAM Üyelik sistemi aktifleştiriliyor.
 include ROOT_PATH.'/src/core/lib/advanced-access-manager/aam.php';
 // Short code yükleniyor
-
+include ROOT_PATH.'/src/ui/app/views/shortcodes/init.php';
 
 // Menuler oluşturuluyor.
 add_action('admin_menu', 'fs_modifymenu');
@@ -41,10 +41,6 @@ function my_custom_menu_page(){
 }
 
 
-function custom_admin_footer() {
-    echo '';
-}
-include ROOT_PATH.'/src/ui/app/views/shortcodes/init.php';
 
 
 ?>

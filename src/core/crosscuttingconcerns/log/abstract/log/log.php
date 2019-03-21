@@ -13439,3 +13439,37 @@
 [21.03.2019 - 10:37:51][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
 [21.03.2019 - 10:37:51][NOTICE] - Rol Çekildi Silindi.CustomerManager_getRole
 [21.03.2019 - 10:37:52][ERROR] - üretici verileri getiremedi.ProducerManager_getProducerList
+[21.03.2019 - 11:49:12][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:12][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:12][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:12][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:12][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:12][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:12][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:12][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:13][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:13][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:13][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:13][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:13][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:13][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:13][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:13][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:13][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:13][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:13][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:13][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:13][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:13][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:13][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:13][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:16][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:16][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:16][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:16][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:16][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:16][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:16][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:16][ERROR] - Rol Çekilemedi..CustomerManager_getRole
+[21.03.2019 - 11:49:16][ERROR] - Müşteri verileri getiremedi.CustomerManager_getCustomerList
+[21.03.2019 - 11:49:16][NOTICE] - Rol Çekildi Silindi.CustomerManager_getRole

@@ -27,9 +27,9 @@ class productsController extends Controller
         parent::__construct();
         self::createColumns();
 
-        echo "<pre>";
-        print_r($this->productFeaturesArray);
-        echo "</pre>";
+      //  echo "<pre>";
+      //  print_r($this->productFeaturesArray);
+      //  echo "</pre>";
         $this->userRole = $_SESSION['role'];
 
 
